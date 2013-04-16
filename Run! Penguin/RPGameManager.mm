@@ -11,6 +11,7 @@
 @implementation RPGameManager
 @synthesize isGamePausedManually = _isGamePausedManually;
 @synthesize isGameStateSceneTransition = _isGameStateSceneTransition;
+@synthesize isGameModeMultiplayer = _isGameModeMultiplayer;
 
 #pragma mark - Sigleton initialization methods
 + (RPGameManager *)sharedGameManager
@@ -26,6 +27,9 @@
 - (id)init
 {
     self = [super init];
+    _isGameModeMultiplayer = NO;
+    _isGamePausedManually = NO;
+    _isGameStateSceneTransition = NO;
     //Listen to the notification to handle player change event
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(authenticationDidChanged:) name:RPGameCenterLocalPlayerAuthenticationChanged object:nil];
     return self;

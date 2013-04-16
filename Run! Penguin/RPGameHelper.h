@@ -16,10 +16,20 @@
 ////////////////////////////////////////////////////////////////////////////
 //Selector string used in NSLog output
 #define SELECTOR_STRING [NSString stringWithFormat:@"[%@ %@]: ",NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
+///////////////////////////////////////////////////////////////////////
 //WinSize
 #define WIN_SIZE [CCDirector sharedDirector].winSize
+///////////////////////////////////////////////////////////////////////
+//Acceleration filter
+//Bigger this value more gentle the acceleration is
+#define kFilterFactor 0.7f
+///////////////////////////////////////////////////////////////////////
+//Player velocity
+#define kPlayerVelocity 1.5f
+///////////////////////////////////////////////////////////////////////
 //Local player changed notification
 #define RPGameCenterLocalPlayerAuthenticationChanged @"RPGameCenterLocalPlayerAuthenticationChanged"
+///////////////////////////////////////////////////////////////////////
 //Game state
 //Level loading progress changed notification
 #define RPLevelLoadingProgressPercentageChanged @"RPLevelLoadingProgressPercentageChanged"

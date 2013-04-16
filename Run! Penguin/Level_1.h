@@ -14,12 +14,20 @@
 #import "GLES-Render.h"
 
 @class RPLevelDirector;
+@class RPGameManager;
 // HelloWorldLayer
 @interface Level_1 : RPLevelTemplate
 {
 	b2World* world;
 	GLESDebugDraw *m_debugDraw;
+    
     RPLevelDirector *_levelDirector;
+    RPGameManager *_gameManager;
+    //The maximum counts of players in multiplayer mode, 0 means not available for
+    //multiplayer mode
+    int _playerCountInMultiplayerMode;
+    
+    LHSprite *_player_1;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

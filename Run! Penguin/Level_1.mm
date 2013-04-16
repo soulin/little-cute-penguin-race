@@ -5,15 +5,17 @@
 //  Created by Sean on 13-4-11.
 //  Copyright __MyCompanyName__ 2013年. All rights reserved.
 //
-
 ///////////////////////////////////////////////////////////////////////
 // Import the interfaces
 #import "Level_1.h"
 #import "RPGameManager.h"
 #import "RPGameManager.h"
 #import "RPLevelDirector.h"
-
 /////////////////////////////////////////////////////////////////////////
+#pragma mark - Extention
+@interface Level_1 (Private)
+- (void)initProperties;
+@end
 //Level_1 implementation
 @implementation Level_1
 
@@ -45,6 +47,7 @@
 	
 	delete m_debugDraw;
     
+    [_loader release], _loader = nil;
 	// don't forget to call "super dealloc"
 	[super dealloc];
 }
@@ -56,9 +59,6 @@
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init]))
     {
-        //Level director
-        _levelDirector = [RPLevelDirector sharedLevelDirector];
-        
 		// enable touches
 		self.isTouchEnabled = YES;
 		
@@ -96,6 +96,9 @@
         //create all objects from the level file and adds them to the cocos2d layer (self)
         [_loader addObjectsToWorld:world cocos2dLayer:self];
         ///////////////////////////////////////////////////////////////////////
+        //Init properties
+        [self initProperties];
+		///////////////////////////////////////////////////////////////////////
         //necessary or else collision in LevelHelper will not be performed
         [_loader useLevelHelperCollisionHandling];
         //Register collision listener
@@ -107,7 +110,16 @@
             //if it does, it will create the physic boundaries
             [_loader createPhysicBoundaries:world];
         }
-		///////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////
+        //Make the camera follow Player_1
+        CGRect gameWorldRect = [_loader gameWorldSize]; //the size of the game world
+        LHLayer *mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
+        LHParallaxNode *parallax_Level_1 = [_loader parallaxNodeWithUniqueName:@"Parallax_Level_1"];
+        CCFollow *followActionMainLayer = [CCFollow actionWithTarget:_player_1 worldBoundary:gameWorldRect];
+        CCFollow *followActionParallaxNode = [CCFollow actionWithTarget:_player_1 worldBoundary:gameWorldRect];
+        [mainLayer runAction:followActionMainLayer];
+        [parallax_Level_1 runAction:followActionParallaxNode];
+        ///////////////////////////////////////////////////////////////////////
 		[self schedule: @selector(tick:)];
 	}
 	return self;
@@ -161,18 +173,57 @@
 ///////////////////////////////////////////////////////////////////////
 #pragma mark - Accelerometer
 - (void)accelerometer:(UIAccelerometer*)accelerometer didAccelerate:(UIAcceleration*)acceleration
-{	
-	static float prevX=0, prevY=0;
+{
+    //When device orientation is landscapeleft upright, the G direction is X+, the
+    //back side of device is Z-, home button is Y-
+	static float previousX=0, previousY=0, previousZ=0;
+    b2Body *playerBody = [_player_1 body];
+    //float positionX = _player_1.position.x;
+    //float positionY = _player_1.position.y;
+    //float velocityX = playerBody->GetLinearVelocity().x;
+    //float velocityY = playerBody->GetLinearVelocity().y;
 	
-	//#define kFilterFactor 0.05f
-#define kFilterFactor 1.0f	// don't use filter. the code is here just as an example
-	
-	float accelX = (float) acceleration.x * kFilterFactor + (1- kFilterFactor)*prevX;
-	float accelY = (float) acceleration.y * kFilterFactor + (1- kFilterFactor)*prevY;
-	
-	prevX = accelX;
-	prevY = accelY;
-	
+    //Player velocity acceleration
+	float accelerationX = (float) acceleration.x * kFilterFactor + (1- kFilterFactor)*previousX;
+	float accelerationY = (float) acceleration.y * kFilterFactor + (1- kFilterFactor)*previousY;
+	float accelerationZ = (float) acceleration.z * kFilterFactor + (1 - kFilterFactor)*previousZ;
+    
+    //Player position transitions
+    float transitionX = 0;
+    float transitionY = 0;
+    
+    //Player transform
+    if (acceleration.x > 0.6f)
+    {
+        //Player should move down
+        transitionY = - kPlayerVelocity;
+    }
+    if (acceleration.x < 0.6f && acceleration.x > - 0.4f)
+    {
+        //Player should move up
+        transitionY = kPlayerVelocity;
+    }
+    if (acceleration.y > 0)
+    {
+        //Player should speed up
+        transitionX = kPlayerVelocity;
+    }
+    if (acceleration.y < 0)
+    {
+        //Player should slow down
+        transitionX = MIN(0, kPlayerVelocity);
+    }
+    if (acceleration.z < 0.4f)
+    {
+        //It is the same status as X > 0.6f
+    }
+    b2Vec2 transitionVelocity = b2Vec2(transitionX, transitionY);
+    //playerBody->SetTransform(transitionPos, 0);
+    playerBody->SetLinearVelocity(transitionVelocity);
+    
+	previousX = accelerationX;
+	previousY = accelerationY;
+	previousZ = accelerationZ;
 //	// accelerometer values are in "Portrait" mode. Change them to Landscape left
 //	// multiply the gravity by 10
 //	b2Vec2 gravity( -accelY * 10, accelX * 10);
@@ -188,5 +239,20 @@
     else
 	    NSLog(@"Kid ... Seal end contact");
 }
-
+///////////////////////////////////////////////////////////////////////
+#pragma mark - Private methods
+- (void)initProperties
+{
+    //Level director
+    _levelDirector = [RPLevelDirector sharedLevelDirector];
+    _gameManager = [RPGameManager sharedGameManager];
+    _playerCountInMultiplayerMode = 2;
+    _player_1 = [_loader spriteWithUniqueName:@"penguin_kid"];
+    //Multiplayer mode players init
+    if ([_gameManager isGameModeMultiplayer])
+    {
+        //Do something interesting here
+    }
+}
+///////////////////////////////////////////////////////////////////////
 @end

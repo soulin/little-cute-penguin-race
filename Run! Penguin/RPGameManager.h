@@ -13,11 +13,15 @@
 
 @interface RPGameManager : NSObject <GKLeaderboardViewControllerDelegate>
 {
+    //Game state identifier
     BOOL _isGamePausedManually;
     BOOL _isGameStateSceneTransition;
+    //Game mode identifier
+    BOOL _isGameModeMultiplayer;
 }
 @property (assign,nonatomic,readwrite) BOOL isGamePausedManually;
 @property (assign,nonatomic,readwrite) BOOL isGameStateSceneTransition;
+@property (assign,nonatomic,readwrite) BOOL isGameModeMultiplayer;
 
 + (RPGameManager *)sharedGameManager;
 
