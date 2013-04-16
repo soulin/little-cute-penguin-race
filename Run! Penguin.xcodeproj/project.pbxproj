@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0df941a0f699fb0931fb3a3c /* LHJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = da813d694e9aa205e315c3e1 /* LHJoint.mm */; };
+		14480B30171D05CC007B7417 /* Run!Penguin.pshs in Resources */ = {isa = PBXBuildFile; fileRef = 14480B26171D05CC007B7417 /* Run!Penguin.pshs */; };
+		14480B31171D05CC007B7417 /* Run!Penguin_Characters-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B27171D05CC007B7417 /* Run!Penguin_Characters-hd.png */; };
+		14480B32171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B28171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png */; };
+		14480B33171D05CC007B7417 /* Run!Penguin_Characters.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B29171D05CC007B7417 /* Run!Penguin_Characters.png */; };
+		14480B34171D05CC007B7417 /* Run!Penguin_PhisicalWorld-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B2A171D05CC007B7417 /* Run!Penguin_PhisicalWorld-hd.png */; };
+		14480B35171D05CC007B7417 /* Run!Penguin_PhisicalWorld-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B2B171D05CC007B7417 /* Run!Penguin_PhisicalWorld-ipadhd.png */; };
+		14480B36171D05CC007B7417 /* Run!Penguin_PhisicalWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B2C171D05CC007B7417 /* Run!Penguin_PhisicalWorld.png */; };
+		14480B37171D05CC007B7417 /* level_1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 14480B2E171D05CC007B7417 /* level_1.plhs */; };
 		146B712B171C317400BAE027 /* RPGameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 146B712A171C317400BAE027 /* RPGameManager.mm */; };
 		146B712D171C327700BAE027 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146B712C171C327700BAE027 /* GameKit.framework */; };
 		146B7134171C33C400BAE027 /* RPLevelDirector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 146B7133171C33C400BAE027 /* RPLevelDirector.mm */; };
@@ -163,7 +171,6 @@
 		1497BAEA17166D4F006D2035 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497BAE917166D4F006D2035 /* RootViewController.m */; };
 		1497BAED17166D4F006D2035 /* Level_1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1497BAEC17166D4F006D2035 /* Level_1.mm */; };
 		1497BAF017166D4F006D2035 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1497BAEF17166D4F006D2035 /* GLES-Render.mm */; };
-		1497BAF317166D4F006D2035 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497BAF217166D4F006D2035 /* blocks.png */; };
 		158b3a94cb9117a373e76fad /* LHBezier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 828d6559054b50eff33890d3 /* LHBezier.mm */; };
 		16abf7fc71589ce37267ae26 /* LHAsset.mm in Sources */ = {isa = PBXBuildFile; fileRef = c67453c20a22aa7cd5fb960f /* LHAsset.mm */; };
 		18fc55f4a3ac756a3383e982 /* LHCustomSpriteMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32b7e4848068315af0b7c9ef /* LHCustomSpriteMgr.mm */; };
@@ -189,6 +196,14 @@
 
 /* Begin PBXFileReference section */
 		079316f68f4d54356a040fb9 /* LHCustomSpriteMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHCustomSpriteMgr.h; sourceTree = "<group>"; };
+		14480B26171D05CC007B7417 /* Run!Penguin.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Run!Penguin.pshs"; sourceTree = "<group>"; };
+		14480B27171D05CC007B7417 /* Run!Penguin_Characters-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_Characters-hd.png"; sourceTree = "<group>"; };
+		14480B28171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_Characters-ipadhd.png"; sourceTree = "<group>"; };
+		14480B29171D05CC007B7417 /* Run!Penguin_Characters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_Characters.png"; sourceTree = "<group>"; };
+		14480B2A171D05CC007B7417 /* Run!Penguin_PhisicalWorld-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_PhisicalWorld-hd.png"; sourceTree = "<group>"; };
+		14480B2B171D05CC007B7417 /* Run!Penguin_PhisicalWorld-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_PhisicalWorld-ipadhd.png"; sourceTree = "<group>"; };
+		14480B2C171D05CC007B7417 /* Run!Penguin_PhisicalWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_PhisicalWorld.png"; sourceTree = "<group>"; };
+		14480B2E171D05CC007B7417 /* level_1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_1.plhs; sourceTree = "<group>"; };
 		146B7129171C317400BAE027 /* RPGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGameManager.h; sourceTree = "<group>"; };
 		146B712A171C317400BAE027 /* RPGameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RPGameManager.mm; sourceTree = "<group>"; };
 		146B712C171C327700BAE027 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -507,7 +522,6 @@
 		1497BAEE17166D4F006D2035 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		1497BAEF17166D4F006D2035 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		1497BAF117166D4F006D2035 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
-		1497BAF217166D4F006D2035 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		189f8d165fca06a598e21c7d /* LHContactInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHContactInfo.h; sourceTree = "<group>"; };
 		1dd46984bf9e2bae0b50594e /* LHSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LHSprite.mm; sourceTree = "<group>"; };
 		1ea59af4ec6f34734eb11a6f /* LHCuttingEngineMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LHCuttingEngineMgr.mm; sourceTree = "<group>"; };
@@ -578,6 +592,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14480B25171D05CC007B7417 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				14480B26171D05CC007B7417 /* Run!Penguin.pshs */,
+				14480B27171D05CC007B7417 /* Run!Penguin_Characters-hd.png */,
+				14480B28171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png */,
+				14480B29171D05CC007B7417 /* Run!Penguin_Characters.png */,
+				14480B2A171D05CC007B7417 /* Run!Penguin_PhisicalWorld-hd.png */,
+				14480B2B171D05CC007B7417 /* Run!Penguin_PhisicalWorld-ipadhd.png */,
+				14480B2C171D05CC007B7417 /* Run!Penguin_PhisicalWorld.png */,
+			);
+			name = images;
+			path = Resources/images;
+			sourceTree = "<group>";
+		};
+		14480B2D171D05CC007B7417 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				14480B2E171D05CC007B7417 /* level_1.plhs */,
+			);
+			name = levels;
+			path = Resources/levels;
+			sourceTree = "<group>";
+		};
+		14480B2F171D05CC007B7417 /* sounds effect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "sounds effect";
+			path = "Resources/sounds effect";
+			sourceTree = "<group>";
+		};
 		146B712E171C32B400BAE027 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +711,9 @@
 		1497B92117166D4D006D2035 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14480B25171D05CC007B7417 /* images */,
+				14480B2D171D05CC007B7417 /* levels */,
+				14480B2F171D05CC007B7417 /* sounds effect */,
 				1497B92217166D4D006D2035 /* Default.png */,
 				1497B92417166D4D006D2035 /* fps_images.png */,
 				1497B92617166D4D006D2035 /* Icon-72.png */,
@@ -675,7 +724,6 @@
 				1497B93017166D4D006D2035 /* Icon@2x.png */,
 				1497B93217166D4D006D2035 /* Info.plist */,
 				1497B93317166D4D006D2035 /* iTunesArtwork */,
-				1497BAF217166D4F006D2035 /* blocks.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1267,7 +1315,14 @@
 				1497B92F17166D4D006D2035 /* Icon.png in Resources */,
 				1497B93117166D4D006D2035 /* Icon@2x.png in Resources */,
 				1497B93417166D4D006D2035 /* iTunesArtwork in Resources */,
-				1497BAF317166D4F006D2035 /* blocks.png in Resources */,
+				14480B30171D05CC007B7417 /* Run!Penguin.pshs in Resources */,
+				14480B31171D05CC007B7417 /* Run!Penguin_Characters-hd.png in Resources */,
+				14480B32171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png in Resources */,
+				14480B33171D05CC007B7417 /* Run!Penguin_Characters.png in Resources */,
+				14480B34171D05CC007B7417 /* Run!Penguin_PhisicalWorld-hd.png in Resources */,
+				14480B35171D05CC007B7417 /* Run!Penguin_PhisicalWorld-ipadhd.png in Resources */,
+				14480B36171D05CC007B7417 /* Run!Penguin_PhisicalWorld.png in Resources */,
+				14480B37171D05CC007B7417 /* level_1.plhs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
