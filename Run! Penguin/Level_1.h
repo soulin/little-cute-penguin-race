@@ -13,11 +13,13 @@
 #import "RPLevelTemplate.h"
 #import "GLES-Render.h"
 
+@class RPLevelDirector;
 // HelloWorldLayer
 @interface Level_1 : RPLevelTemplate
 {
 	b2World* world;
 	GLESDebugDraw *m_debugDraw;
+    RPLevelDirector *_levelDirector;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

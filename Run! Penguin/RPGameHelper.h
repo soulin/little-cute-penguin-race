@@ -7,14 +7,25 @@
 //
 
 #ifndef Run__Penguin_RPGameHelper_h
-////////////////////////////////////////////////////////////////////////////
 #define Run__Penguin_RPGameHelper_h
+//Pixel to metres ratio. Box2D uses metres as the unit for measurement.
+//This ratio defines how many pixels correspond to 1 Box2D "metre"
+//Box2D is optimized for objects of 1x1 metre therefore it makes sense
+//to define the ratio so that your most common object type is 1x1 metre.
+#define PTM_RATIO 32
+////////////////////////////////////////////////////////////////////////////
+//Selector string used in NSLog output
 #define SELECTOR_STRING [NSString stringWithFormat:@"[%@ %@]: ",NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
+//WinSize
+#define WIN_SIZE [CCDirector sharedDirector].winSize
+//Local player changed notification
 #define RPGameCenterLocalPlayerAuthenticationChanged @"RPGameCenterLocalPlayerAuthenticationChanged"
+//Game state
+//Level loading progress changed notification
 #define RPLevelLoadingProgressPercentageChanged @"RPLevelLoadingProgressPercentageChanged"
+//New level is loading
 #define RPNewSceneIsInitializing @"RPNewSceneIsInitializing"
+//New scene becomes current scene
 #define RPNewSceneHasBecomeCurrentScene @"RPNewSceneHasBecomeCurrentScene"
-#define RPCustomerGainedGemsCountDidChanged @"RPCustomerGainedGemsCountDidChanged"
-#define RPCustomerGainedGoodsCountDidChanged @"RPCustomerGainedGoodsCountDidChanged"
 ////////////////////////////////////////////////////////////////////////////
 #endif

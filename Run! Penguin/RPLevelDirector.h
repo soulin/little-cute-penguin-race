@@ -4,7 +4,7 @@
 //
 //  Created by Sean on 13-4-15.
 //  RPLevelDirector is a singleton, which is in charge of level transition, sound
-//  effects, game music, touch dispatches
+//  effects, game music, touch dispatches, collision handling
 //
 
 #import <Foundation/Foundation.h>

@@ -9,12 +9,9 @@
 ///////////////////////////////////////////////////////////////////////
 // Import the interfaces
 #import "Level_1.h"
-
-//Pixel to metres ratio. Box2D uses metres as the unit for measurement.
-//This ratio defines how many pixels correspond to 1 Box2D "metre"
-//Box2D is optimized for objects of 1x1 metre therefore it makes sense
-//to define the ratio so that your most common object type is 1x1 metre.
-#define PTM_RATIO 32
+#import "RPGameManager.h"
+#import "RPGameManager.h"
+#import "RPLevelDirector.h"
 
 /////////////////////////////////////////////////////////////////////////
 //Level_1 implementation
@@ -24,6 +21,8 @@
 #pragma mark - Memory management
 +(CCScene *) scene
 {
+    //New scene is initializing, post notification
+    [[NSNotificationCenter defaultCenter] postNotificationName:RPNewSceneIsInitializing object:nil];
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
@@ -57,14 +56,14 @@
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init]))
     {
+        //Level director
+        _levelDirector = [RPLevelDirector sharedLevelDirector];
+        
 		// enable touches
 		self.isTouchEnabled = YES;
 		
 		// enable accelerometer
 		self.isAccelerometerEnabled = YES;
-		
-		CGSize screenSize = [CCDirector sharedDirector].winSize;
-		CCLOG(@"Screen width %0.2f screen height %0.2f",screenSize.width,screenSize.height);
 		
 		// Define the gravity vector.
 		b2Vec2 gravity;
@@ -89,8 +88,26 @@
 //		flags += b2DebugDraw::e_aabbBit;
 //		flags += b2DebugDraw::e_pairBit;
 //		flags += b2DebugDraw::e_centerOfMassBit;
-		m_debugDraw->SetFlags(flags);		
-		
+		m_debugDraw->SetFlags(flags);
+        ///////////////////////////////////////////////////////////////////////
+        //create a LevelHelperLoader object that has the data of the specified level
+        _loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level_1"];
+        
+        //create all objects from the level file and adds them to the cocos2d layer (self)
+        [_loader addObjectsToWorld:world cocos2dLayer:self];
+        ///////////////////////////////////////////////////////////////////////
+        //necessary or else collision in LevelHelper will not be performed
+        [_loader useLevelHelperCollisionHandling];
+        //Register collision listener
+        [_loader registerBeginOrEndCollisionCallbackBetweenTagA:KID andTagB:SEAL idListener:_levelDirector selListener:@selector(beginEndCollisionHandler:)];
+        
+        //checks if the level has physics boundaries
+        if([_loader hasPhysicBoundaries])
+        {
+            //if it does, it will create the physic boundaries
+            [_loader createPhysicBoundaries:world];
+        }
+		///////////////////////////////////////////////////////////////////////
 		[self schedule: @selector(tick:)];
 	}
 	return self;
@@ -161,6 +178,15 @@
 //	b2Vec2 gravity( -accelY * 10, accelX * 10);
 //	
 //	world->SetGravity( gravity );
+}
+///////////////////////////////////////////////////////////////////////
+#pragma mark - Collision handling
+-(void)beginEndCollisionBetweenKidAndSeal:(LHContactInfo*)contact
+{
+	if([contact contactType])
+    	NSLog(@"Kid ... Seal begin contact");
+    else
+	    NSLog(@"Kid ... Seal end contact");
 }
 
 @end

@@ -63,7 +63,11 @@
 enum LevelHelper_TAG 
 { 
 	DEFAULT_TAG 	= 0,
-	NUMBER_OF_TAGS 	= 1
+	SEAL 			= 1,
+	PARENT 			= 2,
+	EAGLE 			= 3,
+	KID 			= 4,
+	NUMBER_OF_TAGS 	= 5
 };
 
 CGSize  LHSizeFromString(NSString* val);

@@ -7,7 +7,7 @@
 	<key>CreatedWith</key>
 	<string>LevelHelper</string>
 	<key>Gravity</key>
-	<string>{0, 1}</string>
+	<string>{0, 0}</string>
 	<key>JOINTS_INFO</key>
 	<array/>
 	<key>LHVersion</key>
@@ -1912,9 +1912,9 @@
 								<key>SpriteSize</key>
 								<string>{110.5, 134.25}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>4</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>KID</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2004,9 +2004,9 @@
 								<key>SpriteSize</key>
 								<string>{172.5, 159}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>EAGLE</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2061,7 +2061,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{2, 393}, {126.75, 154.5}}</string>
+								<string>{{4, 393}, {126.75, 154.5}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -2079,9 +2079,9 @@
 								<key>SpriteSize</key>
 								<string>{126.25, 154.5}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>2</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>PARENT</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2148,15 +2148,15 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{275.614990234375, 233.5}</string>
+								<string>{80.614990234375, 256.5}</string>
 								<key>Scale</key>
 								<string>{0.5, 0.5}</string>
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2229,9 +2229,9 @@
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2304,9 +2304,9 @@
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2361,7 +2361,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{2, 393}, {126.75, 154.5}}</string>
+								<string>{{4, 393}, {126.75, 154.5}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -2379,9 +2379,9 @@
 								<key>SpriteSize</key>
 								<string>{126.25, 154.5}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>2</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>PARENT</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2471,9 +2471,9 @@
 								<key>SpriteSize</key>
 								<string>{172.5, 159}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>EAGLE</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2563,9 +2563,9 @@
 								<key>SpriteSize</key>
 								<string>{172.5, 159}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>EAGLE</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2638,9 +2638,9 @@
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2713,9 +2713,9 @@
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2770,7 +2770,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{2, 393}, {126.75, 154.5}}</string>
+								<string>{{4, 393}, {126.75, 154.5}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -2788,9 +2788,9 @@
 								<key>SpriteSize</key>
 								<string>{126.25, 154.5}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>2</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>PARENT</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -2863,9 +2863,9 @@
 								<key>SpriteSize</key>
 								<string>{256, 256}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>SEAL</string>
 								<key>TextureOffset</key>
 								<string>{0, 0}</string>
 								<key>UniqueName</key>
@@ -3134,14 +3134,6 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
-					<string>penguin_kid</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
 					<string>seal_5</string>
 				</dict>
 				<dict>
@@ -3252,14 +3244,18 @@
 		<key>PanValue</key>
 		<string>{0, 0}</string>
 		<key>ProjectName</key>
-		<string>Run! Penguin</string>
+		<string></string>
 		<key>ProjectPath</key>
-		<string>/Users/sean/MyProject/Run! Penguin</string>
+		<string></string>
 		<key>SafeFrame</key>
-		<string>{480, 320}</string>
+		<string>{0, 0}</string>
 		<key>Tags</key>
 		<array>
 			<string>DEFAULT</string>
+			<string>SEAL</string>
+			<string>PARENT</string>
+			<string>EAGLE</string>
+			<string>KID</string>
 		</array>
 		<key>ZoomValue</key>
 		<real>0.0</real>

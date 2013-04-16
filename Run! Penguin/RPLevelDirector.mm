@@ -391,5 +391,23 @@
         }
     }
 }
+//////////////////////////////////////////////////////////////////////////
+#pragma mark - Collision handling
+-(void)beginEndCollisionHandler:(LHContactInfo*)contact
+{
+    if (!_currentLayer)
+    {
+        NSLog(@"%@No valid layer is currently presenting",SELECTOR_STRING);
+        return;
+    }
+    if ([[contact spriteA] tag] == KID && [[contact spriteB] tag] == SEAL)
+    {
+        if ([_currentLayer respondsToSelector:@selector(beginEndCollisionBetweenKidAndSeal:)])
+        {
+            [_currentLayer performSelector:@selector(beginEndCollisionBetweenKidAndSeal:) withObject:contact];
+        }
+    }
+}
+//////////////////////////////////////////////////////////////////////////
 
 @end

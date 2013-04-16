@@ -133,7 +133,7 @@
     [levelDirector setIsGameMusicEnabled:isGameMusicEnabled];
 	// Run the MainMenu Scene
     CCScene *scene = [Level_1 scene];
-    _appPanGestureRecognizer = [[[UIPanGestureRecognizer alloc] initWithTarget:gameManger action:@selector(handlePanFrom:)] autorelease];
+    _appPanGestureRecognizer = [[[UIPanGestureRecognizer alloc] initWithTarget:levelDirector action:@selector(handlePanFrom:)] autorelease];
     [viewController.view addGestureRecognizer:_appPanGestureRecognizer];
     if (![[GKLocalPlayer localPlayer] isAuthenticated])
     {
