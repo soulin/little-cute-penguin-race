@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>2HDSuffix</key>
+	<string>-ipadhd</string>
+	<key>AutoGenerateCode</key>
+	<false/>
+	<key>AutoIncludeXCode</key>
+	<false/>
+	<key>BookmarkProjectFolder</key>
+	<data>
+	Ym9vaxQDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANAIA
+	AAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHNlYW4JAAAAAQEAAE15UHJvamVjdAAAAAwA
+	AAABAQAAUnVuISBQZW5ndWluEAAAAAEGAAAEAAAAFAAAACAAAAA0AAAACAAAAAQDAACN
+	kQAAAAAAAAgAAAAEAwAAPQkIAAAAAAAIAAAABAMAANECDAAAAAAACAAAAAQDAAB5K8AB
+	AAAAABAAAAABBgAAYAAAAHAAAACAAAAAkAAAAAgAAAAABAAAQbcWbUwAAAAYAAAAAQIA
+	AAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAMAAAABAQAATWFjAAgAAAAEAwAAAACgfVEA
+	AAAIAAAAAAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3Ni1GMjJELTNFNTQtQThGNC1C
+	NTUxRjBEQUFDM0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAAAAAAAAAAAAEAAAABAQAA
+	LwAAAAAAAAABBQAABAAAAAMDAAAAAQAAqgAAAAECAAAxNDgwMzhlZjk0NGU2MjA4NTQ2
+	MmYxM2E4NTI3MDU4YjNhMzlmMWRlOzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7Y29t
+	LmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7MDEwMDAwMDI7MDAw
+	MDAwMDAwMWMwMmI3OTsvdXNlcnMvc2Vhbi9teXByb2plY3QvcnVuISBwZW5ndWluAAAA
+	qAAAAP7///8BAAAAAAAAAA0AAAAEEAAASAAAAAAAAAAFEAAAoAAAAAAAAAAQEAAAyAAA
+	AAAAAABAEAAAuAAAAAAAAAACIAAAYAEAAAAAAAAQIAAA6AAAAAAAAAARIAAAFAEAAAAA
+	AAASIAAA9AAAAAAAAAATIAAABAEAAAAAAAAgIAAAQAEAAAAAAAAwIAAAbAEAAAAAAAAQ
+	0AAAdAEAAAAAAACA8AAAgAEAAAAAAAA=
+	</data>
+	<key>BundleIdentifier</key>
+	<string></string>
+	<key>CodePathRelative</key>
+	<string>..</string>
+	<key>CustomClasses</key>
+	<array/>
+	<key>CustomScreenSize</key>
+	<string>{480, 320}</string>
+	<key>Device</key>
+	<integer>2</integer>
+	<key>Engine</key>
+	<integer>0</integer>
+	<key>HDSuffix</key>
+	<string>-hd</string>
+	<key>LastLevelLoaded</key>
+	<string>/Users/sean/MyProject/Run! Penguin/Run! Penguin/Resources/levels/level_1.plhs</string>
+	<key>Orientation</key>
+	<integer>1</integer>
+	<key>ProjectName</key>
+	<string>Run! Penguin</string>
+	<key>ProjectPathRelative</key>
+	<string>./</string>
+	<key>Tags</key>
+	<array>
+		<string>DEFAULT</string>
+	</array>
+</dict>
+</plist>

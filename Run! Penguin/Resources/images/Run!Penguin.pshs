@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>CreatedWith</key>
+	<string>SpriteHelper</string>
+	<key>SHEETS_INFO</key>
+	<array>
+		<dict>
+			<key>2HDSuffix</key>
+			<string>-ipadhd</string>
+			<key>AllowRotation</key>
+			<true/>
+			<key>Crop</key>
+			<false/>
+			<key>DropSprites</key>
+			<false/>
+			<key>HDSuffix</key>
+			<string>-hd</string>
+			<key>IsRendable</key>
+			<true/>
+			<key>MaxSheetSize</key>
+			<integer>4096</integer>
+			<key>NpotSize</key>
+			<string>{1656, 2072}</string>
+			<key>Padding</key>
+			<integer>8</integer>
+			<key>PixelFormat</key>
+			<integer>0</integer>
+			<key>SheetImage</key>
+			<string>Run!Penguin_PhisicalWorld.png</string>
+			<key>SheetImage-HD</key>
+			<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+			<key>SheetName</key>
+			<string>PhisicalWorld</string>
+			<key>SheetSceneImageName</key>
+			<string></string>
+			<key>Sheet_Sprites_Info</key>
+			<dict>
+				<key>hill</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hill</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 2}, {256, 235.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 8}, {1024, 943}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hill</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hill.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hill.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1024, 943}}</string>
+						<key>OriginalSize</key>
+						<string>{1024, 944}</string>
+						<key>Position</key>
+						<string>{8, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{256, 236}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0.125}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>ice_ground</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>ice_ground</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 242}, {256, 137}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 968}, {1024, 548}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>ice_ground</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/ice_ground.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/ice_ground.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 14}, {1024, 548}}</string>
+						<key>OriginalSize</key>
+						<string>{1024, 562}</string>
+						<key>Position</key>
+						<string>{8, 968}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{256, 140.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -1.75}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>snow_ground</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>snow_ground</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{262, 262}, {256, 134.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1048, 1048}, {1024, 539}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>snow_ground</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/snow_ground.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/snow_ground.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1024, 539}}</string>
+						<key>OriginalSize</key>
+						<string>{1024, 539}</string>
+						<key>Position</key>
+						<string>{1048, 1048}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{256, 134.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>water under ground</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>water under ground</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{262, 2}, {256, 151.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{1048, 8}, {1024, 606}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>water under ground</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/water under ground.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/water%20under%20ground.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1024, 606}}</string>
+						<key>OriginalSize</key>
+						<string>{1024, 606}</string>
+						<key>Position</key>
+						<string>{1048, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{256, 151.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</dict>
+			<key>Size</key>
+			<string>{2048, 4096}</string>
+			<key>Trim</key>
+			<true/>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>2HDSuffix</key>
+			<string>-ipadhd</string>
+			<key>AllowRotation</key>
+			<true/>
+			<key>Crop</key>
+			<false/>
+			<key>DropSprites</key>
+			<false/>
+			<key>HDSuffix</key>
+			<string>-hd</string>
+			<key>IsRendable</key>
+			<true/>
+			<key>MaxSheetSize</key>
+			<integer>4096</integer>
+			<key>NpotSize</key>
+			<string>{2028, 2536}</string>
+			<key>Padding</key>
+			<integer>8</integer>
+			<key>PixelFormat</key>
+			<integer>0</integer>
+			<key>SheetImage</key>
+			<string>Run!Penguin_Characters.png</string>
+			<key>SheetImage-HD</key>
+			<string>Run!Penguin_Characters-ipadhd.png</string>
+			<key>SheetName</key>
+			<string>Characters</string>
+			<key>SheetSceneImageName</key>
+			<string></string>
+			<key>Sheet_Sprites_Info</key>
+			<dict>
+				<key>eagle_fly0</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>eagle_fly0</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{262, 2}, {172.5, 159}}</string>
+						<key>Frame-HD</key>
+						<string>{{1048, 8}, {690, 636}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>eagle_fly0</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/eagle_fly0.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/eagle_fly0.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {690, 636}}</string>
+						<key>OriginalSize</key>
+						<string>{690, 636}</string>
+						<key>Position</key>
+						<string>{1048, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{172.5, 159}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>eagle_fly1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>eagle_fly1</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{262, 165}, {172.5, 159}}</string>
+						<key>Frame-HD</key>
+						<string>{{1048, 660}, {690, 636}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>eagle_fly1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/eagle_fly1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/eagle_fly1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {690, 636}}</string>
+						<key>OriginalSize</key>
+						<string>{690, 636}</string>
+						<key>Position</key>
+						<string>{1048, 660}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{172.5, 159}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_run0</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_run0</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{257, 443}, {110.5, 134.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1028, 1772}, {442, 537}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_run0</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run0.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_run0.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {442, 537}}</string>
+						<key>OriginalSize</key>
+						<string>{442, 537}</string>
+						<key>Position</key>
+						<string>{1028, 1772}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{110.5, 134.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_run1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_run1</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{396, 328}, {110.5, 134.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1584, 1312}, {442, 537}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_run1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_run1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {442, 537}}</string>
+						<key>OriginalSize</key>
+						<string>{442, 537}</string>
+						<key>Position</key>
+						<string>{1584, 1312}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{110.5, 134.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_run2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_run2</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 523}, {110.5, 134.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 2092}, {442, 537}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_run2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_run2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {442, 537}}</string>
+						<key>OriginalSize</key>
+						<string>{442, 537}</string>
+						<key>Position</key>
+						<string>{8, 2092}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{110.5, 134.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_slip1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_slip1</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{161, 424}, {157.75, 92.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{644, 1696}, {629, 370}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_slip1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_slip1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {629, 370}}</string>
+						<key>OriginalSize</key>
+						<string>{629, 370}</string>
+						<key>Position</key>
+						<string>{644, 1696}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{157.25, 92.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_slip2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_slip2</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{161, 262}, {157.75, 92.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{644, 1048}, {629, 370}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_slip2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_slip2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {629, 370}}</string>
+						<key>OriginalSize</key>
+						<string>{629, 370}</string>
+						<key>Position</key>
+						<string>{644, 1048}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{157.25, 92.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_slip_0</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_slip_0</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{396, 467}, {157.75, 92.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{1584, 1868}, {629, 370}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_slip_0</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip_0.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_slip_0.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {629, 370}}</string>
+						<key>OriginalSize</key>
+						<string>{629, 370}</string>
+						<key>Position</key>
+						<string>{1584, 1868}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{157.25, 92.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_kids_stand0</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_kids_stand0</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{257, 328}, {110.5, 134.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1028, 1312}, {442, 537}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_kids_stand0</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_stand0.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_kids_stand0.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {442, 537}}</string>
+						<key>OriginalSize</key>
+						<string>{442, 537}</string>
+						<key>Position</key>
+						<string>{1028, 1312}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{110.5, 134.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_parent_stand_facetoleft</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_parent_stand_facetoleft</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 393}, {126.75, 154.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 1572}, {505, 618}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_parent_stand_facetoleft</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_parent_stand_facetoleft.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_parent_stand_facetoleft.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {505, 618}}</string>
+						<key>OriginalSize</key>
+						<string>{505, 618}</string>
+						<key>Position</key>
+						<string>{8, 1572}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{126.25, 154.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>penguin_parent_stand_facetoright</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>penguin_parent_stand_facetoright</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 262}, {126.75, 154.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 1048}, {505, 618}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>penguin_parent_stand_facetoright</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_parent_stand_facetoright.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/penguin_parent_stand_facetoright.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {505, 618}}</string>
+						<key>OriginalSize</key>
+						<string>{505, 618}</string>
+						<key>Position</key>
+						<string>{8, 1048}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{126.25, 154.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>seal</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Characters</string>
+					<key>SHSpriteName</key>
+					<string>seal</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_Characters.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_Characters-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 2}, {256, 256}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 8}, {1024, 1024}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_Characters.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_Characters-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<false/>
+						<key>Name</key>
+						<string>seal</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Character/raw/seal.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Character/raw/seal.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1024, 1024}}</string>
+						<key>OriginalSize</key>
+						<string>{1024, 1024}</string>
+						<key>Position</key>
+						<string>{8, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{256, 256}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, 0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</dict>
+			<key>Size</key>
+			<string>{2048, 4096}</string>
+			<key>Trim</key>
+			<false/>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>SH_ANIMATIONS_LIST</key>
+	<array>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.10000000149011612</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>Frame</key>
+					<string>{{257, 443}, {110.5, 134.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{1028, 1772}, {442, 537}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run0.png</string>
+					<key>SpriteSize</key>
+					<string>{110.5, 134.75}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_run0</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{396, 328}, {110.5, 134.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{1584, 1312}, {442, 537}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run1.png</string>
+					<key>SpriteSize</key>
+					<string>{110.5, 134.75}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_run1</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{2, 523}, {110.5, 134.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{8, 2092}, {442, 537}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_run2.png</string>
+					<key>SpriteSize</key>
+					<string>{110.5, 134.75}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_run2</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>Run!Penguin_Characters.png</string>
+			<key>SheetName</key>
+			<string>Characters</string>
+			<key>StartAtLaunch</key>
+			<false/>
+			<key>UniqueName</key>
+			<string>penguin_kid_run</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.10000000149011612</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>Frame</key>
+					<string>{{257, 328}, {110.5, 134.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{1028, 1312}, {442, 537}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_stand0.png</string>
+					<key>SpriteSize</key>
+					<string>{110.5, 134.75}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_stand0</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>Run!Penguin_Characters.png</string>
+			<key>SheetName</key>
+			<string>Characters</string>
+			<key>StartAtLaunch</key>
+			<false/>
+			<key>UniqueName</key>
+			<string>penguin_kid_stand</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.10000000149011612</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>Frame</key>
+					<string>{{396, 467}, {157.75, 92.5}}</string>
+					<key>Frame-HD</key>
+					<string>{{1584, 1868}, {629, 370}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip_0.png</string>
+					<key>SpriteSize</key>
+					<string>{157.75, 92.5}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_slip_0</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{161, 424}, {157.75, 92.5}}</string>
+					<key>Frame-HD</key>
+					<string>{{644, 1696}, {629, 370}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip1.png</string>
+					<key>SpriteSize</key>
+					<string>{157.75, 92.5}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_slip1</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{161, 262}, {157.75, 92.5}}</string>
+					<key>Frame-HD</key>
+					<string>{{644, 1048}, {629, 370}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/penguin_kids_slip2.png</string>
+					<key>SpriteSize</key>
+					<string>{157.75, 92.5}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>penguin_kids_slip2</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>Run!Penguin_Characters.png</string>
+			<key>SheetName</key>
+			<string>Characters</string>
+			<key>StartAtLaunch</key>
+			<false/>
+			<key>UniqueName</key>
+			<string>penguin_kid_slip</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.20000000298023224</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>Frame</key>
+					<string>{{262, 2}, {172.5, 159}}</string>
+					<key>Frame-HD</key>
+					<string>{{1048, 8}, {690, 636}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/eagle_fly0.png</string>
+					<key>SpriteSize</key>
+					<string>{172.5, 159}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>eagle_fly0</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>{{262, 165}, {172.5, 159}}</string>
+					<key>Frame-HD</key>
+					<string>{{1048, 660}, {690, 636}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/sean/Desktop/temp/penguin/Character/raw/eagle_fly1.png</string>
+					<key>SpriteSize</key>
+					<string>{172.5, 159}</string>
+					<key>TextureOffset</key>
+					<string>{0, 0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>eagle_fly1</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>Run!Penguin_Characters.png</string>
+			<key>SheetName</key>
+			<string>Characters</string>
+			<key>StartAtLaunch</key>
+			<false/>
+			<key>UniqueName</key>
+			<string>eagle_fly</string>
+		</dict>
+	</array>
+	<key>SaveSettings</key>
+	<dict>
+		<key>Dither</key>
+		<false/>
+		<key>DocumentName</key>
+		<string>Run!Penguin</string>
+		<key>HD2XSuffix</key>
+		<string>-ipadhd</string>
+		<key>HDSuffix</key>
+		<string>-hd</string>
+		<key>ImageFormatId</key>
+		<integer>0</integer>
+		<key>Npot</key>
+		<true/>
+		<key>PvrBpp</key>
+		<integer>1</integer>
+		<key>PvrRemoveParent</key>
+		<true/>
+		<key>ResamplingAlgorithm</key>
+		<integer>0</integer>
+		<key>ResizingOptions</key>
+		<integer>2</integer>
+		<key>SaveStyle</key>
+		<integer>0</integer>
+	</dict>
+	<key>Version</key>
+	<string>1.8.224</string>
+</dict>
+</plist>
