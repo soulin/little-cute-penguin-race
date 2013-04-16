@@ -7,7 +7,7 @@
 //
 
 #ifndef Run__Penguin_RPGameHelper_h
-
+////////////////////////////////////////////////////////////////////////////
 #define Run__Penguin_RPGameHelper_h
 #define SELECTOR_STRING [NSString stringWithFormat:@"[%@ %@]: ",NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
 #define RPGameCenterLocalPlayerAuthenticationChanged @"RPGameCenterLocalPlayerAuthenticationChanged"
@@ -16,4 +16,5 @@
 #define RPNewSceneHasBecomeCurrentScene @"RPNewSceneHasBecomeCurrentScene"
 #define RPCustomerGainedGemsCountDidChanged @"RPCustomerGainedGemsCountDidChanged"
 #define RPCustomerGainedGoodsCountDidChanged @"RPCustomerGainedGoodsCountDidChanged"
+////////////////////////////////////////////////////////////////////////////
 #endif
