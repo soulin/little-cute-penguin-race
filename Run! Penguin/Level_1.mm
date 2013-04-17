@@ -6,15 +6,31 @@
 //  Copyright __MyCompanyName__ 2013年. All rights reserved.
 //
 ///////////////////////////////////////////////////////////////////////
+#pragma mark - Macro for this level
+#define PLAYER_ANIMATION_STAND @"penguin_kid_stand"
+#define PLAYER_ANIMATION_RUN @"penguin_kid_run"
+#define PLAYER_ANIMATION_FLIP @"penguin_kid_flip"
+///////////////////////////////////////////////////////////////////////
 // Import the interfaces
 #import "Level_1.h"
 #import "RPGameManager.h"
 #import "RPGameManager.h"
 #import "RPLevelDirector.h"
 /////////////////////////////////////////////////////////////////////////
+#pragma mark - Enumeration
+enum playerState
+{
+    PSTATE_INVALID = 0,
+    PSTATE_STAND = 1,
+    PSTATE_RUN = 2,
+    PSTATE_FLIP = 3
+};
+/////////////////////////////////////////////////////////////////////////
 #pragma mark - Extention
 @interface Level_1 (Private)
 - (void)initProperties;
+
+- (int)playerState;
 @end
 //Level_1 implementation
 @implementation Level_1
@@ -147,6 +163,7 @@
 #pragma mark - Scheduled update
 -(void) tick: (ccTime) dt
 {
+    ///////////////////////////////////////////////////////////////////////
 	//It is recommended that a fixed time step is used with Box2D for stability
 	//of the simulation, however, we are using a variable time step here.
 	//You need to make an informed choice, the following URL is useful
@@ -169,6 +186,41 @@
 			myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
 		}	
 	}
+    ///////////////////////////////////////////////////////////////////////
+    //Player state
+    switch ([self playerState])
+    {
+        case PSTATE_RUN:
+        {
+            if ([[_player_1 animationName] isEqualToString:PLAYER_ANIMATION_RUN])
+            {
+                break;
+            }
+            [_player_1 stopAnimationAndRestoreOriginalFrame:YES];
+            [_levelDirector playAnimation:PLAYER_ANIMATION_RUN fromSHFile:nil forSprite:_player_1];
+        }
+            break;
+        case PSTATE_FLIP:
+        {
+            if ([[_player_1 animationName] isEqualToString:PLAYER_ANIMATION_FLIP])
+            {
+                break;
+            }
+            [_player_1 stopAnimationAndRestoreOriginalFrame:YES];
+            [_levelDirector playAnimation:PLAYER_ANIMATION_FLIP fromSHFile:nil forSprite:_player_1];
+        }
+            break;
+        default:
+        {
+            if ([[_player_1 animationName] isEqualToString:PLAYER_ANIMATION_STAND])
+            {
+                break;
+            }
+            [_player_1 stopAnimationAndRestoreOriginalFrame:YES];
+            [_levelDirector playAnimation:PLAYER_ANIMATION_STAND fromSHFile:nil forSprite:_player_1];
+        }
+            break;
+    }
 }
 ///////////////////////////////////////////////////////////////////////
 #pragma mark - Accelerometer
@@ -185,7 +237,7 @@
 	
     //Player velocity acceleration
 	float accelerationX = (float) acceleration.x * kFilterFactor + (1- kFilterFactor)*previousX;
-	float accelerationY = (float) acceleration.y * kFilterFactor + (1- kFilterFactor)*previousY;
+	float accelerationY = (float) acceleration.y * kFilterFactor + (1 - kFilterFactor)*previousY;
 	float accelerationZ = (float) acceleration.z * kFilterFactor + (1 - kFilterFactor)*previousZ;
     
     //Player position transitions
@@ -193,12 +245,12 @@
     float transitionY = 0;
     
     //Player transform
-    if (acceleration.x > 0.6f)
+    if (acceleration.x > 0.85f)
     {
         //Player should move down
         transitionY = - kPlayerVelocity;
     }
-    if (acceleration.x < 0.6f && acceleration.x > - 0.4f)
+    if (acceleration.x < 0.8f && acceleration.x > - 0.4f)
     {
         //Player should move up
         transitionY = kPlayerVelocity;
@@ -211,7 +263,9 @@
     if (acceleration.y < 0)
     {
         //Player should slow down
-        transitionX = MIN(0, kPlayerVelocity);
+        transitionX = kPlayerVelocity;
+        transitionX = transitionX - 0.3f;
+        transitionX = MAX(0.5f, transitionX);
     }
     if (acceleration.z < 0.4f)
     {
@@ -252,6 +306,27 @@
     if ([_gameManager isGameModeMultiplayer])
     {
         //Do something interesting here
+    }
+}
+///////////////////////////////////////////////////////////////////////
+- (int)playerState
+{
+    b2Body *playerBody = [_player_1 body];
+    b2Vec2 playerVelocity = playerBody->GetLinearVelocity();
+    if (fabs(playerVelocity.x) <= kPlayerVelocity || fabs(playerVelocity.y) <= kPlayerVelocity)
+    {
+        //Run
+        return PSTATE_RUN;
+    }
+    else if (fabs(playerVelocity.x) <= kPlayerFlipVelocity || fabs(playerVelocity.y) <= kPlayerFlipVelocity)
+    {
+        //Flip
+        return PSTATE_FLIP;
+    }
+    else
+    {
+        //Stand
+        return PSTATE_STAND;
     }
 }
 ///////////////////////////////////////////////////////////////////////

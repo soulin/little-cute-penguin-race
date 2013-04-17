@@ -34,7 +34,7 @@
 	<key>CustomClasses</key>
 	<array/>
 	<key>CustomScreenSize</key>
-	<string>{0, 0}</string>
+	<string>{480, 320}</string>
 	<key>Device</key>
 	<integer>2</integer>
 	<key>Engine</key>
@@ -71,6 +71,9 @@
 		<string>PARENT</string>
 		<string>EAGLE</string>
 		<string>KID</string>
+		<string>BOUNDARY_Y</string>
+		<string>BOUNDARY_X</string>
+		<string>FINISH_LINE</string>
 	</array>
 </dict>
 </plist>

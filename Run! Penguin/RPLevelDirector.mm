@@ -409,5 +409,35 @@
     }
 }
 //////////////////////////////////////////////////////////////////////////
+#pragma mark - Animation preparation
+- (void)prepareAnimation:(NSString *)animationName fromSHFile:(NSString *)SHFileName forSprite:(LHSprite *)sprite
+{
+    [sprite prepareAnimationNamed:animationName fromSHScene:SHFileName];
+}
+
+- (void)playAnimation:(NSString *)animationName fromSHFile:(NSString *)SHFileName forSprite:(LHSprite *)sprite
+{
+    if (!animationName  || !sprite)
+    {
+        NSLog(@"%@Invalid Parameter(s)",SELECTOR_STRING);
+        return;
+    }
+    if (SHFileName == nil)
+    {
+        [self prepareAnimation:animationName fromSHFile:@"Run!Penguin" forSprite:sprite];
+    }
+    else
+    {
+        [self prepareAnimation:animationName fromSHFile:SHFileName forSprite:sprite];
+    }
+    
+    [sprite playAnimation];
+}
+
+- (void)prepareAnimations
+{
+    
+}
+//////////////////////////////////////////////////////////////////////////
 
 @end

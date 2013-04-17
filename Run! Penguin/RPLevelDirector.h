@@ -4,7 +4,7 @@
 //
 //  Created by Sean on 13-4-15.
 //  RPLevelDirector is a singleton, which is in charge of level transition, sound
-//  effects, game music, touch dispatches, collision handling
+//  effects, game music, touch dispatches, collision handling, game objects' animations
 //
 
 #import <Foundation/Foundation.h>
@@ -48,4 +48,12 @@
 - (void)resumeBackgroundMusic;
 - (void)playSoundEffect:(NSString *)fileName;
 - (void)setBackgroundMusicListener:(id)listener selector:(SEL)selector;
+//Prepare animations
+- (void)prepareAnimations;
+- (void)prepareAnimation:(NSString *)animationName
+              fromSHFile:(NSString *)SHFileName
+               forSprite:(LHSprite *)sprite;
+- (void)playAnimation:(NSString *)animationName
+           fromSHFile:(NSString *)SHFileName
+            forSprite:(LHSprite *)sprite;
 @end

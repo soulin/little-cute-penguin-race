@@ -21,11 +21,12 @@
 #define WIN_SIZE [CCDirector sharedDirector].winSize
 ///////////////////////////////////////////////////////////////////////
 //Acceleration filter
-//Bigger this value more gentle the acceleration is
+//Bigger this value is more gentle the acceleration is
 #define kFilterFactor 0.7f
 ///////////////////////////////////////////////////////////////////////
 //Player velocity
-#define kPlayerVelocity 1.5f
+#define kPlayerVelocity 2.5f
+#define kPlayerFlipVelocity 5.0f
 ///////////////////////////////////////////////////////////////////////
 //Local player changed notification
 #define RPGameCenterLocalPlayerAuthenticationChanged @"RPGameCenterLocalPlayerAuthenticationChanged"
