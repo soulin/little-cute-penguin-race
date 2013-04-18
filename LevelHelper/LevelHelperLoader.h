@@ -67,7 +67,10 @@ enum LevelHelper_TAG
 	PARENT 			= 2,
 	EAGLE 			= 3,
 	KID 			= 4,
-	NUMBER_OF_TAGS 	= 5
+	BOUNDARY_Y 			= 5,
+	BOUNDARY_X 			= 6,
+	FINISH_LINE 			= 7,
+	NUMBER_OF_TAGS 	= 8
 };
 
 CGSize  LHSizeFromString(NSString* val);

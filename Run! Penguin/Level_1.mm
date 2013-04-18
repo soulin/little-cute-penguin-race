@@ -6,7 +6,7 @@
 //  Copyright __MyCompanyName__ 2013年. All rights reserved.
 //
 ///////////////////////////////////////////////////////////////////////
-#pragma mark - Macro for this level
+#pragma mark - Macro for Level_1
 #define PLAYER_ANIMATION_STAND @"penguin_kid_stand"
 #define PLAYER_ANIMATION_RUN @"penguin_kid_run"
 #define PLAYER_ANIMATION_FLIP @"penguin_kid_flip"
@@ -250,7 +250,7 @@ enum playerState
         //Player should move down
         transitionY = - kPlayerVelocity;
     }
-    if (acceleration.x < 0.8f && acceleration.x > - 0.4f)
+    if (acceleration.x < 0.83f && acceleration.x > - 0.4f)
     {
         //Player should move up
         transitionY = kPlayerVelocity;
@@ -264,8 +264,8 @@ enum playerState
     {
         //Player should slow down
         transitionX = kPlayerVelocity;
-        transitionX = transitionX - 0.3f;
-        transitionX = MAX(0.5f, transitionX);
+        transitionX = transitionX - 0.5f;
+        transitionX = MAX(0, transitionX);
     }
     if (acceleration.z < 0.4f)
     {
@@ -313,7 +313,12 @@ enum playerState
 {
     b2Body *playerBody = [_player_1 body];
     b2Vec2 playerVelocity = playerBody->GetLinearVelocity();
-    if (fabs(playerVelocity.x) <= kPlayerVelocity || fabs(playerVelocity.y) <= kPlayerVelocity)
+    if (playerVelocity.x == 0 && playerVelocity.y == 0)
+    {
+        //Stand
+        return PSTATE_STAND;
+    }
+    else if (fabs(playerVelocity.x) <= kPlayerVelocity || fabs(playerVelocity.y) <= kPlayerVelocity)
     {
         //Run
         return PSTATE_RUN;
@@ -325,8 +330,7 @@ enum playerState
     }
     else
     {
-        //Stand
-        return PSTATE_STAND;
+        return PSTATE_INVALID;
     }
 }
 ///////////////////////////////////////////////////////////////////////

@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{1656, 2072}</string>
+			<string>{2032, 2072}</string>
 			<key>Padding</key>
 			<integer>8</integer>
 			<key>PixelFormat</key>
@@ -140,6 +140,2308 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
+				<key>hole_1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>32</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-23.625, -9.125}</string>
+										<string>{-23.875, -11.125}</string>
+										<string>{-22.625, -11.125}</string>
+										<string>{-21.875, -8.875}</string>
+									</array>
+									<array>
+										<string>{26.125, -18.875}</string>
+										<string>{27.125, -18.875}</string>
+										<string>{27.125, -18.375}</string>
+									</array>
+									<array>
+										<string>{35.125, 17.125}</string>
+										<string>{35.125, 17.625}</string>
+										<string>{33.625, 17.875}</string>
+										<string>{33.125, 17.375}</string>
+										<string>{31.375, 7.125}</string>
+									</array>
+									<array>
+										<string>{13.875, 10.875}</string>
+										<string>{10.625, 11.125}</string>
+										<string>{10.375, 10.125}</string>
+										<string>{15.875, 8.875}</string>
+									</array>
+									<array>
+										<string>{-36.125, 3.375}</string>
+										<string>{-38.375, 2.875}</string>
+										<string>{-38.375, 1.625}</string>
+										<string>{-37.875, 1.125}</string>
+									</array>
+									<array>
+										<string>{33.125, 17.375}</string>
+										<string>{30.875, 16.875}</string>
+										<string>{30.875, 16.375}</string>
+										<string>{31.375, 7.125}</string>
+									</array>
+									<array>
+										<string>{30.125, 15.875}</string>
+										<string>{28.625, 13.125}</string>
+										<string>{28.375, 10.625}</string>
+										<string>{29.875, 6.125}</string>
+										<string>{31.125, 6.125}</string>
+										<string>{31.375, 7.125}</string>
+										<string>{30.875, 16.375}</string>
+									</array>
+									<array>
+										<string>{5.375, -22.125}</string>
+										<string>{7.375, -24.375}</string>
+										<string>{12.375, -24.125}</string>
+										<string>{12.875, -21.875}</string>
+										<string>{5.125, -21.375}</string>
+									</array>
+									<array>
+										<string>{-6.625, 20.875}</string>
+										<string>{-7.375, 24.375}</string>
+										<string>{-10.125, 24.625}</string>
+										<string>{-10.375, 24.375}</string>
+									</array>
+									<array>
+										<string>{-23.125, -6.375}</string>
+										<string>{-22.875, -7.125}</string>
+										<string>{-21.875, -7.125}</string>
+										<string>{-18.625, 11.125}</string>
+										<string>{-21.125, 10.625}</string>
+										<string>{-25.125, 6.625}</string>
+									</array>
+									<array>
+										<string>{32.125, 6.375}</string>
+										<string>{35.125, 6.875}</string>
+										<string>{38.125, 10.625}</string>
+										<string>{38.125, 14.375}</string>
+										<string>{36.875, 14.875}</string>
+										<string>{31.375, 7.125}</string>
+									</array>
+									<array>
+										<string>{-21.875, -8.875}</string>
+										<string>{-22.125, -11.625}</string>
+										<string>{-21.125, -15.125}</string>
+										<string>{-20.375, -16.625}</string>
+										<string>{-15.125, -16.375}</string>
+										<string>{-21.375, -8.375}</string>
+									</array>
+									<array>
+										<string>{-21.875, -8.875}</string>
+										<string>{-22.625, -11.125}</string>
+										<string>{-22.125, -11.625}</string>
+									</array>
+									<array>
+										<string>{-34.125, -4.625}</string>
+										<string>{-37.875, 1.125}</string>
+										<string>{-38.375, 0.875}</string>
+										<string>{-38.375, -1.125}</string>
+										<string>{-38.125, -2.625}</string>
+										<string>{-37.125, -4.625}</string>
+										<string>{-36.875, -4.875}</string>
+									</array>
+									<array>
+										<string>{-33.375, -5.125}</string>
+										<string>{-31.375, -5.125}</string>
+										<string>{-31.125, -4.625}</string>
+									</array>
+									<array>
+										<string>{4.875, 14.625}</string>
+										<string>{4.625, 15.125}</string>
+										<string>{3.375, 15.125}</string>
+										<string>{2.875, 14.625}</string>
+									</array>
+									<array>
+										<string>{5.125, -21.375}</string>
+										<string>{12.875, -21.875}</string>
+										<string>{13.625, -20.625}</string>
+										<string>{13.375, -17.875}</string>
+										<string>{4.375, -20.625}</string>
+									</array>
+									<array>
+										<string>{-31.625, 6.125}</string>
+										<string>{-33.125, 6.375}</string>
+										<string>{-34.125, 5.125}</string>
+										<string>{-34.125, -4.625}</string>
+									</array>
+									<array>
+										<string>{-1.875, 17.375}</string>
+										<string>{-2.875, 19.125}</string>
+										<string>{-4.375, 19.125}</string>
+										<string>{-17.625, 13.875}</string>
+										<string>{-18.625, 11.125}</string>
+									</array>
+									<array>
+										<string>{-25.125, 6.625}</string>
+										<string>{-31.125, 6.875}</string>
+										<string>{-31.625, 6.125}</string>
+										<string>{-34.125, -4.625}</string>
+										<string>{-33.375, -5.125}</string>
+										<string>{-31.125, -4.625}</string>
+									</array>
+									<array>
+										<string>{15.875, 8.875}</string>
+										<string>{10.375, 10.125}</string>
+										<string>{9.375, 9.125}</string>
+										<string>{14.125, -16.375}</string>
+									</array>
+									<array>
+										<string>{-21.125, 10.625}</string>
+										<string>{-22.375, 10.625}</string>
+										<string>{-25.125, 6.625}</string>
+									</array>
+									<array>
+										<string>{8.125, 10.125}</string>
+										<string>{8.375, 12.125}</string>
+										<string>{5.875, 14.375}</string>
+										<string>{4.875, 14.625}</string>
+										<string>{2.875, 14.625}</string>
+										<string>{-15.125, -16.375}</string>
+									</array>
+									<array>
+										<string>{-22.125, -11.625}</string>
+										<string>{-22.625, -14.625}</string>
+										<string>{-22.125, -15.125}</string>
+										<string>{-21.125, -15.125}</string>
+									</array>
+									<array>
+										<string>{-34.125, 5.125}</string>
+										<string>{-34.875, 5.125}</string>
+										<string>{-36.125, 3.375}</string>
+										<string>{-34.125, -4.625}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{3.125, -19.625}</string>
+										<string>{3.875, -20.625}</string>
+										<string>{4.375, -20.625}</string>
+										<string>{13.375, -17.875}</string>
+										<string>{14.125, -16.375}</string>
+										<string>{9.375, 9.125}</string>
+									</array>
+									<array>
+										<string>{33.375, -11.125}</string>
+										<string>{35.375, -9.625}</string>
+										<string>{35.375, -8.875}</string>
+										<string>{31.875, -1.375}</string>
+										<string>{30.625, -0.375}</string>
+									</array>
+									<array>
+										<string>{29.875, -17.375}</string>
+										<string>{30.625, -16.875}</string>
+										<string>{29.125, 2.375}</string>
+										<string>{28.375, 10.625}</string>
+										<string>{27.625, 10.375}</string>
+										<string>{27.375, 9.625}</string>
+										<string>{28.375, -17.375}</string>
+									</array>
+									<array>
+										<string>{-36.125, 3.375}</string>
+										<string>{-37.875, 1.125}</string>
+										<string>{-34.125, -4.625}</string>
+									</array>
+									<array>
+										<string>{-25.125, 6.625}</string>
+										<string>{-31.125, -4.625}</string>
+										<string>{-29.125, -6.625}</string>
+										<string>{-27.625, -7.375}</string>
+										<string>{-25.375, -7.125}</string>
+										<string>{-24.375, -5.875}</string>
+									</array>
+									<array>
+										<string>{-25.125, 6.625}</string>
+										<string>{-24.375, -5.875}</string>
+										<string>{-23.125, -6.375}</string>
+									</array>
+									<array>
+										<string>{-6.625, 20.875}</string>
+										<string>{-13.125, 23.375}</string>
+										<string>{-14.125, 23.375}</string>
+										<string>{-17.375, 19.625}</string>
+										<string>{-18.125, 17.875}</string>
+										<string>{-17.625, 13.875}</string>
+										<string>{-4.375, 19.125}</string>
+									</array>
+									<array>
+										<string>{-10.375, 24.375}</string>
+										<string>{-12.125, 24.375}</string>
+										<string>{-13.125, 23.375}</string>
+										<string>{-6.625, 20.875}</string>
+									</array>
+									<array>
+										<string>{-0.875, 16.625}</string>
+										<string>{-1.875, 17.375}</string>
+										<string>{-18.625, 11.125}</string>
+										<string>{-21.875, -7.125}</string>
+										<string>{-21.375, -8.375}</string>
+										<string>{-15.125, -16.375}</string>
+									</array>
+									<array>
+										<string>{-18.625, 11.125}</string>
+										<string>{-19.125, 11.625}</string>
+										<string>{-20.125, 11.625}</string>
+										<string>{-21.125, 10.625}</string>
+									</array>
+									<array>
+										<string>{1.375, 16.375}</string>
+										<string>{-0.875, 16.625}</string>
+										<string>{-15.125, -16.375}</string>
+										<string>{2.875, 14.625}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{8.125, 10.125}</string>
+										<string>{-15.125, -16.375}</string>
+										<string>{-14.375, -17.875}</string>
+										<string>{-13.125, -18.625}</string>
+										<string>{-11.625, -18.625}</string>
+										<string>{-10.625, -18.125}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{-10.625, -18.125}</string>
+										<string>{-9.125, -19.125}</string>
+										<string>{-8.125, -19.125}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{-8.125, -19.125}</string>
+										<string>{-7.125, -19.875}</string>
+										<string>{-5.375, -20.125}</string>
+										<string>{-3.625, -19.875}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{-3.625, -19.875}</string>
+										<string>{1.125, -20.125}</string>
+										<string>{1.875, -19.625}</string>
+									</array>
+									<array>
+										<string>{8.875, 9.125}</string>
+										<string>{1.875, -19.625}</string>
+										<string>{3.125, -19.625}</string>
+									</array>
+									<array>
+										<string>{20.375, 9.375}</string>
+										<string>{15.875, 8.875}</string>
+										<string>{14.125, -16.375}</string>
+										<string>{16.375, -17.875}</string>
+										<string>{18.625, -18.125}</string>
+									</array>
+									<array>
+										<string>{25.625, 10.375}</string>
+										<string>{21.875, 10.375}</string>
+										<string>{20.375, 9.375}</string>
+										<string>{18.625, -18.125}</string>
+										<string>{26.375, 9.625}</string>
+									</array>
+									<array>
+										<string>{27.375, 9.625}</string>
+										<string>{26.375, 9.625}</string>
+										<string>{18.625, -18.125}</string>
+										<string>{20.875, -20.125}</string>
+										<string>{22.375, -20.125}</string>
+										<string>{23.375, -19.375}</string>
+									</array>
+									<array>
+										<string>{27.375, 9.625}</string>
+										<string>{23.375, -19.375}</string>
+										<string>{25.625, -19.375}</string>
+										<string>{26.125, -18.875}</string>
+									</array>
+									<array>
+										<string>{27.375, 9.625}</string>
+										<string>{26.125, -18.875}</string>
+										<string>{27.125, -18.375}</string>
+									</array>
+									<array>
+										<string>{27.375, 9.625}</string>
+										<string>{27.125, -18.375}</string>
+										<string>{27.875, -18.125}</string>
+										<string>{28.375, -17.375}</string>
+									</array>
+									<array>
+										<string>{29.625, 1.125}</string>
+										<string>{29.625, 1.875}</string>
+										<string>{29.125, 2.375}</string>
+									</array>
+									<array>
+										<string>{33.625, -1.125}</string>
+										<string>{31.875, -1.375}</string>
+										<string>{35.375, -8.875}</string>
+										<string>{36.125, -8.125}</string>
+										<string>{36.125, -5.625}</string>
+										<string>{34.625, -1.625}</string>
+									</array>
+									<array>
+										<string>{36.875, 14.875}</string>
+										<string>{36.875, 15.375}</string>
+										<string>{35.125, 17.125}</string>
+										<string>{31.375, 7.125}</string>
+									</array>
+									<array>
+										<string>{30.625, -0.375}</string>
+										<string>{30.375, 0.625}</string>
+										<string>{29.625, 1.125}</string>
+										<string>{30.625, -16.875}</string>
+									</array>
+									<array>
+										<string>{30.625, -16.875}</string>
+										<string>{33.875, -12.875}</string>
+										<string>{33.875, -11.875}</string>
+										<string>{33.375, -11.125}</string>
+									</array>
+									<array>
+										<string>{30.625, -16.875}</string>
+										<string>{33.375, -11.125}</string>
+										<string>{30.625, -0.375}</string>
+									</array>
+									<array>
+										<string>{29.125, 2.375}</string>
+										<string>{29.875, 6.125}</string>
+										<string>{28.375, 10.625}</string>
+									</array>
+									<array>
+										<string>{29.125, 2.375}</string>
+										<string>{30.625, -16.875}</string>
+										<string>{29.625, 1.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-38.375, -24.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>hole_1</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{-0.99999999999999312, 112}</string>
+									<string>{-0.99999999999999356, 105}</string>
+									<string>{-4.9999999999999938, 101}</string>
+									<string>{-4.9999999999999938, 97}</string>
+									<string>{-19.999999999999996, 84}</string>
+									<string>{-26.999999999999996, 81}</string>
+									<string>{-42.999999999999993, 83}</string>
+									<string>{-53.999999999999993, 79}</string>
+									<string>{-51.999999999999993, 77}</string>
+									<string>{-51.999999999999993, 73}</string>
+									<string>{-55.999999999999993, 69}</string>
+									<string>{-55.999999999999993, 64}</string>
+									<string>{-72, 53.000000000000007}</string>
+									<string>{-71, 29.000000000000004}</string>
+									<string>{-74, 27.000000000000004}</string>
+									<string>{-73, 21.000000000000004}</string>
+									<string>{-78, 17.000000000000004}</string>
+									<string>{-78, 14.000000000000005}</string>
+									<string>{-85, 9.0000000000000053}</string>
+									<string>{-87, 5.3272135762909868e-15}</string>
+									<string>{-92, 5.6333752760778247e-15}</string>
+									<string>{-94, 2.0000000000000058}</string>
+									<string>{-95, 5.8170722959499274e-15}</string>
+									<string>{-103, 6.3069310156088688e-15}</string>
+									<string>{-109, 1.0000000000000067}</string>
+									<string>{-117, 5.0000000000000071}</string>
+									<string>{-118, 6.0000000000000071}</string>
+									<string>{-117, 17.000000000000007}</string>
+									<string>{-119, 20.000000000000007}</string>
+									<string>{-119, 28.000000000000007}</string>
+									<string>{-117, 29.000000000000007}</string>
+									<string>{-125, 37.000000000000007}</string>
+									<string>{-128, 43.000000000000007}</string>
+									<string>{-127, 52.000000000000007}</string>
+									<string>{-122, 56.000000000000007}</string>
+									<string>{-124, 61.000000000000007}</string>
+									<string>{-127, 62.000000000000007}</string>
+									<string>{-127, 66.000000000000014}</string>
+									<string>{-132, 68.000000000000014}</string>
+									<string>{-134, 66.000000000000014}</string>
+									<string>{-135, 59.000000000000007}</string>
+									<string>{-143, 58.000000000000007}</string>
+									<string>{-143, 63.000000000000007}</string>
+									<string>{-145, 65.000000000000014}</string>
+									<string>{-157, 63.000000000000007}</string>
+									<string>{-159, 65.000000000000014}</string>
+									<string>{-159, 69.000000000000014}</string>
+									<string>{-165, 72.000000000000014}</string>
+									<string>{-164, 93.000000000000014}</string>
+									<string>{-170, 96.000000000000014}</string>
+									<string>{-173, 101.00000000000001}</string>
+									<string>{-173, 107.00000000000001}</string>
+									<string>{-171, 111.00000000000001}</string>
+									<string>{-175, 117.00000000000001}</string>
+									<string>{-175, 121.00000000000001}</string>
+									<string>{-178, 125.00000000000001}</string>
+									<string>{-179, 132}</string>
+									<string>{-178, 139}</string>
+									<string>{-179, 158}</string>
+									<string>{-177, 161}</string>
+									<string>{-177, 166}</string>
+									<string>{-181, 169}</string>
+									<string>{-181, 171}</string>
+									<string>{-184, 174}</string>
+									<string>{-187, 175}</string>
+									<string>{-196, 183}</string>
+									<string>{-195, 203}</string>
+									<string>{-186, 205}</string>
+									<string>{-181, 208}</string>
+									<string>{-170, 207}</string>
+									<string>{-164, 210}</string>
+									<string>{-170, 219}</string>
+									<string>{-171, 228}</string>
+									<string>{-178.99999999999997, 237}</string>
+									<string>{-178.99999999999997, 243}</string>
+									<string>{-175.99999999999997, 247}</string>
+									<string>{-175.99999999999997, 256}</string>
+									<string>{-173.99999999999997, 258}</string>
+									<string>{-173.99999999999997, 262}</string>
+									<string>{-171.99999999999997, 262}</string>
+									<string>{-170.99999999999997, 265}</string>
+									<string>{-167.99999999999997, 267}</string>
+									<string>{-167.99999999999997, 273}</string>
+									<string>{-165.99999999999997, 276}</string>
+									<string>{-149.99999999999997, 289}</string>
+									<string>{-145.99999999999997, 289}</string>
+									<string>{-142.99999999999997, 287}</string>
+									<string>{-136.99999999999997, 295}</string>
+									<string>{-133.99999999999997, 295}</string>
+									<string>{-130.99999999999997, 298}</string>
+									<string>{-120.99999999999999, 298}</string>
+									<string>{-104.99999999999999, 292}</string>
+									<string>{-102.99999999999999, 288}</string>
+									<string>{-103.99999999999999, 281}</string>
+									<string>{-99.999999999999986, 276}</string>
+									<string>{-95.999999999999986, 275}</string>
+									<string>{-93.999999999999986, 272}</string>
+									<string>{-90.999999999999986, 272}</string>
+									<string>{-88.999999999999986, 270}</string>
+									<string>{-73.999999999999986, 273}</string>
+									<string>{-73.999999999999986, 278}</string>
+									<string>{-69.999999999999986, 279}</string>
+									<string>{-72.999999999999986, 282}</string>
+									<string>{-70.999999999999986, 294}</string>
+									<string>{-55.999999999999979, 306}</string>
+									<string>{-40.999999999999979, 306}</string>
+									<string>{-38.999999999999979, 301}</string>
+									<string>{-36.999999999999979, 301}</string>
+									<string>{-29.999999999999982, 294}</string>
+									<string>{-27.999999999999982, 294}</string>
+									<string>{-26.999999999999982, 288}</string>
+									<string>{-28.999999999999982, 286}</string>
+									<string>{-30.999999999999982, 277}</string>
+									<string>{-32.999999999999986, 277}</string>
+									<string>{-34.999999999999986, 274}</string>
+									<string>{-45.999999999999986, 268}</string>
+									<string>{-55.999999999999986, 267}</string>
+									<string>{-56.999999999999986, 264}</string>
+									<string>{-59.999999999999986, 263}</string>
+									<string>{-59.999999999999986, 259}</string>
+									<string>{-56.999999999999986, 256}</string>
+									<string>{-56.999999999999986, 241}</string>
+									<string>{-60.999999999999986, 235}</string>
+									<string>{-62.999999999999986, 217}</string>
+									<string>{-54.999999999999986, 209}</string>
+									<string>{-53.999999999999986, 196}</string>
+									<string>{-57.999999999999986, 195}</string>
+									<string>{-61.999999999999986, 191}</string>
+									<string>{-61.999999999999986, 189}</string>
+									<string>{-57.999999999999986, 186}</string>
+									<string>{-49.999999999999986, 187}</string>
+									<string>{-40.999999999999986, 177}</string>
+									<string>{-39.999999999999993, 173}</string>
+									<string>{-37.999999999999993, 172}</string>
+									<string>{-37.999999999999993, 167}</string>
+									<string>{-39.999999999999993, 165}</string>
+									<string>{-32.999999999999993, 159}</string>
+									<string>{-31.999999999999989, 150}</string>
+									<string>{-28.999999999999989, 146}</string>
+									<string>{-21.999999999999993, 142}</string>
+									<string>{-21.999999999999993, 136}</string>
+									<string>{-14.999999999999993, 127}</string>
+									<string>{-0.99999999999999245, 124}</string>
+									<string>{6.9192544151825453e-15, 113}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hole_1</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{458, 221}, {76.75, 49.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1832, 884}, {307, 197}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hole_1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hole_1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hole_1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {307, 197}}</string>
+						<key>OriginalSize</key>
+						<string>{307, 197}</string>
+						<key>Position</key>
+						<string>{1832, 884}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{76.75, 49.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>hole_2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>32</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-28, 29.75}</string>
+										<string>{-28, 30.5}</string>
+										<string>{-30, 30.75}</string>
+										<string>{-29.75, 29}</string>
+										<string>{-28.25, 26}</string>
+									</array>
+									<array>
+										<string>{-28.25, 21.5}</string>
+										<string>{-31, 22}</string>
+										<string>{-31, 21.5}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{6.75, 27.25}</string>
+										<string>{3, 27.75}</string>
+										<string>{3, 27}</string>
+									</array>
+									<array>
+										<string>{34.75, -30.25}</string>
+										<string>{35.75, -30.25}</string>
+										<string>{35.75, -29.5}</string>
+										<string>{31.5, -19}</string>
+									</array>
+									<array>
+										<string>{9.75, -28}</string>
+										<string>{9.75, -29.5}</string>
+										<string>{10.75, -31.25}</string>
+										<string>{11.5, -31.75}</string>
+										<string>{14.5, -31.5}</string>
+										<string>{14.5, -30}</string>
+										<string>{10.5, -26.75}</string>
+									</array>
+									<array>
+										<string>{37.5, -28}</string>
+										<string>{38.5, -28}</string>
+										<string>{38.75, -26}</string>
+										<string>{38, -24.75}</string>
+									</array>
+									<array>
+										<string>{-13, 33.25}</string>
+										<string>{-13, 33.75}</string>
+										<string>{-15, 34}</string>
+										<string>{-15.25, 33.75}</string>
+										<string>{-15.75, 33}</string>
+									</array>
+									<array>
+										<string>{-11, 27.25}</string>
+										<string>{-10.25, 26.25}</string>
+										<string>{-8.5, 26.5}</string>
+										<string>{-8.5, 28.5}</string>
+										<string>{-9, 29.25}</string>
+										<string>{-10.25, 29.5}</string>
+									</array>
+									<array>
+										<string>{6.5, -24.5}</string>
+										<string>{8, -24.5}</string>
+										<string>{8.25, -23.5}</string>
+										<string>{4.5, -21.75}</string>
+									</array>
+									<array>
+										<string>{-11.75, 27.25}</string>
+										<string>{-11, 27.25}</string>
+										<string>{-10.25, 29.5}</string>
+										<string>{-11.5, 32}</string>
+									</array>
+									<array>
+										<string>{-37.75, -1}</string>
+										<string>{-38.75, -2.25}</string>
+										<string>{-38.5, -3.5}</string>
+										<string>{-36.5, -3.75}</string>
+										<string>{-35.75, -3.25}</string>
+									</array>
+									<array>
+										<string>{14.5, 26.5}</string>
+										<string>{14, 27.25}</string>
+										<string>{12.75, 27}</string>
+									</array>
+									<array>
+										<string>{-4, -9.75}</string>
+										<string>{-8, -17}</string>
+										<string>{-8.25, -19.75}</string>
+										<string>{-6.5, -20.75}</string>
+										<string>{-3.5, -20.5}</string>
+										<string>{-2.25, -19.75}</string>
+										<string>{22.25, -0.5}</string>
+									</array>
+									<array>
+										<string>{10.5, -26}</string>
+										<string>{10.5, -26.75}</string>
+										<string>{14.5, -30}</string>
+										<string>{15.75, -29}</string>
+										<string>{27.25, -16.5}</string>
+									</array>
+									<array>
+										<string>{-38.5, 16.5}</string>
+										<string>{-39, 15.5}</string>
+										<string>{-39, 12.75}</string>
+										<string>{-38, 12.25}</string>
+										<string>{-36.25, 17.75}</string>
+										<string>{-37.25, 17.75}</string>
+									</array>
+									<array>
+										<string>{27.5, -33.25}</string>
+										<string>{27.75, -33.75}</string>
+										<string>{28.75, -33.75}</string>
+										<string>{29.75, -32.5}</string>
+										<string>{27.5, -18}</string>
+									</array>
+									<array>
+										<string>{35.75, -19.5}</string>
+										<string>{35.25, -18.25}</string>
+										<string>{32.5, -18}</string>
+										<string>{31.5, -19}</string>
+									</array>
+									<array>
+										<string>{10, 28.75}</string>
+										<string>{7.25, 28.5}</string>
+										<string>{6.75, 27.25}</string>
+										<string>{10.5, 28.25}</string>
+									</array>
+									<array>
+										<string>{-29.75, 29}</string>
+										<string>{-30, 27.25}</string>
+										<string>{-28.25, 26}</string>
+									</array>
+									<array>
+										<string>{-27.25, 29.25}</string>
+										<string>{-28, 29.75}</string>
+										<string>{-28.25, 26}</string>
+										<string>{-25.5, 25.25}</string>
+									</array>
+									<array>
+										<string>{-21, 32.5}</string>
+										<string>{-21.5, 32.75}</string>
+										<string>{-26.75, 29.75}</string>
+										<string>{-27.25, 29.25}</string>
+										<string>{-25.5, 25.25}</string>
+										<string>{-24.5, 23.75}</string>
+									</array>
+									<array>
+										<string>{-1.75, -20.25}</string>
+										<string>{-1.75, -21}</string>
+										<string>{-0.5, -21.75}</string>
+										<string>{4.5, -21.75}</string>
+										<string>{22.25, -0.5}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{16.75, 21.5}</string>
+										<string>{16.25, 24}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{16.25, 24}</string>
+										<string>{15.25, 26.25}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{15.25, 26.25}</string>
+										<string>{14.5, 26.5}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{14.5, 26.5}</string>
+										<string>{12.75, 27}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{12.75, 27}</string>
+										<string>{6.75, 27.25}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{6.75, 27.25}</string>
+										<string>{3, 27}</string>
+									</array>
+									<array>
+										<string>{1.75, 25.75}</string>
+										<string>{3, 27}</string>
+										<string>{1.75, 26.25}</string>
+									</array>
+									<array>
+										<string>{20.25, 15.5}</string>
+										<string>{20, 16.25}</string>
+										<string>{19, 17}</string>
+										<string>{-4, 18.25}</string>
+										<string>{-4.75, 18.25}</string>
+										<string>{-5.5, 17}</string>
+										<string>{19.5, 12.5}</string>
+									</array>
+									<array>
+										<string>{-38.75, 2.25}</string>
+										<string>{-39, 0}</string>
+										<string>{-37.75, -1}</string>
+										<string>{-37.25, 5.75}</string>
+										<string>{-38, 5.5}</string>
+									</array>
+									<array>
+										<string>{18.25, 19}</string>
+										<string>{16.75, 21.5}</string>
+										<string>{0.5, 24.25}</string>
+										<string>{-1, 24}</string>
+										<string>{-4.75, 21.5}</string>
+										<string>{-4.75, 19.75}</string>
+										<string>{-3.75, 18.75}</string>
+										<string>{19, 17}</string>
+									</array>
+									<array>
+										<string>{19, 17}</string>
+										<string>{18.75, 18.75}</string>
+										<string>{18.25, 19}</string>
+									</array>
+									<array>
+										<string>{-32.75, -6.5}</string>
+										<string>{-30.5, -9.5}</string>
+										<string>{-28.5, -10}</string>
+										<string>{-27, -8.75}</string>
+										<string>{-32.75, -5.25}</string>
+									</array>
+									<array>
+										<string>{30.75, -32}</string>
+										<string>{34, -31.5}</string>
+										<string>{34.75, -30.25}</string>
+										<string>{31.5, -19}</string>
+										<string>{31, -19}</string>
+									</array>
+									<array>
+										<string>{-37.25, 5.75}</string>
+										<string>{-33.25, -4.75}</string>
+										<string>{-32.75, -5.25}</string>
+										<string>{-27, -8.75}</string>
+										<string>{-24.75, -8}</string>
+										<string>{-23.25, -6.5}</string>
+										<string>{-36.5, 7.5}</string>
+										<string>{-37.25, 6.75}</string>
+									</array>
+									<array>
+										<string>{17.25, -29.25}</string>
+										<string>{18.75, -31}</string>
+										<string>{19.5, -31}</string>
+										<string>{27.5, -18}</string>
+									</array>
+									<array>
+										<string>{24.5, -3.5}</string>
+										<string>{23.75, -1.75}</string>
+										<string>{23, -1.5}</string>
+										<string>{27.25, -16.5}</string>
+										<string>{28.5, -13}</string>
+									</array>
+									<array>
+										<string>{31.5, -19}</string>
+										<string>{36.75, -28.5}</string>
+										<string>{37.5, -28}</string>
+										<string>{38, -24.75}</string>
+										<string>{38, -22.75}</string>
+										<string>{37.25, -21}</string>
+										<string>{35.75, -19.5}</string>
+									</array>
+									<array>
+										<string>{-25.5, 32.5}</string>
+										<string>{-26.5, 31.75}</string>
+										<string>{-26.75, 29.75}</string>
+										<string>{-21.5, 32.75}</string>
+									</array>
+									<array>
+										<string>{-19, 33}</string>
+										<string>{-21, 32.5}</string>
+										<string>{-24.5, 23.75}</string>
+										<string>{-18, 32.5}</string>
+									</array>
+									<array>
+										<string>{12.75, 27}</string>
+										<string>{11.5, 28.25}</string>
+										<string>{10.5, 28.25}</string>
+										<string>{6.75, 27.25}</string>
+									</array>
+									<array>
+										<string>{22.25, -0.5}</string>
+										<string>{21.75, 2.5}</string>
+										<string>{21, 4}</string>
+										<string>{-5.5, 17}</string>
+										<string>{-6.5, 17}</string>
+										<string>{-7.5, 16}</string>
+										<string>{-6.75, -2.5}</string>
+										<string>{-6.5, -2.75}</string>
+									</array>
+									<array>
+										<string>{28.5, -13}</string>
+										<string>{29.25, -12.25}</string>
+										<string>{29.25, -10}</string>
+										<string>{27.75, -6.75}</string>
+										<string>{24.5, -3.5}</string>
+									</array>
+									<array>
+										<string>{-34.25, 19.25}</string>
+										<string>{-36.25, 17.75}</string>
+										<string>{-38, 12.25}</string>
+										<string>{-36.5, 10.25}</string>
+										<string>{-33.75, 19.25}</string>
+									</array>
+									<array>
+										<string>{-38, 5.5}</string>
+										<string>{-39, 4}</string>
+										<string>{-38.75, 2.25}</string>
+									</array>
+									<array>
+										<string>{-24.5, 22.75}</string>
+										<string>{-24, 22}</string>
+										<string>{-12.5, 25}</string>
+									</array>
+									<array>
+										<string>{-24.5, 23.75}</string>
+										<string>{-24.5, 22.75}</string>
+										<string>{-12.5, 25}</string>
+									</array>
+									<array>
+										<string>{-18, 32.5}</string>
+										<string>{-24.5, 23.75}</string>
+										<string>{-12.5, 25}</string>
+									</array>
+									<array>
+										<string>{-18, 32.5}</string>
+										<string>{-12.5, 25}</string>
+										<string>{-11.75, 27.25}</string>
+									</array>
+									<array>
+										<string>{-15.75, 33}</string>
+										<string>{-18, 32.5}</string>
+										<string>{-11.75, 27.25}</string>
+									</array>
+									<array>
+										<string>{-15.75, 33}</string>
+										<string>{-11.75, 27.25}</string>
+										<string>{-11.5, 32}</string>
+									</array>
+									<array>
+										<string>{-13, 33.25}</string>
+										<string>{-15.75, 33}</string>
+										<string>{-11.5, 32}</string>
+									</array>
+									<array>
+										<string>{-13, 33.25}</string>
+										<string>{-11.5, 32}</string>
+										<string>{-12, 32.75}</string>
+									</array>
+									<array>
+										<string>{-12.5, 24.25}</string>
+										<string>{-12.5, 25}</string>
+										<string>{-24, 22}</string>
+									</array>
+									<array>
+										<string>{-10.5, 16.75}</string>
+										<string>{-10, 19.25}</string>
+										<string>{-12.5, 24.25}</string>
+										<string>{-24, 22}</string>
+										<string>{-24.5, 21.25}</string>
+										<string>{-20.25, -5.25}</string>
+										<string>{-17, -5.75}</string>
+									</array>
+									<array>
+										<string>{22, -32}</string>
+										<string>{23.5, -33.5}</string>
+										<string>{26.75, -33.75}</string>
+										<string>{27.5, -33.25}</string>
+										<string>{27.5, -18}</string>
+									</array>
+									<array>
+										<string>{-37.25, 5.75}</string>
+										<string>{-37.75, -1}</string>
+										<string>{-35.75, -3.25}</string>
+										<string>{-35, -4}</string>
+										<string>{-33.25, -4.75}</string>
+									</array>
+									<array>
+										<string>{-21.5, -6.25}</string>
+										<string>{-20.25, -5.25}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-23.25, -6.5}</string>
+										<string>{-21.5, -6.25}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-36.5, 7.5}</string>
+										<string>{-23.25, -6.5}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-36.75, 9.25}</string>
+										<string>{-36.5, 7.5}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-36.5, 10.25}</string>
+										<string>{-36.75, 9.25}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-33.75, 19.25}</string>
+										<string>{-36.5, 10.25}</string>
+										<string>{-27, 20.5}</string>
+									</array>
+									<array>
+										<string>{-33.75, 19.25}</string>
+										<string>{-27, 20.5}</string>
+										<string>{-31, 21.5}</string>
+									</array>
+									<array>
+										<string>{-33.75, 19.25}</string>
+										<string>{-31, 21.5}</string>
+										<string>{-33.25, 20.25}</string>
+									</array>
+									<array>
+										<string>{19.5, -31}</string>
+										<string>{20.75, -32}</string>
+										<string>{22, -32}</string>
+										<string>{27.5, -18}</string>
+									</array>
+									<array>
+										<string>{35.75, -29.5}</string>
+										<string>{36.75, -28.5}</string>
+										<string>{31.5, -19}</string>
+									</array>
+									<array>
+										<string>{30.75, -32}</string>
+										<string>{31, -19}</string>
+										<string>{29.5, -18.25}</string>
+										<string>{27.5, -18}</string>
+										<string>{29.75, -32.5}</string>
+									</array>
+									<array>
+										<string>{16.5, -29}</string>
+										<string>{17.25, -29.25}</string>
+										<string>{27.5, -18}</string>
+										<string>{27.25, -16.5}</string>
+									</array>
+									<array>
+										<string>{15.75, -29}</string>
+										<string>{16.5, -29}</string>
+										<string>{27.25, -16.5}</string>
+									</array>
+									<array>
+										<string>{22.25, -0.5}</string>
+										<string>{9.25, -23.5}</string>
+										<string>{10.5, -26}</string>
+										<string>{27.25, -16.5}</string>
+										<string>{23, -1.5}</string>
+									</array>
+									<array>
+										<string>{16.75, 21.5}</string>
+										<string>{1.75, 25.75}</string>
+										<string>{1, 25.25}</string>
+										<string>{0.5, 24.25}</string>
+									</array>
+									<array>
+										<string>{19, 17}</string>
+										<string>{-3.75, 18.75}</string>
+										<string>{-4, 18.25}</string>
+									</array>
+									<array>
+										<string>{-24.5, 21.25}</string>
+										<string>{-26.5, 21}</string>
+										<string>{-27, 20.5}</string>
+										<string>{-20.25, -5.25}</string>
+									</array>
+									<array>
+										<string>{-6.5, -2.75}</string>
+										<string>{-7, -4}</string>
+										<string>{-6.75, -6}</string>
+										<string>{-4.75, -8}</string>
+										<string>{22.25, -0.5}</string>
+									</array>
+									<array>
+										<string>{-10.5, 16.75}</string>
+										<string>{-17, -5.75}</string>
+										<string>{-13.25, -5.25}</string>
+										<string>{-11.25, -3.25}</string>
+										<string>{-9.5, 16}</string>
+									</array>
+									<array>
+										<string>{20.5, 9.5}</string>
+										<string>{19.5, 12.5}</string>
+										<string>{-5.5, 17}</string>
+										<string>{21, 4}</string>
+									</array>
+									<array>
+										<string>{-9.5, 16}</string>
+										<string>{-11.25, -3.25}</string>
+										<string>{-10.25, -2.75}</string>
+									</array>
+									<array>
+										<string>{-9.5, 16}</string>
+										<string>{-10.25, -2.75}</string>
+										<string>{-6.75, -2.5}</string>
+										<string>{-7.5, 16}</string>
+									</array>
+									<array>
+										<string>{22.25, -0.5}</string>
+										<string>{-4.75, -8}</string>
+										<string>{-4, -9.75}</string>
+									</array>
+									<array>
+										<string>{22.25, -0.5}</string>
+										<string>{-2.25, -19.75}</string>
+										<string>{-1.75, -20.25}</string>
+									</array>
+									<array>
+										<string>{22.25, -0.5}</string>
+										<string>{4.5, -21.75}</string>
+										<string>{8.25, -23.5}</string>
+										<string>{9.25, -23.5}</string>
+									</array>
+									<array>
+										<string>{29, -14}</string>
+										<string>{28.5, -13}</string>
+										<string>{27.25, -16.5}</string>
+										<string>{28.5, -16}</string>
+										<string>{29, -15.25}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-39, -34}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>hole_2</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{95, 1}</string>
+									<string>{93, 4}</string>
+									<string>{84, 6}</string>
+									<string>{80, 4}</string>
+									<string>{72, 6}</string>
+									<string>{70, 5}</string>
+									<string>{54, 6}</string>
+									<string>{50, 9}</string>
+									<string>{49, 17}</string>
+									<string>{47, 19}</string>
+									<string>{44, 17}</string>
+									<string>{44, 14}</string>
+									<string>{36, 13}</string>
+									<string>{37, 20}</string>
+									<string>{36, 27}</string>
+									<string>{43, 32}</string>
+									<string>{54, 35}</string>
+									<string>{58, 41}</string>
+									<string>{58, 45}</string>
+									<string>{60, 48}</string>
+									<string>{58, 51}</string>
+									<string>{50, 52}</string>
+									<string>{48, 54}</string>
+									<string>{43, 50}</string>
+									<string>{32, 48}</string>
+									<string>{32, 50}</string>
+									<string>{23, 55}</string>
+									<string>{21, 59}</string>
+									<string>{19, 59}</string>
+									<string>{11, 65}</string>
+									<string>{7, 65}</string>
+									<string>{2, 70}</string>
+									<string>{0, 74}</string>
+									<string>{0, 85}</string>
+									<string>{4, 87}</string>
+									<string>{10, 95}</string>
+									<string>{9, 99}</string>
+									<string>{10, 106}</string>
+									<string>{7, 109}</string>
+									<string>{7, 113}</string>
+									<string>{4, 114}</string>
+									<string>{0, 120}</string>
+									<string>{1, 127}</string>
+									<string>{0, 136}</string>
+									<string>{5, 140}</string>
+									<string>{1, 145}</string>
+									<string>{2, 150}</string>
+									<string>{10, 151}</string>
+									<string>{13, 149}</string>
+									<string>{16, 152}</string>
+									<string>{23, 155}</string>
+									<string>{25, 157}</string>
+									<string>{25, 162}</string>
+									<string>{34, 174}</string>
+									<string>{42, 176}</string>
+									<string>{48, 171}</string>
+									<string>{57, 168}</string>
+									<string>{63, 162}</string>
+									<string>{70, 161}</string>
+									<string>{75, 157}</string>
+									<string>{88, 159}</string>
+									<string>{103, 157}</string>
+									<string>{111, 149}</string>
+									<string>{115, 147}</string>
+									<string>{129, 146}</string>
+									<string>{130, 147}</string>
+									<string>{128, 152}</string>
+									<string>{129, 160}</string>
+									<string>{137, 168}</string>
+									<string>{140, 175}</string>
+									<string>{124, 204}</string>
+									<string>{123, 215}</string>
+									<string>{130, 219}</string>
+									<string>{142, 218}</string>
+									<string>{147, 215}</string>
+									<string>{149, 217}</string>
+									<string>{149, 220}</string>
+									<string>{154, 223}</string>
+									<string>{174, 223}</string>
+									<string>{182, 234}</string>
+									<string>{188, 234}</string>
+									<string>{189, 230}</string>
+									<string>{193, 230}</string>
+									<string>{198, 240}</string>
+									<string>{198, 243}</string>
+									<string>{195, 248}</string>
+									<string>{195, 254}</string>
+									<string>{199, 261}</string>
+									<string>{202, 263}</string>
+									<string>{214, 262}</string>
+									<string>{214, 256}</string>
+									<string>{219, 252}</string>
+									<string>{222, 252}</string>
+									<string>{225, 253}</string>
+									<string>{231, 260}</string>
+									<string>{234, 260}</string>
+									<string>{239, 264}</string>
+									<string>{244, 264}</string>
+									<string>{250, 270}</string>
+									<string>{263, 271}</string>
+									<string>{266, 269}</string>
+									<string>{267, 271}</string>
+									<string>{271, 271}</string>
+									<string>{275, 266}</string>
+									<string>{279, 264}</string>
+									<string>{292, 262}</string>
+									<string>{295, 257}</string>
+									<string>{299, 257}</string>
+									<string>{299, 254}</string>
+									<string>{303, 250}</string>
+									<string>{306, 248}</string>
+									<string>{310, 248}</string>
+									<string>{311, 240}</string>
+									<string>{308, 235}</string>
+									<string>{308, 227}</string>
+									<string>{305, 220}</string>
+									<string>{299, 214}</string>
+									<string>{297, 209}</string>
+									<string>{286, 208}</string>
+									<string>{282, 212}</string>
+									<string>{280, 212}</string>
+									<string>{274, 209}</string>
+									<string>{266, 208}</string>
+									<string>{265, 202}</string>
+									<string>{270, 200}</string>
+									<string>{272, 197}</string>
+									<string>{272, 192}</string>
+									<string>{270, 188}</string>
+									<string>{273, 185}</string>
+									<string>{273, 176}</string>
+									<string>{267, 163}</string>
+									<string>{254, 150}</string>
+									<string>{251, 143}</string>
+									<string>{248, 142}</string>
+									<string>{245, 138}</string>
+									<string>{243, 126}</string>
+									<string>{240, 120}</string>
+									<string>{238, 98}</string>
+									<string>{234, 86}</string>
+									<string>{237, 74}</string>
+									<string>{236, 71}</string>
+									<string>{232, 68}</string>
+									<string>{231, 61}</string>
+									<string>{229, 60}</string>
+									<string>{223, 50}</string>
+									<string>{221, 40}</string>
+									<string>{217, 31}</string>
+									<string>{214, 30}</string>
+									<string>{212, 27}</string>
+									<string>{207, 28}</string>
+									<string>{202, 23}</string>
+									<string>{198, 23}</string>
+									<string>{196, 21}</string>
+									<string>{185, 22}</string>
+									<string>{183, 27}</string>
+									<string>{168, 25}</string>
+									<string>{168, 28}</string>
+									<string>{163, 31}</string>
+									<string>{163, 33}</string>
+									<string>{160, 35}</string>
+									<string>{158, 39}</string>
+									<string>{152, 40}</string>
+									<string>{137, 50}</string>
+									<string>{137, 57}</string>
+									<string>{141, 61}</string>
+									<string>{140, 63}</string>
+									<string>{137, 63}</string>
+									<string>{134, 68}</string>
+									<string>{130, 68}</string>
+									<string>{126, 72}</string>
+									<string>{118, 72}</string>
+									<string>{114, 69}</string>
+									<string>{116, 59}</string>
+									<string>{106, 39}</string>
+									<string>{106, 36}</string>
+									<string>{109, 27}</string>
+									<string>{112, 27}</string>
+									<string>{115, 31}</string>
+									<string>{122, 30}</string>
+									<string>{122, 22}</string>
+									<string>{120, 19}</string>
+									<string>{115, 18}</string>
+									<string>{110, 8}</string>
+									<string>{108, 5}</string>
+									<string>{104, 3}</string>
+									<string>{104, 1}</string>
+									<string>{96, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hole_2</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{401, 302}, {78, 68}}</string>
+						<key>Frame-HD</key>
+						<string>{{1604, 1208}, {312, 272}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hole_2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hole_2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hole_2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {312, 272}}</string>
+						<key>OriginalSize</key>
+						<string>{312, 272}</string>
+						<key>Position</key>
+						<string>{1604, 1208}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{78, 68}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>hole_3</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>32</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-0.375, 9.5}</string>
+										<string>{-0.375, 11.5}</string>
+										<string>{-1.875, 11.25}</string>
+										<string>{-1.875, 9}</string>
+									</array>
+									<array>
+										<string>{-13.875, 10.75}</string>
+										<string>{-16.125, 11}</string>
+										<string>{-16.125, 10.5}</string>
+									</array>
+									<array>
+										<string>{-17.375, -3.5}</string>
+										<string>{-16.625, -9}</string>
+										<string>{-15.125, -10.5}</string>
+										<string>{-13.375, -10.5}</string>
+										<string>{-13.625, -8}</string>
+										<string>{-14.625, -4}</string>
+										<string>{-14.875, -3.25}</string>
+									</array>
+									<array>
+										<string>{0.625, -10.75}</string>
+										<string>{6.875, -11}</string>
+										<string>{6.875, -10.5}</string>
+										<string>{2.125, 3.75}</string>
+										<string>{0.125, 5}</string>
+									</array>
+									<array>
+										<string>{-3.875, 12}</string>
+										<string>{-7.875, 12}</string>
+										<string>{-7.875, 11.75}</string>
+										<string>{-2.875, 7.5}</string>
+										<string>{-1.875, 9}</string>
+										<string>{-1.875, 11.25}</string>
+									</array>
+									<array>
+										<string>{13.625, 4.25}</string>
+										<string>{11.625, 8.5}</string>
+										<string>{9.375, 8.5}</string>
+										<string>{9.125, 6.5}</string>
+										<string>{12.625, 2.25}</string>
+									</array>
+									<array>
+										<string>{-12.875, -1}</string>
+										<string>{-12.625, -2.25}</string>
+										<string>{-10.125, -9.25}</string>
+										<string>{-9.625, -10.25}</string>
+										<string>{-5.625, -9.75}</string>
+										<string>{0.125, 5}</string>
+										<string>{-1.625, 7.25}</string>
+										<string>{-2.875, 7.5}</string>
+									</array>
+									<array>
+										<string>{-2.875, 7.5}</string>
+										<string>{-7.875, 11.75}</string>
+										<string>{-8.625, 10.25}</string>
+										<string>{-12.875, -1}</string>
+									</array>
+									<array>
+										<string>{14.875, 3.75}</string>
+										<string>{16.375, 2}</string>
+										<string>{17.375, 2.25}</string>
+										<string>{21.625, 8.25}</string>
+										<string>{20.625, 9.25}</string>
+										<string>{18.625, 10.25}</string>
+									</array>
+									<array>
+										<string>{-12.875, -7.25}</string>
+										<string>{-12.375, -8.75}</string>
+										<string>{-10.125, -9.25}</string>
+										<string>{-12.625, -2.25}</string>
+										<string>{-13.625, -3.5}</string>
+									</array>
+									<array>
+										<string>{-5.625, -9.75}</string>
+										<string>{-4.875, -11}</string>
+										<string>{-4.125, -11}</string>
+										<string>{0.125, 5}</string>
+									</array>
+									<array>
+										<string>{20.625, 9.25}</string>
+										<string>{20.625, 9.75}</string>
+										<string>{19.375, 10.5}</string>
+										<string>{18.625, 10.25}</string>
+									</array>
+									<array>
+										<string>{19.625, 2}</string>
+										<string>{21.625, 3.25}</string>
+										<string>{21.625, 8.25}</string>
+										<string>{17.375, 2.25}</string>
+									</array>
+									<array>
+										<string>{13.625, 4.25}</string>
+										<string>{14.875, 3.75}</string>
+										<string>{18.625, 10.25}</string>
+										<string>{18.125, 10.75}</string>
+										<string>{16.625, 10.5}</string>
+									</array>
+									<array>
+										<string>{13.625, 4.25}</string>
+										<string>{16.625, 10.5}</string>
+										<string>{15.125, 10.75}</string>
+										<string>{13.875, 9.5}</string>
+									</array>
+									<array>
+										<string>{13.625, 4.25}</string>
+										<string>{13.875, 9.5}</string>
+										<string>{13.125, 9.5}</string>
+										<string>{11.625, 8.5}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-9.875, 9.75}</string>
+										<string>{-12.375, 11.25}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-12.375, 11.25}</string>
+										<string>{-13.375, 11.25}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-13.375, 11.25}</string>
+										<string>{-13.875, 10.75}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-13.875, 10.75}</string>
+										<string>{-16.125, 5.5}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-16.125, 5.5}</string>
+										<string>{-17.125, 3}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-17.125, 3}</string>
+										<string>{-17.125, 1}</string>
+									</array>
+									<array>
+										<string>{-14.875, 0}</string>
+										<string>{-17.125, 1}</string>
+										<string>{-15.625, 0}</string>
+									</array>
+									<array>
+										<string>{0.125, 5}</string>
+										<string>{-4.125, -11}</string>
+										<string>{-3.625, -11.75}</string>
+										<string>{-1.375, -11.75}</string>
+										<string>{0.625, -10.75}</string>
+									</array>
+									<array>
+										<string>{2.125, 3.75}</string>
+										<string>{7.625, -9.75}</string>
+										<string>{9.125, -9.75}</string>
+										<string>{11.125, -6.75}</string>
+										<string>{11.125, -6}</string>
+										<string>{4.125, 3.75}</string>
+									</array>
+									<array>
+										<string>{-16.125, 10.5}</string>
+										<string>{-16.875, 9.75}</string>
+										<string>{-16.125, 5.5}</string>
+										<string>{-13.875, 10.75}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-17.375, -3.5}</string>
+										<string>{-18.875, -3}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-18.875, -3}</string>
+										<string>{-20.875, -3}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-20.875, -3}</string>
+										<string>{-21.625, -3.75}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-21.625, -3.75}</string>
+										<string>{-21.875, -4.5}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-21.875, -4.5}</string>
+										<string>{-21.625, -9.25}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-21.625, -9.25}</string>
+										<string>{-19.875, -10.5}</string>
+									</array>
+									<array>
+										<string>{-16.625, -9}</string>
+										<string>{-19.875, -10.5}</string>
+										<string>{-18.125, -10.5}</string>
+									</array>
+									<array>
+										<string>{-14.625, -4}</string>
+										<string>{-13.625, -8}</string>
+										<string>{-12.875, -7.25}</string>
+										<string>{-13.625, -3.5}</string>
+									</array>
+									<array>
+										<string>{12.625, -4.5}</string>
+										<string>{13.375, -4.5}</string>
+										<string>{14.625, -3.5}</string>
+										<string>{14.625, -2.25}</string>
+										<string>{13.625, -0.75}</string>
+										<string>{4.125, 3.75}</string>
+									</array>
+									<array>
+										<string>{13.625, 0.25}</string>
+										<string>{12.625, 2.25}</string>
+										<string>{9.125, 6.5}</string>
+										<string>{7.125, 6.5}</string>
+										<string>{4.125, 3.75}</string>
+										<string>{13.625, -0.75}</string>
+									</array>
+									<array>
+										<string>{12.375, -5.25}</string>
+										<string>{12.625, -4.5}</string>
+										<string>{4.125, 3.75}</string>
+										<string>{11.125, -6}</string>
+									</array>
+									<array>
+										<string>{6.875, -10.5}</string>
+										<string>{7.625, -9.75}</string>
+										<string>{2.125, 3.75}</string>
+									</array>
+									<array>
+										<string>{-14.125, -0.75}</string>
+										<string>{-12.875, -1}</string>
+										<string>{-8.625, 10.25}</string>
+										<string>{-9.875, 9.75}</string>
+										<string>{-14.875, 0}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-21.875, -12}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>hole_3</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{56, 1}</string>
+									<string>{53, 7}</string>
+									<string>{48, 9}</string>
+									<string>{38, 3}</string>
+									<string>{34, 3}</string>
+									<string>{32, 5}</string>
+									<string>{23, 4}</string>
+									<string>{23, 6}</string>
+									<string>{20, 9}</string>
+									<string>{23, 26}</string>
+									<string>{19, 36}</string>
+									<string>{19, 44}</string>
+									<string>{25, 48}</string>
+									<string>{28, 48}</string>
+									<string>{31, 51}</string>
+									<string>{36, 52}</string>
+									<string>{37, 57}</string>
+									<string>{33, 62}</string>
+									<string>{29, 64}</string>
+									<string>{28, 61}</string>
+									<string>{18, 62}</string>
+									<string>{12, 60}</string>
+									<string>{4, 60}</string>
+									<string>{1, 63}</string>
+									<string>{0, 66}</string>
+									<string>{1, 85}</string>
+									<string>{8, 90}</string>
+									<string>{15, 90}</string>
+									<string>{21, 84}</string>
+									<string>{27, 90}</string>
+									<string>{34, 90}</string>
+									<string>{33, 80}</string>
+									<string>{36, 77}</string>
+									<string>{38, 83}</string>
+									<string>{47, 85}</string>
+									<string>{49, 89}</string>
+									<string>{65, 87}</string>
+									<string>{68, 92}</string>
+									<string>{71, 92}</string>
+									<string>{73, 95}</string>
+									<string>{82, 95}</string>
+									<string>{90, 91}</string>
+									<string>{115, 92}</string>
+									<string>{115, 90}</string>
+									<string>{118, 87}</string>
+									<string>{124, 87}</string>
+									<string>{132, 75}</string>
+									<string>{132, 72}</string>
+									<string>{137, 69}</string>
+									<string>{138, 66}</string>
+									<string>{141, 66}</string>
+									<string>{146, 62}</string>
+									<string>{146, 57}</string>
+									<string>{142, 51}</string>
+									<string>{142, 47}</string>
+									<string>{138, 39}</string>
+									<string>{142, 31}</string>
+									<string>{147, 33}</string>
+									<string>{153, 40}</string>
+									<string>{157, 39}</string>
+									<string>{166, 40}</string>
+									<string>{174, 35}</string>
+									<string>{174, 15}</string>
+									<string>{170, 11}</string>
+									<string>{170, 9}</string>
+									<string>{165, 6}</string>
+									<string>{162, 7}</string>
+									<string>{160, 5}</string>
+									<string>{154, 6}</string>
+									<string>{148, 5}</string>
+									<string>{143, 10}</string>
+									<string>{140, 10}</string>
+									<string>{134, 14}</string>
+									<string>{125, 14}</string>
+									<string>{124, 22}</string>
+									<string>{116, 22}</string>
+									<string>{104, 33}</string>
+									<string>{96, 33}</string>
+									<string>{88, 28}</string>
+									<string>{81, 19}</string>
+									<string>{76, 18}</string>
+									<string>{80, 12}</string>
+									<string>{86, 10}</string>
+									<string>{86, 2}</string>
+									<string>{80, 3}</string>
+									<string>{72, 0}</string>
+									<string>{56, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hole_3</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{462, 193}, {43.75, 24}}</string>
+						<key>Frame-HD</key>
+						<string>{{1848, 772}, {175, 96}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hole_3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hole_3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hole_3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {175, 96}}</string>
+						<key>OriginalSize</key>
+						<string>{175, 96}</string>
+						<key>Position</key>
+						<string>{1848, 772}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{43.75, 24}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>hole_4</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>32</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-18.5, -16.75}</string>
+										<string>{18.5, -16.75}</string>
+										<string>{18.5, 16.75}</string>
+										<string>{-18.5, 16.75}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>134</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>33.5</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-18.5, -16.75}</string>
+								<key>LHWidth</key>
+								<real>37</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>hole_4</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{148, 0}</string>
+									<string>{148, 134}</string>
+									<string>{0, 134}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>148</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hole_4</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{462, 155}, {37, 33.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{1848, 620}, {148, 134}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hole_4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hole_4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hole_4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {148, 134}}</string>
+						<key>OriginalSize</key>
+						<string>{148, 134}</string>
+						<key>Position</key>
+						<string>{1848, 620}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{37, 33.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>hole_5</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>32</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-16.125, -21.125}</string>
+										<string>{16.125, -21.125}</string>
+										<string>{16.125, 21.125}</string>
+										<string>{-16.125, 21.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>169</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>42.25</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-16.125, -21.125}</string>
+								<key>LHWidth</key>
+								<real>32.25</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>hole_5</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{7.8989718545004281e-15, 129}</string>
+									<string>{-169, 129}</string>
+									<string>{-169, 1.0348265452795134e-14}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>129</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>hole_5</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{462, 81}, {32.75, 42.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1848, 324}, {129, 169}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>hole_5</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/hole_5.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/hole_5.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {129, 169}}</string>
+						<key>OriginalSize</key>
+						<string>{129, 169}</string>
+						<key>Position</key>
+						<string>{1848, 324}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{32.25, 42.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0.25, -0.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 				<key>ice_ground</key>
 				<dict>
 					<key>IsSHSprite</key>
@@ -235,6 +2537,796 @@
 						<integer>0</integer>
 						<key>TextureOffset</key>
 						<string>{0, -1.75}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>rock_1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>16</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-8.625, -9.375}</string>
+										<string>{8.625, -9.375}</string>
+										<string>{8.625, 9.375}</string>
+										<string>{-8.625, 9.375}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>75</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>18.75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-8.625, -9.375}</string>
+								<key>LHWidth</key>
+								<real>17.25</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>rock_1</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{4.2250314570583689e-15, 69}</string>
+									<string>{-75, 69}</string>
+									<string>{-75, 4.5924254968025744e-15}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>69</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>rock_1</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{418, 233}, {17.75, 18.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1672, 932}, {69, 75}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>rock_1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/rock_1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/rock_1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {69, 75}}</string>
+						<key>OriginalSize</key>
+						<string>{69, 75}</string>
+						<key>Position</key>
+						<string>{1672, 932}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{17.25, 18.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0.25, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>rock_2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>16</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-18, -11.125}</string>
+										<string>{18, -11.125}</string>
+										<string>{18, 11.125}</string>
+										<string>{-18, 11.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>89</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>22.25</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-18, -11.125}</string>
+								<key>LHWidth</key>
+								<real>36</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>rock_2</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{144, 0}</string>
+									<string>{144, 89}</string>
+									<string>{0, 89}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>144</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>rock_2</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{418, 206}, {36, 22.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1672, 824}, {144, 89}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>rock_2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/rock_2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/rock_2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {144, 89}}</string>
+						<key>OriginalSize</key>
+						<string>{144, 89}</string>
+						<key>Position</key>
+						<string>{1672, 824}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{36, 22.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>rock_3</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>16</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-19.875, -16.875}</string>
+										<string>{19.875, -16.875}</string>
+										<string>{19.875, 16.875}</string>
+										<string>{-19.875, 16.875}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>135</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>33.75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-19.875, -16.875}</string>
+								<key>LHWidth</key>
+								<real>39.75</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>rock_3</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{159, 0}</string>
+									<string>{159, 135}</string>
+									<string>{0, 135}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>159</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>rock_3</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{462, 118}, {39.75, 33.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1848, 472}, {159, 135}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>rock_3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/rock_3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/rock_3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {159, 135}}</string>
+						<key>OriginalSize</key>
+						<string>{159, 135}</string>
+						<key>Position</key>
+						<string>{1848, 472}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{39.75, 33.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>rock_4</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>16</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-20.25, -37.5}</string>
+										<string>{20.25, -37.5}</string>
+										<string>{20.25, 37.5}</string>
+										<string>{-20.25, 37.5}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>300</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-20.25, -37.5}</string>
+								<key>LHWidth</key>
+								<real>40.5</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>rock_4</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{162, 0}</string>
+									<string>{162, 300}</string>
+									<string>{0, 300}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>162</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>rock_4</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{462, 2}, {40.5, 75}}</string>
+						<key>Frame-HD</key>
+						<string>{{1848, 8}, {162, 300}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>rock_4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/rock_4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/rock_4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {162, 300}}</string>
+						<key>OriginalSize</key>
+						<string>{162, 300}</string>
+						<key>Position</key>
+						<string>{1848, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{40.5, 75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>rock_5</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>16</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-20.25, -100}</string>
+										<string>{20.25, -100}</string>
+										<string>{20.25, 100}</string>
+										<string>{-20.25, 100}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>800</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>200</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-20.25, -100}</string>
+								<key>LHWidth</key>
+								<real>40.5</real>
+								<key>Mask</key>
+								<integer>8</integer>
+								<key>Name</key>
+								<string>rock_5</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{162, 0}</string>
+									<string>{162, 800}</string>
+									<string>{0, 800}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>162</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>PhisicalWorld</string>
+					<key>SHSpriteName</key>
+					<string>rock_5</string>
+					<key>SheetImage</key>
+					<string>Run!Penguin_PhisicalWorld.png</string>
+					<key>SheetImage-HD</key>
+					<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{418, 2}, {40.5, 200}}</string>
+						<key>Frame-HD</key>
+						<string>{{1672, 8}, {162, 800}}</string>
+						<key>Image</key>
+						<string>Run!Penguin_PhisicalWorld.png</string>
+						<key>Image-HD</key>
+						<string>Run!Penguin_PhisicalWorld-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>rock_5</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/sean/Desktop/temp/penguin/Physical World/raw/rock_5.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../Desktop/temp/penguin/Physical%20World/raw/rock_5.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {162, 800}}</string>
+						<key>OriginalSize</key>
+						<string>{162, 800}</string>
+						<key>Position</key>
+						<string>{1672, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{40.5, 200}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -484,58 +3576,6 @@
 			<dict>
 				<key>eagle_fly0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vaxwFAAAAAAQQMAAAAIsvB3m5NqWsfJQD
-					x1EFPOtPAMPQObk9lLJm1o5B49549AMAAJsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM1
-					MzYzNjY0MzgzNTM0MzQ2MjM5MzY2NjMzMzI2
-					MjY1MzY2NTYxMzQzNTMxMzAzMTY1NjEzNzY2
-					MzI2MTM0NjIzNzM1MzYzNjM3MzY2MjMxM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzA2MTM1MzYzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY2NTYxNjc2YzY1NWY2NjZj
-					NzkzMDJlNzA2ZTY3AAUAAAABAQAAVXNlcnMA
-					AAAEAAAAAQEAAHNlYW4HAAAAAQEAAERlc2t0
-					b3AABAAAAAEBAAB0ZW1wBwAAAAEBAABwZW5n
-					dWluAAkAAAABAQAAQ2hhcmFjdGVyAAAAAwAA
-					AAEBAAByYXcADgAAAAEBAABlYWdsZV9mbHkw
-					LnBuZwAAIAAAAAEGAACoAQAAuAEAAMQBAADU
-					AQAA4AEAAPABAAAEAgAAEAIAAAgAAAAEAwAA
-					jZEAAAAAAAAIAAAABAMAAD0JCAAAAAAACAAA
-					AAQDAABICQgAAAAAAAgAAAAEAwAAI8IkAQAA
-					AAAIAAAABAMAAHd+vwEAAAAACAAAAAQDAAB7
-					fr8BAAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAA
-					BAMAAFYKwAEAAAAAIAAAAAEGAABQAgAAYAIA
-					AHACAACAAgAAkAIAAKACAACwAgAAwAIAAAgA
-					AAAABAAAQbcVQusAAAAYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAA
-					BAAAAAMDAAAGAAAACAAAAAQDAAAGAAAAAAAA
-					AAQAAAABAQAAU2VhbgQAAAADAwAA9QEAAAMA
-					AAABAQAATWFjAAgAAAAEAwAAAACgfVEAAAAI
-					AAAAAAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1
-					Rjg3Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBE
-					QUFDM0IYAAAAAQIAAIEAAAABAAgA7z8AAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAACgCAAAAAAAABRAAANACAAAAAAAAEBAA
-					AAgDAAAAAAAAQBAAAPgCAAAAAAAAVBAAADAD
-					AAAAAAAAVRAAADADAAAAAAAAVhAAACgDAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAANwDAAAAAAAA
-					ECAAAGQDAAAAAAAAESAAAJADAAAAAAAAEiAA
-					AHADAAAAAAAAEyAAAIADAAAAAAAAICAAALwD
-					AAAAAAAAMCAAACgDAAAAAAAAAcAAADwDAAAA
-					AAAAEcAAAEwDAAAAAAAAEsAAAFgDAAAAAAAA
-					ENAAAOgDAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -700,58 +3740,6 @@
 				</dict>
 				<key>eagle_fly1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vaxwFAAAAAAQQMAAAAB2V0wod64Nhhi7G
-					NynDP7l5ObBbceGDHvxuZTj0+kr19AMAAJsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM3
-					MzE2MjMzMzEzNzYxMzk2MzYyNjUzNzM0MzQz
-					NDM2MzczNzM0MzE2NTM1MzMzNDMyMzg2NTMx
-					MzQ2NjY2Mzk2NTM3MzczOTM4NjI2MjMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzA2MTM1MzczYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY2NTYxNjc2YzY1NWY2NjZj
-					NzkzMTJlNzA2ZTY3AAUAAAABAQAAVXNlcnMA
-					AAAEAAAAAQEAAHNlYW4HAAAAAQEAAERlc2t0
-					b3AABAAAAAEBAAB0ZW1wBwAAAAEBAABwZW5n
-					dWluAAkAAAABAQAAQ2hhcmFjdGVyAAAAAwAA
-					AAEBAAByYXcADgAAAAEBAABlYWdsZV9mbHkx
-					LnBuZwAAIAAAAAEGAACoAQAAuAEAAMQBAADU
-					AQAA4AEAAPABAAAEAgAAEAIAAAgAAAAEAwAA
-					jZEAAAAAAAAIAAAABAMAAD0JCAAAAAAACAAA
-					AAQDAABICQgAAAAAAAgAAAAEAwAAI8IkAQAA
-					AAAIAAAABAMAAHd+vwEAAAAACAAAAAQDAAB7
-					fr8BAAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAA
-					BAMAAFcKwAEAAAAAIAAAAAEGAABQAgAAYAIA
-					AHACAACAAgAAkAIAAKACAACwAgAAwAIAAAgA
-					AAAABAAAQbcVQvsAAAAYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAA
-					BAAAAAMDAAAGAAAACAAAAAQDAAAGAAAAAAAA
-					AAQAAAABAQAAU2VhbgQAAAADAwAA9QEAAAMA
-					AAABAQAATWFjAAgAAAAEAwAAAACgfVEAAAAI
-					AAAAAAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1
-					Rjg3Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBE
-					QUFDM0IYAAAAAQIAAIEAAAABAAgA7z8AAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAACgCAAAAAAAABRAAANACAAAAAAAAEBAA
-					AAgDAAAAAAAAQBAAAPgCAAAAAAAAVBAAADAD
-					AAAAAAAAVRAAADADAAAAAAAAVhAAACgDAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAANwDAAAAAAAA
-					ECAAAGQDAAAAAAAAESAAAJADAAAAAAAAEiAA
-					AHADAAAAAAAAEyAAAIADAAAAAAAAICAAALwD
-					AAAAAAAAMCAAACgDAAAAAAAAAcAAADwDAAAA
-					AAAAEcAAAEwDAAAAAAAAEsAAAFgDAAAAAAAA
-					ENAAAOgDAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -853,59 +3841,6 @@
 				</dict>
 				<key>penguin_kids_run0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAANVNUScHQsfSr5ZF
-					91AwG3KME5pcpmm4WoSmbeuWctuVDAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTYx
-					NjUzNjMzNjMzNjM4NjM2MjM5MzE2MjYyMzE2
-					MTMwMzE2MTYyMzE2MjMwNjQ2MjMxMzk2MTM4
-					MzYzODY0NjUzNzMyMzgzODYxNjI2MjMwM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjIzMzYzMzUzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMwMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjAucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					AMWzvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT39MAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1007,59 +3942,6 @@
 				</dict>
 				<key>penguin_kids_run1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAPaTR558gLUQe4xY
-					vEjNV7Hywzau/IpPtKes35XE+B9XDAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM1
-					NjYzMTY0MzAzMDYxMzY2MzM1NjY2NTM0Mzkz
-					NzM4NjI2MTM2NjIzNTY0NjI2MTM2MzIzMjM0
-					MzU2NjM1NjMzMTY1MzI2MTY1NjIzOTYxM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjM5NjQzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMxMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjEucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					AJ2vvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT1L0AAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1161,59 +4043,6 @@
 				</dict>
 				<key>penguin_kids_run2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAMYlxuT3NGcyjVq+
-					G7qTmNYmCXjtWZG+XTIzHnAskPB/DAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTYx
-					MzQzMzMxNjI2NTM4MzMzNjY0MzU2NjY2Mzk2
-					NTM1MzkzNjM3NjYzOTY1MzI2MjY2MzIzMzM2
-					NjY2NjY0MzgzMzMxMzE2NTYyMzg2NDM5M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjYyMzUzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMyMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjIucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					ALWvvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT1NAAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1315,59 +4144,6 @@
 				</dict>
 				<key>penguin_kids_slip1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAP+hB/+uGDrXeG+J
-					U1Ik+keqYktG+iboZERB7VWsfCyYDAQAAKsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM2
-					NjE2MzM2MzU2NTM2NjM2MTYzMzI2MzYxMzY2
-					NTYyMzYzNTMwNjEzNzMzNjI2NjY1MzczODMz
-					MzkzNjYzMzQzNzM0MzM2MjMwMzAzMTM3M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2MzkzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwMzEyZTcwNmU2
-					NwAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABYA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3NsaXAxLnBu
-					ZwAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					APnjvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcUGvIAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1469,59 +4245,6 @@
 				</dict>
 				<key>penguin_kids_slip2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAGUsqRnJTf3UmbIX
-					BJBPgn5zqlCZM4XMODxzV18tafySDAQAAKsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMx
-					NjMzMzMwNjMzNTYzNjMzNzM0MzEzNzM2Mzkz
-					MzMyNjM2MjYxMzEzMDM1NjMzNTMwMzMzNDYz
-					MzE2MTYzNjUzNjY1MzczNzY0MzU2NDY2M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2NjEzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwMzIyZTcwNmU2
-					NwAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABYA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3NsaXAyLnBu
-					ZwAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					APrjvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcUGwQAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1623,59 +4346,6 @@
 				</dict>
 				<key>penguin_kids_slip_0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazgFAAAAAAQQMAAAANb3NZ813aD/Ien5
-					YqSwLB1Tt9cbHhUDO1eFGjBjU9ctEAQAAK0B
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTY2
-					NjQ2NDM3NjQ2NjMyNjU2NjM0Mzk2NTMwMzkz
-					MTM4NjEzODMwMzgzNjMyMzU2MjMxMzczMzMy
-					NjQzMjY1Mzc2MTY0NjU2MzMwMzYzNzMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2MzczYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwNWYzMDJlNzA2
-					ZTY3AAAABQAAAAEBAABVc2VycwAAAAQAAAAB
-					AQAAc2VhbgcAAAABAQAARGVza3RvcAAEAAAA
-					AQEAAHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAA
-					AAEBAABDaGFyYWN0ZXIAAAADAAAAAQEAAHJh
-					dwAXAAAAAQEAAHBlbmd1aW5fa2lkc19zbGlw
-					XzAucG5nACAAAAABBgAAvAEAAMwBAADYAQAA
-					6AEAAPQBAAAEAgAAGAIAACQCAAAIAAAABAMA
-					AI2RAAAAAAAACAAAAAQDAAA9CQgAAAAAAAgA
-					AAAEAwAASAkIAAAAAAAIAAAABAMAACPCJAEA
-					AAAACAAAAAQDAAB3fr8BAAAAAAgAAAAEAwAA
-					e36/AQAAAAAIAAAABAMAAHx+vwEAAAAACAAA
-					AAQDAAD3478BAAAAACAAAAABBgAAbAIAAHwC
-					AACMAgAAnAIAAKwCAAC8AgAAzAIAANwCAAAI
-					AAAAAAQAAEG3FBrhAAAAGAAAAAECAAABAAAA
-					AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUA
-					AAQAAAADAwAABgAAAAgAAAAEAwAABgAAAAAA
-					AAAEAAAAAQEAAFNlYW4EAAAAAwMAAPUBAAAD
-					AAAAAQEAAE1hYwAIAAAABAMAAAAAoH1RAAAA
-					CAAAAAAEAABBsLZVHwAAACQAAAABAQAAOUJC
-					NUY4NzYtRjIyRC0zRTU0LUE4RjQtQjU1MUYw
-					REFBQzNCGAAAAAECAACBAAAAAQAIAO8/AAAB
-					AAgAAAAAAAAAAAABAAAAAQEAAC8AAAAEAAAA
-					AwMAAAAIACjwAAAA/v///wEAAAAAAAAAEwAA
-					AAQQAABEAgAAAAAAAAUQAADsAgAAAAAAABAQ
-					AAAkAwAAAAAAAEAQAAAUAwAAAAAAAFQQAABM
-					AwAAAAAAAFUQAABMAwAAAAAAAFYQAABEAwAA
-					AAAAAAIRAAAEAAAAAAAAAAIgAAD4AwAAAAAA
-					ABAgAACAAwAAAAAAABEgAACsAwAAAAAAABIg
-					AACMAwAAAAAAABMgAACcAwAAAAAAACAgAADY
-					AwAAAAAAADAgAABEAwAAAAAAAAHAAABYAwAA
-					AAAAABHAAABoAwAAAAAAABLAAAB0AwAAAAAA
-					ABDQAAAEBAAAAAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1777,59 +4447,6 @@
 				</dict>
 				<key>penguin_kids_stand0</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazgFAAAAAAQQMAAAAFXaAj0TDY4MdcyF
-					KTo4PbQ4lP3kREdlk3Vj+idooFQnEAQAAK0B
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTY1
-					MzI2NjM1MzI2MTM0MzA2NjYyMzAzMTY0MzUz
-					NzMzMzM2NTM1MzY2MzY0MzEzMDYyMzMzODYz
-					MzUzNTM2MzIzMTY2MzUzMTM2NjE2MjMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjM4MzQzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNzQ2MTZlNjQzMDJlNzA2
-					ZTY3AAAABQAAAAEBAABVc2VycwAAAAQAAAAB
-					AQAAc2VhbgcAAAABAQAARGVza3RvcAAEAAAA
-					AQEAAHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAA
-					AAEBAABDaGFyYWN0ZXIAAAADAAAAAQEAAHJh
-					dwAXAAAAAQEAAHBlbmd1aW5fa2lkc19zdGFu
-					ZDAucG5nACAAAAABBgAAvAEAAMwBAADYAQAA
-					6AEAAPQBAAAEAgAAGAIAACQCAAAIAAAABAMA
-					AI2RAAAAAAAACAAAAAQDAAA9CQgAAAAAAAgA
-					AAAEAwAASAkIAAAAAAAIAAAABAMAACPCJAEA
-					AAAACAAAAAQDAAB3fr8BAAAAAAgAAAAEAwAA
-					e36/AQAAAAAIAAAABAMAAHx+vwEAAAAACAAA
-					AAQDAACEr78BAAAAACAAAAABBgAAbAIAAHwC
-					AACMAgAAnAIAAKwCAAC8AgAAzAIAANwCAAAI
-					AAAAAAQAAEG3E9SfAAAAGAAAAAECAAABAAAA
-					AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUA
-					AAQAAAADAwAABgAAAAgAAAAEAwAABgAAAAAA
-					AAAEAAAAAQEAAFNlYW4EAAAAAwMAAPUBAAAD
-					AAAAAQEAAE1hYwAIAAAABAMAAAAAoH1RAAAA
-					CAAAAAAEAABBsLZVHwAAACQAAAABAQAAOUJC
-					NUY4NzYtRjIyRC0zRTU0LUE4RjQtQjU1MUYw
-					REFBQzNCGAAAAAECAACBAAAAAQAIAO8/AAAB
-					AAgAAAAAAAAAAAABAAAAAQEAAC8AAAAEAAAA
-					AwMAAAAIACjwAAAA/v///wEAAAAAAAAAEwAA
-					AAQQAABEAgAAAAAAAAUQAADsAgAAAAAAABAQ
-					AAAkAwAAAAAAAEAQAAAUAwAAAAAAAFQQAABM
-					AwAAAAAAAFUQAABMAwAAAAAAAFYQAABEAwAA
-					AAAAAAIRAAAEAAAAAAAAAAIgAAD4AwAAAAAA
-					ABAgAACAAwAAAAAAABEgAACsAwAAAAAAABIg
-					AACMAwAAAAAAABMgAACcAwAAAAAAACAgAADY
-					AwAAAAAAADAgAABEAwAAAAAAAAHAAABYAwAA
-					AAAAABHAAABoAwAAAAAAABLAAAB0AwAAAAAA
-					ABDQAAAEBAAAAAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1891,7 +4508,7 @@
 								<key>LHWidth</key>
 								<real>0.0</real>
 								<key>Mask</key>
-								<integer>7</integer>
+								<integer>55</integer>
 								<key>Name</key>
 								<string>kid_stand</string>
 								<key>Restitution</key>
@@ -1988,60 +4605,6 @@
 				</dict>
 				<key>penguin_parent_stand_facetoleft</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va1wFAAAAAAQQMAAAAG1LiZQdTHszEnff
-					tZsc9oSaRfo9NuGATr1J4MQMMd62NAQAAMUB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTY2
-					NjMzMzM4NjUzNDYyNjY2NjM2NjI2MzY2NjQz
-					NTMwNjE2MzY2MzkzMTM5NjU2MzYzMzI2NjY0
-					NjMzOTMzMzgzMzYyNjU2MjY1MzkzMzMxM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzMzNjM5NjIzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NzA2MTcyNjU2ZTc0NWY3Mzc0NjE2ZTY0NWY2
-					NjYxNjM2NTc0NmY2YzY1NjY3NDJlNzA2ZTY3
-					AAAABQAAAAEBAABVc2VycwAAAAQAAAABAQAA
-					c2VhbgcAAAABAQAARGVza3RvcAAEAAAAAQEA
-					AHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAAAAEB
-					AABDaGFyYWN0ZXIAAAADAAAAAQEAAHJhdwAj
-					AAAAAQEAAHBlbmd1aW5fcGFyZW50X3N0YW5k
-					X2ZhY2V0b2xlZnQucG5nACAAAAABBgAA1AEA
-					AOQBAADwAQAAAAIAAAwCAAAcAgAAMAIAADwC
-					AAAIAAAABAMAAI2RAAAAAAAACAAAAAQDAAA9
-					CQgAAAAAAAgAAAAEAwAASAkIAAAAAAAIAAAA
-					BAMAACPCJAEAAAAACAAAAAQDAAB3fr8BAAAA
-					AAgAAAAEAwAAe36/AQAAAAAIAAAABAMAAHx+
-					vwEAAAAACAAAAAQDAACbNsABAAAAACAAAAAB
-					BgAAkAIAAKACAACwAgAAwAIAANACAADgAgAA
-					8AIAAAADAAAIAAAAAAQAAEG3FCLLAAAAGAAA
-					AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAA
-					AAAAAAAAAQUAAAQAAAADAwAABgAAAAgAAAAE
-					AwAABgAAAAAAAAAEAAAAAQEAAFNlYW4EAAAA
-					AwMAAPUBAAADAAAAAQEAAE1hYwAIAAAABAMA
-					AAAAoH1RAAAACAAAAAAEAABBsLZVHwAAACQA
-					AAABAQAAOUJCNUY4NzYtRjIyRC0zRTU0LUE4
-					RjQtQjU1MUYwREFBQzNCGAAAAAECAACBAAAA
-					AQAIAO8/AAABAAgAAAAAAAAAAAABAAAAAQEA
-					AC8AAAAEAAAAAwMAAAAIACjwAAAA/v///wEA
-					AAAAAAAAEwAAAAQQAABoAgAAAAAAAAUQAAAQ
-					AwAAAAAAABAQAABIAwAAAAAAAEAQAAA4AwAA
-					AAAAAFQQAABwAwAAAAAAAFUQAABwAwAAAAAA
-					AFYQAABoAwAAAAAAAAIRAAAEAAAAAAAAAAIg
-					AAAcBAAAAAAAABAgAACkAwAAAAAAABEgAADQ
-					AwAAAAAAABIgAACwAwAAAAAAABMgAADAAwAA
-					AAAAACAgAAD8AwAAAAAAADAgAABoAwAAAAAA
-					AAHAAAB8AwAAAAAAABHAAACMAwAAAAAAABLA
-					AACYAwAAAAAAABDQAAAoBAAAAAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2206,60 +4769,6 @@
 				</dict>
 				<key>penguin_parent_stand_facetoright</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va1wFAAAAAAQQMAAAAGvscpqaStTwcQJw
-					hW8eSbRJXz1iRt+HKYF73dHSycIgNAQAAMcB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMx
-					MzEzMTY1NjY2NjMyNjU2MzM2MzU2MzM4NjMz
-					OTM1NjMzODMxNjMzMDY2NjYzMzM0MzUzMDM4
-					NjMzNTYyNjUzNDMwMzYzMTM1Mzc2NjMwM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzMzNjM5NjYzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NzA2MTcyNjU2ZTc0NWY3Mzc0NjE2ZTY0NWY2
-					NjYxNjM2NTc0NmY3MjY5Njc2ODc0MmU3MDZl
-					NjcABQAAAAEBAABVc2VycwAAAAQAAAABAQAA
-					c2VhbgcAAAABAQAARGVza3RvcAAEAAAAAQEA
-					AHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAAAAEB
-					AABDaGFyYWN0ZXIAAAADAAAAAQEAAHJhdwAk
-					AAAAAQEAAHBlbmd1aW5fcGFyZW50X3N0YW5k
-					X2ZhY2V0b3JpZ2h0LnBuZyAAAAABBgAA1AEA
-					AOQBAADwAQAAAAIAAAwCAAAcAgAAMAIAADwC
-					AAAIAAAABAMAAI2RAAAAAAAACAAAAAQDAAA9
-					CQgAAAAAAAgAAAAEAwAASAkIAAAAAAAIAAAA
-					BAMAACPCJAEAAAAACAAAAAQDAAB3fr8BAAAA
-					AAgAAAAEAwAAe36/AQAAAAAIAAAABAMAAHx+
-					vwEAAAAACAAAAAQDAACfNsABAAAAACAAAAAB
-					BgAAkAIAAKACAACwAgAAwAIAANACAADgAgAA
-					8AIAAAADAAAIAAAAAAQAAEG3Fo+qAAAAGAAA
-					AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAA
-					AAAAAAAAAQUAAAQAAAADAwAABgAAAAgAAAAE
-					AwAABgAAAAAAAAAEAAAAAQEAAFNlYW4EAAAA
-					AwMAAPUBAAADAAAAAQEAAE1hYwAIAAAABAMA
-					AAAAoH1RAAAACAAAAAAEAABBsLZVHwAAACQA
-					AAABAQAAOUJCNUY4NzYtRjIyRC0zRTU0LUE4
-					RjQtQjU1MUYwREFBQzNCGAAAAAECAACBAAAA
-					AQAIAO8/AAABAAgAAAAAAAAAAAABAAAAAQEA
-					AC8AAAAEAAAAAwMAAAAIACjwAAAA/v///wEA
-					AAAAAAAAEwAAAAQQAABoAgAAAAAAAAUQAAAQ
-					AwAAAAAAABAQAABIAwAAAAAAAEAQAAA4AwAA
-					AAAAAFQQAABwAwAAAAAAAFUQAABwAwAAAAAA
-					AFYQAABoAwAAAAAAAAIRAAAEAAAAAAAAAAIg
-					AAAcBAAAAAAAABAgAACkAwAAAAAAABEgAADQ
-					AwAAAAAAABIgAACwAwAAAAAAABMgAADAAwAA
-					AAAAACAgAAD8AwAAAAAAADAgAABoAwAAAAAA
-					AAHAAAB8AwAAAAAAABHAAACMAwAAAAAAABLA
-					AACYAwAAAAAAABDQAAAoBAAAAAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2361,57 +4870,6 @@
 				</dict>
 				<key>seal</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawgFAAAAAAQQMAAAAH1KJzgdFLUqbChW
-					xxEy1JOpyeXLZA9rHA2/DqZgv35B4AMAAI8B
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM2
-					Mzc2NDMwNjQ2NDM5MzEzMDM4NjUzNzMzNjQz
-					MzMxNjUzODM0MzI2NjYyMzEzMjMzMzY2NTM1
-					MzczMDM5MzIzNzMzNjU2NTM1NjUzOTM5M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzAzNDY0NjMzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MzY1NjE2YzJlNzA2ZTY3
-					AAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHNl
-					YW4HAAAAAQEAAERlc2t0b3AABAAAAAEBAAB0
-					ZW1wBwAAAAEBAABwZW5ndWluAAkAAAABAQAA
-					Q2hhcmFjdGVyAAAAAwAAAAEBAAByYXcACAAA
-					AAEBAABzZWFsLnBuZyAAAAABBgAAnAEAAKwB
-					AAC4AQAAyAEAANQBAADkAQAA+AEAAAQCAAAI
-					AAAABAMAAI2RAAAAAAAACAAAAAQDAAA9CQgA
-					AAAAAAgAAAAEAwAASAkIAAAAAAAIAAAABAMA
-					ACPCJAEAAAAACAAAAAQDAAB3fr8BAAAAAAgA
-					AAAEAwAAe36/AQAAAAAIAAAABAMAAHx+vwEA
-					AAAACAAAAAQDAADcBMABAAAAACAAAAABBgAA
-					PAIAAEwCAABcAgAAbAIAAHwCAACMAgAAnAIA
-					AKwCAAAIAAAAAAQAAEG3FTVFAAAAGAAAAAEC
-					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAA
-					AAAAAQUAAAQAAAADAwAABgAAAAgAAAAEAwAA
-					BgAAAAAAAAAEAAAAAQEAAFNlYW4EAAAAAwMA
-					APUBAAADAAAAAQEAAE1hYwAIAAAABAMAAAAA
-					oH1RAAAACAAAAAAEAABBsLZVHwAAACQAAAAB
-					AQAAOUJCNUY4NzYtRjIyRC0zRTU0LUE4RjQt
-					QjU1MUYwREFBQzNCGAAAAAECAACBAAAAAQAI
-					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAEAAAAAwMAAAAIACjwAAAA/v///wEAAAAA
-					AAAAEwAAAAQQAAAUAgAAAAAAAAUQAAC8AgAA
-					AAAAABAQAAD0AgAAAAAAAEAQAADkAgAAAAAA
-					AFQQAAAcAwAAAAAAAFUQAAAcAwAAAAAAAFYQ
-					AAAUAwAAAAAAAAIRAAAEAAAAAAAAAAIgAADI
-					AwAAAAAAABAgAABQAwAAAAAAABEgAAB8AwAA
-					AAAAABIgAABcAwAAAAAAABMgAABsAwAAAAAA
-					ACAgAACoAwAAAAAAADAgAAAUAwAAAAAAAAHA
-					AAAoAwAAAAAAABHAAAA4AwAAAAAAABLAAABE
-					AwAAAAAAABDQAADUAwAAAAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2589,59 +5047,6 @@
 			<key>Frames</key>
 			<array>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAANVNUScHQsfSr5ZF
-					91AwG3KME5pcpmm4WoSmbeuWctuVDAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTYx
-					NjUzNjMzNjMzNjM4NjM2MjM5MzE2MjYyMzE2
-					MTMwMzE2MTYyMzE2MjMwNjQ2MjMxMzk2MTM4
-					MzYzODY0NjUzNzMyMzgzODYxNjI2MjMwM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjIzMzYzMzUzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMwMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjAucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					AMWzvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT39MAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{257, 443}, {110.5, 134.75}}</string>
 					<key>Frame-HD</key>
@@ -2664,59 +5069,6 @@
 					<string>penguin_kids_run0</string>
 				</dict>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAPaTR558gLUQe4xY
-					vEjNV7Hywzau/IpPtKes35XE+B9XDAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM1
-					NjYzMTY0MzAzMDYxMzY2MzM1NjY2NTM0Mzkz
-					NzM4NjI2MTM2NjIzNTY0NjI2MTM2MzIzMjM0
-					MzU2NjM1NjMzMTY1MzI2MTY1NjIzOTYxM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjM5NjQzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMxMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjEucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					AJ2vvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT1L0AAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{396, 328}, {110.5, 134.75}}</string>
 					<key>Frame-HD</key>
@@ -2739,59 +5091,6 @@
 					<string>penguin_kids_run1</string>
 				</dict>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAMYlxuT3NGcyjVq+
-					G7qTmNYmCXjtWZG+XTIzHnAskPB/DAQAAKkB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTYx
-					MzQzMzMxNjI2NTM4MzMzNjY0MzU2NjY2Mzk2
-					NTM1MzkzNjM3NjYzOTY1MzI2MjY2MzIzMzM2
-					NjY2NjY0MzgzMzMxMzE2NTYyMzg2NDM5M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjYyMzUzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjcyNzU2ZTMyMmU3MDZlNjcA
-					AAAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABUA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3J1bjIucG5n
-					AAAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					ALWvvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcT1NAAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{2, 523}, {110.5, 134.75}}</string>
 					<key>Frame-HD</key>
@@ -2835,59 +5134,6 @@
 			<key>Frames</key>
 			<array>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazgFAAAAAAQQMAAAAFXaAj0TDY4MdcyF
-					KTo4PbQ4lP3kREdlk3Vj+idooFQnEAQAAK0B
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTY1
-					MzI2NjM1MzI2MTM0MzA2NjYyMzAzMTY0MzUz
-					NzMzMzM2NTM1MzY2MzY0MzEzMDYyMzMzODYz
-					MzUzNTM2MzIzMTY2MzUzMTM2NjE2MjMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjE2NjM4MzQzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNzQ2MTZlNjQzMDJlNzA2
-					ZTY3AAAABQAAAAEBAABVc2VycwAAAAQAAAAB
-					AQAAc2VhbgcAAAABAQAARGVza3RvcAAEAAAA
-					AQEAAHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAA
-					AAEBAABDaGFyYWN0ZXIAAAADAAAAAQEAAHJh
-					dwAXAAAAAQEAAHBlbmd1aW5fa2lkc19zdGFu
-					ZDAucG5nACAAAAABBgAAvAEAAMwBAADYAQAA
-					6AEAAPQBAAAEAgAAGAIAACQCAAAIAAAABAMA
-					AI2RAAAAAAAACAAAAAQDAAA9CQgAAAAAAAgA
-					AAAEAwAASAkIAAAAAAAIAAAABAMAACPCJAEA
-					AAAACAAAAAQDAAB3fr8BAAAAAAgAAAAEAwAA
-					e36/AQAAAAAIAAAABAMAAHx+vwEAAAAACAAA
-					AAQDAACEr78BAAAAACAAAAABBgAAbAIAAHwC
-					AACMAgAAnAIAAKwCAAC8AgAAzAIAANwCAAAI
-					AAAAAAQAAEG3E9SfAAAAGAAAAAECAAABAAAA
-					AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUA
-					AAQAAAADAwAABgAAAAgAAAAEAwAABgAAAAAA
-					AAAEAAAAAQEAAFNlYW4EAAAAAwMAAPUBAAAD
-					AAAAAQEAAE1hYwAIAAAABAMAAAAAoH1RAAAA
-					CAAAAAAEAABBsLZVHwAAACQAAAABAQAAOUJC
-					NUY4NzYtRjIyRC0zRTU0LUE4RjQtQjU1MUYw
-					REFBQzNCGAAAAAECAACBAAAAAQAIAO8/AAAB
-					AAgAAAAAAAAAAAABAAAAAQEAAC8AAAAEAAAA
-					AwMAAAAIACjwAAAA/v///wEAAAAAAAAAEwAA
-					AAQQAABEAgAAAAAAAAUQAADsAgAAAAAAABAQ
-					AAAkAwAAAAAAAEAQAAAUAwAAAAAAAFQQAABM
-					AwAAAAAAAFUQAABMAwAAAAAAAFYQAABEAwAA
-					AAAAAAIRAAAEAAAAAAAAAAIgAAD4AwAAAAAA
-					ABAgAACAAwAAAAAAABEgAACsAwAAAAAAABIg
-					AACMAwAAAAAAABMgAACcAwAAAAAAACAgAADY
-					AwAAAAAAADAgAABEAwAAAAAAAAHAAABYAwAA
-					AAAAABHAAABoAwAAAAAAABLAAAB0AwAAAAAA
-					ABDQAAAEBAAAAAAAAA==
-					</data>
 					<key>Frame</key>
 					<string>{{257, 328}, {110.5, 134.75}}</string>
 					<key>Frame-HD</key>
@@ -2931,59 +5177,6 @@
 			<key>Frames</key>
 			<array>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazgFAAAAAAQQMAAAANb3NZ813aD/Ien5
-					YqSwLB1Tt9cbHhUDO1eFGjBjU9ctEAQAAK0B
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTY2
-					NjQ2NDM3NjQ2NjMyNjU2NjM0Mzk2NTMwMzkz
-					MTM4NjEzODMwMzgzNjMyMzU2MjMxMzczMzMy
-					NjQzMjY1Mzc2MTY0NjU2MzMwMzYzNzMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2MzczYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwNWYzMDJlNzA2
-					ZTY3AAAABQAAAAEBAABVc2VycwAAAAQAAAAB
-					AQAAc2VhbgcAAAABAQAARGVza3RvcAAEAAAA
-					AQEAAHRlbXAHAAAAAQEAAHBlbmd1aW4ACQAA
-					AAEBAABDaGFyYWN0ZXIAAAADAAAAAQEAAHJh
-					dwAXAAAAAQEAAHBlbmd1aW5fa2lkc19zbGlw
-					XzAucG5nACAAAAABBgAAvAEAAMwBAADYAQAA
-					6AEAAPQBAAAEAgAAGAIAACQCAAAIAAAABAMA
-					AI2RAAAAAAAACAAAAAQDAAA9CQgAAAAAAAgA
-					AAAEAwAASAkIAAAAAAAIAAAABAMAACPCJAEA
-					AAAACAAAAAQDAAB3fr8BAAAAAAgAAAAEAwAA
-					e36/AQAAAAAIAAAABAMAAHx+vwEAAAAACAAA
-					AAQDAAD3478BAAAAACAAAAABBgAAbAIAAHwC
-					AACMAgAAnAIAAKwCAAC8AgAAzAIAANwCAAAI
-					AAAAAAQAAEG3FBrhAAAAGAAAAAECAAABAAAA
-					AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUA
-					AAQAAAADAwAABgAAAAgAAAAEAwAABgAAAAAA
-					AAAEAAAAAQEAAFNlYW4EAAAAAwMAAPUBAAAD
-					AAAAAQEAAE1hYwAIAAAABAMAAAAAoH1RAAAA
-					CAAAAAAEAABBsLZVHwAAACQAAAABAQAAOUJC
-					NUY4NzYtRjIyRC0zRTU0LUE4RjQtQjU1MUYw
-					REFBQzNCGAAAAAECAACBAAAAAQAIAO8/AAAB
-					AAgAAAAAAAAAAAABAAAAAQEAAC8AAAAEAAAA
-					AwMAAAAIACjwAAAA/v///wEAAAAAAAAAEwAA
-					AAQQAABEAgAAAAAAAAUQAADsAgAAAAAAABAQ
-					AAAkAwAAAAAAAEAQAAAUAwAAAAAAAFQQAABM
-					AwAAAAAAAFUQAABMAwAAAAAAAFYQAABEAwAA
-					AAAAAAIRAAAEAAAAAAAAAAIgAAD4AwAAAAAA
-					ABAgAACAAwAAAAAAABEgAACsAwAAAAAAABIg
-					AACMAwAAAAAAABMgAACcAwAAAAAAACAgAADY
-					AwAAAAAAADAgAABEAwAAAAAAAAHAAABYAwAA
-					AAAAABHAAABoAwAAAAAAABLAAAB0AwAAAAAA
-					ABDQAAAEBAAAAAAAAA==
-					</data>
 					<key>Frame</key>
 					<string>{{396, 467}, {157.75, 92.5}}</string>
 					<key>Frame-HD</key>
@@ -3006,59 +5199,6 @@
 					<string>penguin_kids_slip_0</string>
 				</dict>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAP+hB/+uGDrXeG+J
-					U1Ik+keqYktG+iboZERB7VWsfCyYDAQAAKsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM2
-					NjE2MzM2MzU2NTM2NjM2MTYzMzI2MzYxMzY2
-					NTYyMzYzNTMwNjEzNzMzNjI2NjY1MzczODMz
-					MzkzNjYzMzQzNzM0MzM2MjMwMzAzMTM3M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2MzkzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwMzEyZTcwNmU2
-					NwAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABYA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3NsaXAxLnBu
-					ZwAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					APnjvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcUGvIAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{161, 424}, {157.75, 92.5}}</string>
 					<key>Frame-HD</key>
@@ -3081,59 +5221,6 @@
 					<string>penguin_kids_slip1</string>
 				</dict>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vazQFAAAAAAQQMAAAAGUsqRnJTf3UmbIX
-					BJBPgn5zqlCZM4XMODxzV18tafySDAQAAKsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMx
-					NjMzMzMwNjMzNTYzNjMzNzM0MzEzNzM2Mzkz
-					MzMyNjM2MjYxMzEzMDM1NjMzNTMwMzMzNDYz
-					MzE2MTYzNjUzNjY1MzczNzY0MzU2NDY2M2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MjY2NjUzMzY2NjEzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY3MDY1NmU2Nzc1Njk2ZTVm
-					NmI2OTY0NzM1ZjczNmM2OTcwMzIyZTcwNmU2
-					NwAFAAAAAQEAAFVzZXJzAAAABAAAAAEBAABz
-					ZWFuBwAAAAEBAABEZXNrdG9wAAQAAAABAQAA
-					dGVtcAcAAAABAQAAcGVuZ3VpbgAJAAAAAQEA
-					AENoYXJhY3RlcgAAAAMAAAABAQAAcmF3ABYA
-					AAABAQAAcGVuZ3Vpbl9raWRzX3NsaXAyLnBu
-					ZwAAIAAAAAEGAAC4AQAAyAEAANQBAADkAQAA
-					8AEAAAACAAAUAgAAIAIAAAgAAAAEAwAAjZEA
-					AAAAAAAIAAAABAMAAD0JCAAAAAAACAAAAAQD
-					AABICQgAAAAAAAgAAAAEAwAAI8IkAQAAAAAI
-					AAAABAMAAHd+vwEAAAAACAAAAAQDAAB7fr8B
-					AAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAABAMA
-					APrjvwEAAAAAIAAAAAEGAABoAgAAeAIAAIgC
-					AACYAgAAqAIAALgCAADIAgAA2AIAAAgAAAAA
-					BAAAQbcUGwQAAAAYAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAABAAA
-					AAMDAAAGAAAACAAAAAQDAAAGAAAAAAAAAAQA
-					AAABAQAAU2VhbgQAAAADAwAA9QEAAAMAAAAB
-					AQAATWFjAAgAAAAEAwAAAACgfVEAAAAIAAAA
-					AAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1Rjg3
-					Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBEQUFD
-					M0IYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-					AAAAAAAAAAEAAAABAQAALwAAAAQAAAADAwAA
-					AAgAKPAAAAD+////AQAAAAAAAAATAAAABBAA
-					AEACAAAAAAAABRAAAOgCAAAAAAAAEBAAACAD
-					AAAAAAAAQBAAABADAAAAAAAAVBAAAEgDAAAA
-					AAAAVRAAAEgDAAAAAAAAVhAAAEADAAAAAAAA
-					AhEAAAQAAAAAAAAAAiAAAPQDAAAAAAAAECAA
-					AHwDAAAAAAAAESAAAKgDAAAAAAAAEiAAAIgD
-					AAAAAAAAEyAAAJgDAAAAAAAAICAAANQDAAAA
-					AAAAMCAAAEADAAAAAAAAAcAAAFQDAAAAAAAA
-					EcAAAGQDAAAAAAAAEsAAAHADAAAAAAAAENAA
-					AAAEAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{161, 262}, {157.75, 92.5}}</string>
 					<key>Frame-HD</key>
@@ -3177,58 +5264,6 @@
 			<key>Frames</key>
 			<array>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vaxwFAAAAAAQQMAAAAIsvB3m5NqWsfJQD
-					x1EFPOtPAMPQObk9lLJm1o5B49549AMAAJsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM1
-					MzYzNjY0MzgzNTM0MzQ2MjM5MzY2NjMzMzI2
-					MjY1MzY2NTYxMzQzNTMxMzAzMTY1NjEzNzY2
-					MzI2MTM0NjIzNzM1MzYzNjM3MzY2MjMxM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzA2MTM1MzYzYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY2NTYxNjc2YzY1NWY2NjZj
-					NzkzMDJlNzA2ZTY3AAUAAAABAQAAVXNlcnMA
-					AAAEAAAAAQEAAHNlYW4HAAAAAQEAAERlc2t0
-					b3AABAAAAAEBAAB0ZW1wBwAAAAEBAABwZW5n
-					dWluAAkAAAABAQAAQ2hhcmFjdGVyAAAAAwAA
-					AAEBAAByYXcADgAAAAEBAABlYWdsZV9mbHkw
-					LnBuZwAAIAAAAAEGAACoAQAAuAEAAMQBAADU
-					AQAA4AEAAPABAAAEAgAAEAIAAAgAAAAEAwAA
-					jZEAAAAAAAAIAAAABAMAAD0JCAAAAAAACAAA
-					AAQDAABICQgAAAAAAAgAAAAEAwAAI8IkAQAA
-					AAAIAAAABAMAAHd+vwEAAAAACAAAAAQDAAB7
-					fr8BAAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAA
-					BAMAAFYKwAEAAAAAIAAAAAEGAABQAgAAYAIA
-					AHACAACAAgAAkAIAAKACAACwAgAAwAIAAAgA
-					AAAABAAAQbcVQusAAAAYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAA
-					BAAAAAMDAAAGAAAACAAAAAQDAAAGAAAAAAAA
-					AAQAAAABAQAAU2VhbgQAAAADAwAA9QEAAAMA
-					AAABAQAATWFjAAgAAAAEAwAAAACgfVEAAAAI
-					AAAAAAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1
-					Rjg3Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBE
-					QUFDM0IYAAAAAQIAAIEAAAABAAgA7z8AAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAACgCAAAAAAAABRAAANACAAAAAAAAEBAA
-					AAgDAAAAAAAAQBAAAPgCAAAAAAAAVBAAADAD
-					AAAAAAAAVRAAADADAAAAAAAAVhAAACgDAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAANwDAAAAAAAA
-					ECAAAGQDAAAAAAAAESAAAJADAAAAAAAAEiAA
-					AHADAAAAAAAAEyAAAIADAAAAAAAAICAAALwD
-					AAAAAAAAMCAAACgDAAAAAAAAAcAAADwDAAAA
-					AAAAEcAAAEwDAAAAAAAAEsAAAFgDAAAAAAAA
-					ENAAAOgDAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{262, 2}, {172.5, 159}}</string>
 					<key>Frame-HD</key>
@@ -3251,58 +5286,6 @@
 					<string>eagle_fly0</string>
 				</dict>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vaxwFAAAAAAQQMAAAAB2V0wod64Nhhi7G
-					NynDP7l5ObBbceGDHvxuZTj0+kr19AMAAJsB
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM3
-					MzE2MjMzMzEzNzYxMzk2MzYyNjUzNzM0MzQz
-					NDM2MzczNzM0MzE2NTM1MzMzNDMyMzg2NTMx
-					MzQ2NjY2Mzk2NTM3MzczOTM4NjI2MjMzM2Iz
-					MDMwMzAzMDMwMzAzMDMwM2IzMDMwMzAzMDMw
-					MzAzMDMwMzAzMDMwMzAzMDMwMzIzMDNiNjM2
-					ZjZkMmU2MTcwNzA2YzY1MmU2MTcwNzAyZDcz
-					NjE2ZTY0NjI2Zjc4MmU3MjY1NjE2NDJkNzc3
-					MjY5NzQ2NTNiMzAzMDMwMzAzMDMwMzAzMTNi
-					MzAzMTMwMzAzMDMwMzAzMTNiMzAzMDMwMzAz
-					MDMwMzAzMDMwMzE2MzMwMzA2MTM1MzczYjJm
-					NzU3MzY1NzI3MzJmNzM2NTYxNmUyZjY0NjU3
-					MzZiNzQ2ZjcwMmY3NDY1NmQ3MDJmNzA2NTZl
-					Njc3NTY5NmUyZjYzNjg2MTcyNjE2Mzc0NjU3
-					MjJmNzI2MTc3MmY2NTYxNjc2YzY1NWY2NjZj
-					NzkzMTJlNzA2ZTY3AAUAAAABAQAAVXNlcnMA
-					AAAEAAAAAQEAAHNlYW4HAAAAAQEAAERlc2t0
-					b3AABAAAAAEBAAB0ZW1wBwAAAAEBAABwZW5n
-					dWluAAkAAAABAQAAQ2hhcmFjdGVyAAAAAwAA
-					AAEBAAByYXcADgAAAAEBAABlYWdsZV9mbHkx
-					LnBuZwAAIAAAAAEGAACoAQAAuAEAAMQBAADU
-					AQAA4AEAAPABAAAEAgAAEAIAAAgAAAAEAwAA
-					jZEAAAAAAAAIAAAABAMAAD0JCAAAAAAACAAA
-					AAQDAABICQgAAAAAAAgAAAAEAwAAI8IkAQAA
-					AAAIAAAABAMAAHd+vwEAAAAACAAAAAQDAAB7
-					fr8BAAAAAAgAAAAEAwAAfH6/AQAAAAAIAAAA
-					BAMAAFcKwAEAAAAAIAAAAAEGAABQAgAAYAIA
-					AHACAACAAgAAkAIAAKACAACwAgAAwAIAAAgA
-					AAAABAAAQbcVQvsAAAAYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAA
-					BAAAAAMDAAAGAAAACAAAAAQDAAAGAAAAAAAA
-					AAQAAAABAQAAU2VhbgQAAAADAwAA9QEAAAMA
-					AAABAQAATWFjAAgAAAAEAwAAAACgfVEAAAAI
-					AAAAAAQAAEGwtlUfAAAAJAAAAAEBAAA5QkI1
-					Rjg3Ni1GMjJELTNFNTQtQThGNC1CNTUxRjBE
-					QUFDM0IYAAAAAQIAAIEAAAABAAgA7z8AAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAACgCAAAAAAAABRAAANACAAAAAAAAEBAA
-					AAgDAAAAAAAAQBAAAPgCAAAAAAAAVBAAADAD
-					AAAAAAAAVRAAADADAAAAAAAAVhAAACgDAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAANwDAAAAAAAA
-					ECAAAGQDAAAAAAAAESAAAJADAAAAAAAAEiAA
-					AHADAAAAAAAAEyAAAIADAAAAAAAAICAAALwD
-					AAAAAAAAMCAAACgDAAAAAAAAAcAAADwDAAAA
-					AAAAEcAAAEwDAAAAAAAAEsAAAFgDAAAAAAAA
-					ENAAAOgDAAAAAAAA
-					</data>
 					<key>Frame</key>
 					<string>{{262, 165}, {172.5, 159}}</string>
 					<key>Frame-HD</key>
