@@ -5391,7 +5391,7 @@
 					<key>UniqueName</key>
 					<string>Characters</string>
 					<key>ZOrder</key>
-					<integer>1</integer>
+					<integer>3</integer>
 				</dict>
 			</array>
 			<key>CustomClassInfo</key>

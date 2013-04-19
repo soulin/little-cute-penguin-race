@@ -29,7 +29,7 @@ enum playerState
 #pragma mark - Extention
 @interface Level_1 (Private)
 - (void)initProperties;
-
+- (void)preloadParticles;
 - (int)playerState;
 @end
 //Level_1 implementation
@@ -112,6 +112,9 @@ enum playerState
         //create all objects from the level file and adds them to the cocos2d layer (self)
         [_loader addObjectsToWorld:world cocos2dLayer:self];
         ///////////////////////////////////////////////////////////////////////
+        //Preload particles
+        [self preloadParticles];
+        ///////////////////////////////////////////////////////////////////////
         //Init properties
         [self initProperties];
 		///////////////////////////////////////////////////////////////////////
@@ -129,12 +132,17 @@ enum playerState
         ///////////////////////////////////////////////////////////////////////
         //Make the camera follow Player_1
         CGRect gameWorldRect = [_loader gameWorldSize]; //the size of the game world
-        LHLayer *mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
         LHParallaxNode *parallax_Level_1 = [_loader parallaxNodeWithUniqueName:@"Parallax_Level_1"];
         CCFollow *followActionMainLayer = [CCFollow actionWithTarget:_player_1 worldBoundary:gameWorldRect];
         CCFollow *followActionParallaxNode = [CCFollow actionWithTarget:_player_1 worldBoundary:gameWorldRect];
-        [mainLayer runAction:followActionMainLayer];
+        [_mainLayer runAction:followActionMainLayer];
+                
         [parallax_Level_1 runAction:followActionParallaxNode];
+        ///////////////////////////////////////////////////////////////////////
+        //Particles
+        _particleWindSnow = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"blizzard.plist"];
+        _particleWindSnow.positionType = kCCPositionTypeRelative;
+        [_mainLayer addChild:_particleWindSnow z:2];
         ///////////////////////////////////////////////////////////////////////
 		[self schedule: @selector(tick:)];
 	}
@@ -221,6 +229,16 @@ enum playerState
         }
             break;
     }
+    ///////////////////////////////////////////////////////////////////////
+    //Particles position
+    float windSnowPositionX = _player_1.position.x;
+    float windSnowPositionY = _particleWindSnow.position.y;
+    float particleMaxX = [_loader gameWorldSize].size.width - WIN_SIZE.width / 2;
+    if (windSnowPositionX < particleMaxX)
+    {
+        [_particleWindSnow setPosition:ccp(windSnowPositionX, windSnowPositionY)];
+    }
+    ///////////////////////////////////////////////////////////////////////
 }
 ///////////////////////////////////////////////////////////////////////
 #pragma mark - Accelerometer
@@ -289,7 +307,10 @@ enum playerState
 -(void)beginEndCollisionBetweenKidAndSeal:(LHContactInfo*)contact
 {
 	if([contact contactType])
-    	NSLog(@"Kid ... Seal begin contact");
+    {
+        NSLog(@"Kid ... Seal begin contact");
+        //NSLog(@"Player's position is (%.2f, %.2f)", _player_1.position.x, _player_1.position.y);
+    }
     else
 	    NSLog(@"Kid ... Seal end contact");
 }
@@ -301,12 +322,18 @@ enum playerState
     _levelDirector = [RPLevelDirector sharedLevelDirector];
     _gameManager = [RPGameManager sharedGameManager];
     _playerCountInMultiplayerMode = 2;
+    _mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
     _player_1 = [_loader spriteWithUniqueName:@"penguin_kid"];
     //Multiplayer mode players init
     if ([_gameManager isGameModeMultiplayer])
     {
         //Do something interesting here
     }
+}
+///////////////////////////////////////////////////////////////////////
+- (void)preloadParticles
+{
+    [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"blizzard.plist"];
 }
 ///////////////////////////////////////////////////////////////////////
 - (int)playerState

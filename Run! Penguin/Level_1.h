@@ -27,7 +27,10 @@
     //multiplayer mode
     int _playerCountInMultiplayerMode;
     
+    LHLayer *_mainLayer;
     LHSprite *_player_1;
+    //Particles
+    CCParticleSystem *_particleWindSnow;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
