@@ -3,15 +3,17 @@
 //  Run! Penguin
 //
 //  Created by Sean on 13-4-15.
-//  RPLevelDirector is a singleton, which is in charge of level transition, sound
-//  effects, game music, touch dispatches, collision handling, game objects' animations
+//  RPLevelDirector is a singleton, which is in charge of level loading progress and
+//  transition, sound effects, game music, touch dispatches, collision handling, game
+//  objects' animations
 //
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "LevelHelperLoader.h"
+#import "RPLevelTemplate.h"
 
-@interface RPLevelDirector : NSObject
+@interface RPLevelDirector : NSObject <RPLeveLoadingProgress>
 {
     NSOperationQueue *_initNewSceneQueue;
     float _levelLoadingPercentage;
@@ -35,7 +37,7 @@
 + (RPLevelDirector *)sharedLevelDirector;
 //Replace scene
 - (void)replaceScene:(CCScene *)newScene;
-//RPLevelLoadingProgress method
+//RPLevelLoadingProgress Protocol method
 - (void)loadingProgress:(NSNumber *)progress;
 //Sounds
 - (void)preloadSoundEffects;

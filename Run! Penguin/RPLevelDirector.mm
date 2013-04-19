@@ -14,7 +14,6 @@
 #import "SimpleAudioEngine.h"
 #import "RPGameHelper.h"
 #import "RPGameManager.h"
-#import "RPLevelTemplate.h"
 
 @interface RPLevelDirector (Private)
 - (void)registerWithLHTouchMgr;

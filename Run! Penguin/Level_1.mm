@@ -244,9 +244,9 @@ enum playerState
 #pragma mark - Accelerometer
 - (void)accelerometer:(UIAccelerometer*)accelerometer didAccelerate:(UIAcceleration*)acceleration
 {
-    //When device orientation is landscapeleft upright, the G direction is X+, the
-    //back side of device is Z-, home button is Y-
-	static float previousX=0, previousY=0, previousZ=0;
+    ///////////////////////////////////////////////////////////////////////
+    UIDevice *device = [UIDevice currentDevice];
+    static float previousX=0, previousY=0, previousZ=0;
     b2Body *playerBody = [_player_1 body];
     //float positionX = _player_1.position.x;
     //float positionY = _player_1.position.y;
@@ -261,34 +261,81 @@ enum playerState
     //Player position transitions
     float transitionX = 0;
     float transitionY = 0;
-    
-    //Player transform
-    if (acceleration.x > 0.85f)
+    ///////////////////////////////////////////////////////////////////////
+    switch (device.orientation)
     {
-        //Player should move down
-        transitionY = - kPlayerVelocity;
+        case UIDeviceOrientationLandscapeRight:
+        {
+            //When device orientation is landscaperight upright, the G direction is X+, the
+            //back side of device is Z-, home button is Y-
+            //Player transform
+            if (acceleration.x > 0.85f)
+            {
+                //Player should move down
+                transitionY = - kPlayerVelocity;
+            }
+            if (acceleration.x < 0.83f && acceleration.x > - 0.4f)
+            {
+                //Player should move up
+                transitionY = kPlayerVelocity;
+            }
+            if (acceleration.y > 0)
+            {
+                //Player should speed up
+                transitionX = kPlayerVelocity;
+            }
+            if (acceleration.y < 0)
+            {
+                //Player should slow down
+                transitionX = kPlayerVelocity;
+                transitionX = transitionX - 0.5f;
+                transitionX = MAX(0, transitionX);
+            }
+            if (acceleration.z < 0.4f)
+            {
+                //It is the same status as X > 0.6f
+            }
+        }
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+        {
+            //When device orientation is landscapeleft upright, the G direction is X-, the
+            //back side of device is Z-, home button is Y-
+            if (acceleration.x < -0.85f)
+            {
+                //Player should move down
+                transitionY = - kPlayerVelocity;
+            }
+            if (acceleration.x > -0.83f && acceleration.x < 0.4f)
+            {
+                //Player should move up
+                transitionY = kPlayerVelocity;
+            }
+            if (acceleration.y < 0)
+            {
+                //Player should speed up
+                transitionX = kPlayerVelocity;
+            }
+            if (acceleration.y > 0)
+            {
+                //Player should slow down
+                transitionX = kPlayerVelocity;
+                transitionX = transitionX - 0.5f;
+                transitionX = MAX(0, transitionX);
+            }
+            if (acceleration.z < 0.4f)
+            {
+                //It is the same status as X > 0.6f
+            }
+        }
+            break;
+        default:
+        {
+            
+        }
+            break;
     }
-    if (acceleration.x < 0.83f && acceleration.x > - 0.4f)
-    {
-        //Player should move up
-        transitionY = kPlayerVelocity;
-    }
-    if (acceleration.y > 0)
-    {
-        //Player should speed up
-        transitionX = kPlayerVelocity;
-    }
-    if (acceleration.y < 0)
-    {
-        //Player should slow down
-        transitionX = kPlayerVelocity;
-        transitionX = transitionX - 0.5f;
-        transitionX = MAX(0, transitionX);
-    }
-    if (acceleration.z < 0.4f)
-    {
-        //It is the same status as X > 0.6f
-    }
+    ///////////////////////////////////////////////////////////////////////
     b2Vec2 transitionVelocity = b2Vec2(transitionX, transitionY);
     //playerBody->SetTransform(transitionPos, 0);
     playerBody->SetLinearVelocity(transitionVelocity);
@@ -296,11 +343,6 @@ enum playerState
 	previousX = accelerationX;
 	previousY = accelerationY;
 	previousZ = accelerationZ;
-//	// accelerometer values are in "Portrait" mode. Change them to Landscape left
-//	// multiply the gravity by 10
-//	b2Vec2 gravity( -accelY * 10, accelX * 10);
-//	
-//	world->SetGravity( gravity );
 }
 ///////////////////////////////////////////////////////////////////////
 #pragma mark - Collision handling
