@@ -15,6 +15,9 @@
 
 @interface RPLevelDirector : NSObject <RPLeveLoadingProgress>
 {
+    //Level state
+    BOOL _isLevelStatePausedManually;
+    BOOL _isLevelStateSceneTransition;
     NSOperationQueue *_initNewSceneQueue;
     float _levelLoadingPercentage;
     NSMutableArray *_backgroundMusicList;
@@ -25,6 +28,8 @@
     CCLayer *_currentLayer;
     LevelHelperLoader *_currentLHLoader;
 }
+@property (assign,nonatomic,readwrite) BOOL isLevelStatePausedManually;
+@property (assign,nonatomic,readwrite) BOOL isLevelStateSceneTransition;
 @property (retain,nonatomic,readwrite) NSOperationQueue *initNewSceneQueue;
 @property (assign,nonatomic,readwrite) float levelLoadingPercentage;
 @property (retain,nonatomic) NSMutableArray *backgroundMusicList;

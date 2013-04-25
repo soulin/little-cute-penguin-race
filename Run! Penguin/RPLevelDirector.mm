@@ -21,6 +21,9 @@
 @end
 
 @implementation RPLevelDirector
+@synthesize isLevelStatePausedManually = _isLevelStatePausedManually;
+@synthesize isLevelStateSceneTransition = _isLevelStateSceneTransition;
+
 @synthesize initNewSceneQueue = _initNewSceneQueue;
 @synthesize levelLoadingPercentage = _levelLoadingPercentage;
 @synthesize backgroundMusicList = _backgroundMusicList;
@@ -44,6 +47,8 @@
 - (id)init
 {
     self = [super init];
+    [self setIsLevelStatePausedManually:NO];
+    [self setIsLevelStateSceneTransition:NO];
     self.initNewSceneQueue = [[[NSOperationQueue alloc] init] autorelease];
     [[self initNewSceneQueue] setMaxConcurrentOperationCount:1];
     //Listen to the notification to update loading progress accordingly
@@ -62,6 +67,7 @@
     [self preloadSoundEffects];
     return self;
 }
+//////////////////////////////////////////////////////////////////////////
 #pragma mark - Sound effect
 - (void)backgroundMusicDidFinishPlay
 {
@@ -264,7 +270,7 @@
 ///////////////////////////////////////////////////////////////////
 - (void)newSceneIsInitializing
 {
-    [[RPGameManager sharedGameManager] setIsGameStateSceneTransition:YES];
+    [self setIsLevelStateSceneTransition:YES];
 }
 ///////////////////////////////////////////////////////////////////
 - (void)newSceneDidBecomeCurrentScene:(NSNotification *)notification
@@ -272,7 +278,7 @@
     //Enable touch even after new scene init completely
     [[CCTouchDispatcher sharedDispatcher] setDispatchEvents:YES];
     CCScene *scene = [notification object];
-    [[RPGameManager sharedGameManager] setIsGameStateSceneTransition:NO];
+    [self setIsLevelStateSceneTransition:NO];
     [self setCurrentScene:scene];
     CCLayer *layer = [[scene children] objectAtIndex:0];
     [self setCurrentLayer:layer];
@@ -335,9 +341,9 @@
 #pragma mark - Touch handler
 - (void)touchBegan:(LHTouchInfo *)info
 {
-    RPGameManager *gameManager = [RPGameManager sharedGameManager];
+    //RPGameManager *gameManager = [RPGameManager sharedGameManager];
     CCLayer *layer = [self currentLayer];
-    if (![gameManager isGameStateSceneTransition])
+    if (![self isLevelStateSceneTransition])
     {
         //Implement touch began logic here
         int tag = info.sprite.tag;
@@ -357,9 +363,9 @@
 }
 - (void)touchEnded:(LHTouchInfo *)info
 {
-    RPGameManager *gameManager = [RPGameManager sharedGameManager];
+    //RPGameManager *gameManager = [RPGameManager sharedGameManager];
     CCLayer *layer = [self currentLayer];
-    if (![gameManager isGameStateSceneTransition])
+    if (![self isLevelStateSceneTransition])
     {
         //Implement touch ended logic here
         int tag = info.sprite.tag;
@@ -379,9 +385,9 @@
 }
 - (void) handlePanFrom:(UIPanGestureRecognizer *)recognizer
 {
-    RPGameManager *gameManager = [RPGameManager sharedGameManager];
+    //RPGameManager *gameManager = [RPGameManager sharedGameManager];
     CCLayer *layer = [self currentLayer];
-    if (![gameManager isGameStateSceneTransition])
+    if (![self isLevelStateSceneTransition])
     {
         //Implement pan gesture logic here
         if ([layer respondsToSelector:@selector(handlePanFrom:)])

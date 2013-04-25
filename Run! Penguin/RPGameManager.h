@@ -11,17 +11,42 @@
 #import <GameKit/GameKit.h>
 #import "RPGameHelper.h"
 
-@interface RPGameManager : NSObject <GKLeaderboardViewControllerDelegate>
+//RPGameState
+typedef enum
 {
+    kRPGameStateUnavailable = 0,
+    kRPGameStateWaitingForMatch,
+    kRPGameStateWaitingForRandomNumber,
+    kRPGameStateWaitingForStart,
+    kRPGameStateActive,
+    kRPGameStateDone
+} RPGameState;
+//RPGameMode
+typedef enum
+{
+    KRPGameModeInvalid = 0,
+    kRPGameModeSingle,
+    kRPGameModeMultiple,
+} RPGameMode;
+//RPGameManager
+@interface RPGameManager : NSObject <GKLeaderboardViewControllerDelegate,GKMatchmakerViewControllerDelegate, GKMatchDelegate>
+{
+    //RootViewController
+    UIViewController *_rootViewController;
+    //GKMatch
+    GKMatch *_match;
+    //Players to invite
+    NSMutableArray *_playersToInvite;
     //Game state identifier
-    BOOL _isGamePausedManually;
-    BOOL _isGameStateSceneTransition;
+    RPGameState _gameState;
     //Game mode identifier
-    BOOL _isGameModeMultiplayer;
+    RPGameMode _gameMode;
+    //GKMath
+    
 }
-@property (assign,nonatomic,readwrite) BOOL isGamePausedManually;
-@property (assign,nonatomic,readwrite) BOOL isGameStateSceneTransition;
-@property (assign,nonatomic,readwrite) BOOL isGameModeMultiplayer;
+@property (retain,nonatomic,readwrite) GKMatch *match;
+@property (assign,nonatomic,readwrite) RPGameState gameState;
+@property (assign,nonatomic,readwrite) RPGameMode gameMode;
 
 + (RPGameManager *)sharedGameManager;
 

@@ -367,7 +367,7 @@ enum playerState
     _mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
     _player_1 = [_loader spriteWithUniqueName:@"penguin_kid"];
     //Multiplayer mode players init
-    if ([_gameManager isGameModeMultiplayer])
+    if ([_gameManager gameMode] == kRPGameModeMultiple)
     {
         //Do something interesting here
     }

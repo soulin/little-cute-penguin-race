@@ -9,9 +9,9 @@
 #import "RPGameManager.h"
 
 @implementation RPGameManager
-@synthesize isGamePausedManually = _isGamePausedManually;
-@synthesize isGameStateSceneTransition = _isGameStateSceneTransition;
-@synthesize isGameModeMultiplayer = _isGameModeMultiplayer;
+@synthesize match = _match;
+@synthesize gameState = _gameState;
+@synthesize gameMode = _gameMode;
 
 #pragma mark - Sigleton initialization methods
 + (RPGameManager *)sharedGameManager
@@ -27,9 +27,9 @@
 - (id)init
 {
     self = [super init];
-    _isGameModeMultiplayer = NO;
-    _isGamePausedManually = NO;
-    _isGameStateSceneTransition = NO;
+    _rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    self.gameState = kRPGameStateWaitingForMatch;
+    self.gameMode = kRPGameModeSingle;
     //Listen to the notification to handle player change event
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(authenticationDidChanged:) name:RPGameCenterLocalPlayerAuthenticationChanged object:nil];
     return self;
@@ -65,6 +65,33 @@
             else if (localPlayer.isAuthenticated)
             {
                 //Local player is authenticated
+                //Installing an invitation handler
+                [GKMatchmaker sharedMatchmaker].inviteHandler = ^(GKInvite *acceptedInvite, NSArray *playersToInvite)
+                {
+                    // Insert game-specific code here to clean up any game in progress.
+                    if (acceptedInvite)
+                    {
+                        GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc] initWithInvite:acceptedInvite];
+                        mmvc.matchmakerDelegate = self;
+                        if (_rootViewController)
+                        {
+                            [_rootViewController presentViewController:mmvc animated:YES completion:nil];
+                        }
+                    }
+                    else if (playersToInvite)
+                    {
+                        GKMatchRequest *request = [[GKMatchRequest alloc] init];
+                        request.minPlayers = 2;
+                        request.maxPlayers = 4;
+                        request.playersToInvite = playersToInvite;
+                        GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc] initWithMatchRequest:request];
+                        mmvc.matchmakerDelegate = self;
+                        if (_rootViewController)
+                        {
+                            [_rootViewController presentViewController:mmvc animated:YES completion:nil];
+                        }
+                    }
+                };
             }
             else
             {
@@ -214,5 +241,53 @@
 {
     NSLog(@"Received CSGameCenterLocalPlayerAuthenticationChanged notification");
     [self authenticateLocalPlayer];
+}
+///////////////////////////////////////////////////////////////////
+#pragma mark - GKMatchmakerViewControllerDelegate
+//User cancel match finding
+- (void)matchmakerViewControllerWasCancelled:(GKMatchmakerViewController *)viewController
+{
+    if (_rootViewController)
+    {
+        [_rootViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+///////////////////////////////////////////////////////////////////
+//Match finding failed
+- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFailWithError:(NSError *)error
+{
+    if (_rootViewController)
+    {
+        [_rootViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    NSLog(@"%@Error finding match: %@", SELECTOR_STRING, error.localizedDescription);
+}
+///////////////////////////////////////////////////////////////////
+//Called when a peer-to-peer match is found
+- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFindMatch:(GKMatch *)match
+{
+    if (_rootViewController)
+    {
+        [_rootViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    self.match = match;
+    match.delegate = self;
+    if (self.gameState == kRPGameStateWaitingForMatch && match.expectedPlayerCount == 0)
+    {
+        self.gameState = kRPGameStateWaitingForStart;
+        // Insert game-specific code to start the match.
+    }
+}
+///////////////////////////////////////////////////////////////////
+#pragma mark GKMatchDelegate 
+// The match received data sent from the player
+- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID
+{
+    if (self.match != theMatch)
+    {
+        return;
+    }
+    //Handle the data here
+    
 }
 @end
