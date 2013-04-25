@@ -281,9 +281,9 @@
 ///////////////////////////////////////////////////////////////////
 #pragma mark GKMatchDelegate 
 // The match received data sent from the player
-- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID
+- (void)match:(GKMatch *)match didReceiveData:(NSData *)data fromPlayer:(NSString                                                                         *)playerID
 {
-    if (self.match != theMatch)
+    if (self.match != match)
     {
         return;
     }
