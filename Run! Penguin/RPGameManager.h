@@ -59,5 +59,8 @@ typedef enum
 - (void)completeMultipleAchievements;
 - (void)loadAchievements;
 - (void)showVIPLeaderBoard;
-
+//Match handler
+- (void)chooseBestServer;
+- (void)initMatchWithRequest:(GKMatchRequest *)request;
+- (void)disconnectFromMatch;
 @end

@@ -236,6 +236,39 @@
      }];
 }
 ///////////////////////////////////////////////////////////////////
+#pragma mark - Match handler
+- (void)chooseBestServer
+{
+    [_match chooseBestHostPlayerWithCompletionHandler:^(NSString *playerID)
+    {
+        if (playerID)
+        {
+            //Choose the best server here
+        }
+    }];
+}
+- (void)initMatchWithRequest:(GKMatchRequest *)request
+{
+    GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc]
+                                        initWithMatchRequest:request];
+    mmvc.matchmakerDelegate = self;
+    [_rootViewController presentViewController:mmvc animated:YES completion:nil];
+    //Add players to existing match if we have one
+    if ([self match])
+    {
+        [mmvc addPlayersToMatch:self.match];
+    }
+}
+///////////////////////////////////////////////////////////////////
+- (void)disconnectFromMatch
+{
+    if (!self.match)
+    {
+        return;
+    }
+    [[self match] disconnect];
+}
+///////////////////////////////////////////////////////////////////
 #pragma mark - Notification observer
 - (void)authenticationDidChanged:(NSNotification *)notification
 {
@@ -290,4 +323,24 @@
     //Handle the data here
     
 }
+///////////////////////////////////////////////////////////////////
+//Player state changed
+- (void)match:(GKMatch *)match player:(NSString *)playerID
+didChangeState:(GKPlayerConnectionState)state
+{
+    switch (state)
+    {
+        case GKPlayerStateConnected:
+            // Handle a new player connection.
+            break;
+        case GKPlayerStateDisconnected:
+            // A player just disconnected.
+            break;
+    }
+    if ([self gameState] == kRPGameStateWaitingForStart && match.expectedPlayerCount == 0)
+    {
+        // Handle initial match negotiation.
+    }
+}
+///////////////////////////////////////////////////////////////////
 @end
