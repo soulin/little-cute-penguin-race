@@ -255,6 +255,17 @@
     }];
 }
 ///////////////////////////////////////////////////////////////////
+- (BOOL)amIBestServer
+{
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    //If I am the best server
+    if ([[localPlayer playerID] isEqualToString:_bestServer])
+    {
+        return YES;
+    }
+    return NO;
+}
+///////////////////////////////////////////////////////////////////
 - (void)initMatchWithRequest:(GKMatchRequest *)request
 {
     if ([self gameMode] != kRPGameModeMultiple)
@@ -304,9 +315,8 @@
         message.messageType = kRPGameMessageTypeGameBegin;
         message.shouldBegin.begin = YES;
         NSArray *server = [NSArray arrayWithObject:_bestServer];
-        GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
         //If I am the best server
-        if ([[localPlayer playerID] isEqualToString:_bestServer])
+        if ([self amIBestServer])
         {
             //Notify the other players to start game
             [self sendMessage:message toPlayers:self.match.playerIDs];
@@ -325,7 +335,6 @@
     [self disconnectFromMatch];
     //Clear cache
     self.match = nil;
-    _playerIDs = nil;
     _bestServer = nil;
     //Set game state to kRPGameStateDone
     [self setGameState:kRPGameStateDone];
@@ -366,7 +375,6 @@
         [_rootViewController dismissViewControllerAnimated:YES completion:nil];
     }
     self.match = match;
-    _playerIDs = match.playerIDs;
     match.delegate = self;
     if (self.gameState == kRPGameStateWaitingForMatch && match.expectedPlayerCount == 0)
     {
@@ -392,7 +400,7 @@
     {
         case kRPGameMessageTypeGameBegin:
         {
-            if (![[localPlayer playerID] isEqualToString:_bestServer] && ![playerID isEqualToString:_bestServer])
+            if (![self amIBestServer] && ![playerID isEqualToString:_bestServer])
             {
                 NSLog(@"%@Invalid message source", SELECTOR_STRING);
                 return;

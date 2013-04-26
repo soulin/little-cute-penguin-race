@@ -34,7 +34,7 @@ enum playerState
 @end
 //Level_1 implementation
 @implementation Level_1
-
+@synthesize playerSprite = _playerSprite;
 ///////////////////////////////////////////////////////////////////////
 #pragma mark - Memory management
 +(CCScene *) scene
@@ -360,16 +360,55 @@ enum playerState
 #pragma mark - Private methods
 - (void)initProperties
 {
-    //Level director
+    //Single player mode
     _levelDirector = [RPLevelDirector sharedLevelDirector];
     _gameManager = [RPGameManager sharedGameManager];
-    _playerCountInMultiplayerMode = 2;
+    _playerCountInMultiplayerMode = kMinPlayerCountModeMultiple;
     _mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
     _player_1 = [_loader spriteWithUniqueName:@"penguin_kid"];
+    _player_2 = nil;
+    _playersArray = nil;
     //Multiplayer mode players init
     if ([_gameManager gameMode] == kRPGameModeMultiple)
     {
-        //Do something interesting here
+        int playerCount = [[[_gameManager match] playerIDs] count];
+        _playersArray = [[NSMutableArray arrayWithCapacity:playerCount] retain];
+        //Add player_1 sprite at index 0
+        [_playersArray insertObject:_player_1 atIndex:0];
+        ///////////////////////////////////////////////////////////////////////
+        //Add the other player sprites
+        for (int i = 1; i < playerCount; i++)
+        {
+            LHSprite *anotherSprite = [_loader createBatchSpriteWithUniqueName:@"penguin_kid"];
+            [_playersArray insertObject:anotherSprite atIndex:i];
+            ///////////////////////////////////////////////////////////////////////
+            //Server dispatch the playerID and LHSprite pair
+            if ([_gameManager amIBestServer])
+            {
+                //Match the playerID and LHSprite in the _playerSprite dictionary
+                GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+                __block int localPlayerIDIndex = playerCount + 1;
+                NSArray *playerIDs = [[_gameManager match] playerIDs];
+                NSMutableArray *mutablePlayerIDs = [NSMutableArray arrayWithArray:playerIDs];
+                NSMutableArray *mutablePlayersArray = [NSMutableArray arrayWithArray:_playersArray];
+                //Enumerate playerIDs array to remove local player's ID
+                [mutablePlayerIDs enumerateObjectsUsingBlock:
+                 ^(NSString *playerID, NSUInteger index, BOOL *stop)
+                 {
+                     if ([[localPlayer playerID] isEqualToString:playerID])
+                     {
+                         localPlayerIDIndex = index;
+                         *stop = YES;
+                     }
+                 }];
+                [mutablePlayerIDs removeObjectAtIndex:localPlayerIDIndex];
+                [mutablePlayersArray removeObject:_player_1];
+                self.playerSprite = [NSMutableDictionary dictionaryWithObjects:(NSArray *)mutablePlayersArray forKeys:(NSArray *)mutablePlayerIDs];
+                [self.playerSprite setObject:_player_1 forKey:[localPlayer playerID]];
+            }
+            ///////////////////////////////////////////////////////////////////////
+        }
+        ///////////////////////////////////////////////////////////////////////
     }
 }
 ///////////////////////////////////////////////////////////////////////

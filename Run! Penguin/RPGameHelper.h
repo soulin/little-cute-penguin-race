@@ -15,8 +15,8 @@
 #define PTM_RATIO 32
 ////////////////////////////////////////////////////////////////////////////
 //Player count
-#define kRPModeMultipleMinPlayerCount 2
-#define kRPModeMultipleMaxPlayerCount 4
+#define kMinPlayerCountModeMultiple 2
+#define kMaxPlayerCountModeMultiple 4
 ////////////////////////////////////////////////////////////////////////////
 //Selector string used in NSLog output
 #define SELECTOR_STRING [NSString stringWithFormat:@"[%@ %@]: ",NSStringFromClass([self class]), NSStringFromSelector(_cmd)]

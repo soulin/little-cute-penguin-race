@@ -18,10 +18,13 @@
 {
     LevelHelperLoader *_loader;
     id<RPLeveLoadingProgress> _loadingDelegate;
-    
+    //The maximum counts of players in multiplayer mode, 0 means not available for
+    //multiplayer mode
+    int _playerCountInMultiplayerMode;    
 }
 @property (assign,nonatomic,readwrite) LevelHelperLoader *loader;
 @property (assign,nonatomic,readwrite) id<RPLeveLoadingProgress> loadingDelegate;
+@property (assign,nonatomic,readwrite) int playerCountInMultiplayerMode;
 
 
 //Subclass should implement these methods

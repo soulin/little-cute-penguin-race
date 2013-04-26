@@ -23,16 +23,19 @@
     
     RPLevelDirector *_levelDirector;
     RPGameManager *_gameManager;
-    //The maximum counts of players in multiplayer mode, 0 means not available for
-    //multiplayer mode
-    int _playerCountInMultiplayerMode;
-    
+    //Main layer
     LHLayer *_mainLayer;
+    
     LHSprite *_player_1;
+    LHSprite *_player_2;
+    NSMutableArray *_playersArray;
+    //key : value like playerID : LHSprite
+    NSMutableDictionary *_playerSprite;
     //Particles
     CCParticleSystem *_particleWindSnow;
 }
 
+@property (retain,nonatomic,readwrite) NSMutableDictionary *playerSprite;
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 

@@ -77,8 +77,6 @@ typedef struct
     UIViewController *_rootViewController;
     //GKMatch
     GKMatch *_match;
-    //Players in the game
-    NSArray *_playerIDs;
     //Best server
     NSString *_bestServer;
     //Game state identifier
@@ -105,10 +103,10 @@ typedef struct
 - (void)showVIPLeaderBoard;
 //Match handler
 - (void)chooseBestServer;
+- (BOOL)amIBestServer;
 - (void)initMatchWithRequest:(GKMatchRequest *)request;
 - (void)sendMessage:(RPGameMessage)message toPlayers:(NSArray *)players;
 - (void)disconnectFromMatch;
-//Game logic
 - (void)beginGame;
 - (void)endGame;
 @end
