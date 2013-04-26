@@ -16,7 +16,7 @@ typedef enum
 {
     kRPGameStateUnavailable = 0,
     kRPGameStateWaitingForMatch,
-    kRPGameStateWaitingForRandomNumber,
+    kRPGameStateWaitingForBestServer,
     kRPGameStateWaitingForStart,
     kRPGameStateActive,
     kRPGameStateDone
@@ -47,7 +47,8 @@ typedef struct
 } RPGameMessageBestServer;
 typedef struct
 {
-    CGPoint positionMoveTo;
+    //Dictionary of key : value like playerID : positionMoveTo
+    NSDictionary *playerPositions;
 } RPGameMessagePlayerMove;
 typedef struct
 {
@@ -76,8 +77,10 @@ typedef struct
     UIViewController *_rootViewController;
     //GKMatch
     GKMatch *_match;
-    //Players to invite
-    NSMutableArray *_playersToInvite;
+    //Players in the game
+    NSArray *_playerIDs;
+    //Best server
+    NSString *_bestServer;
     //Game state identifier
     RPGameState _gameState;
     //Game mode identifier
@@ -105,4 +108,7 @@ typedef struct
 - (void)initMatchWithRequest:(GKMatchRequest *)request;
 - (void)sendMessage:(RPGameMessage)message toPlayers:(NSArray *)players;
 - (void)disconnectFromMatch;
+//Game logic
+- (void)beginGame;
+- (void)endGame;
 @end

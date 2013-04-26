@@ -239,17 +239,31 @@
 #pragma mark - Match handler
 - (void)chooseBestServer
 {
-    [_match chooseBestHostPlayerWithCompletionHandler:^(NSString *playerID)
+    [self.match chooseBestHostPlayerWithCompletionHandler:^(NSString *playerID)
     {
         if (playerID)
         {
             //Choose the best server here
+            if (_bestServer)
+            {
+                _bestServer = nil;
+            }
+            _bestServer = [playerID copy];
+            [self setGameState:kRPGameStateWaitingForStart];
+            [self beginGame];
         }
     }];
 }
 ///////////////////////////////////////////////////////////////////
 - (void)initMatchWithRequest:(GKMatchRequest *)request
 {
+    if ([self gameMode] != kRPGameModeMultiple)
+    {
+        NSLog(@"%@MultiPlayer mode is not supported", SELECTOR_STRING);
+        return;
+    }
+    //Set game state to kRPGameStateWaitingForMatch
+    self.gameState = kRPGameStateWaitingForMatch;
     GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc]
                                         initWithMatchRequest:request];
     mmvc.matchmakerDelegate = self;
@@ -278,6 +292,43 @@
         return;
     }
     [[self match] disconnect];
+}
+///////////////////////////////////////////////////////////////////
+#pragma mark - Game logic
+//Begin
+- (void)beginGame
+{
+    if ([self gameState] == kRPGameStateWaitingForStart)
+    {
+        RPGameMessage message;
+        message.messageType = kRPGameMessageTypeGameBegin;
+        message.shouldBegin.begin = YES;
+        NSArray *server = [NSArray arrayWithObject:_bestServer];
+        GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+        //If I am the best server
+        if ([[localPlayer playerID] isEqualToString:_bestServer])
+        {
+            //Notify the other players to start game
+            [self sendMessage:message toPlayers:self.match.playerIDs];
+        }
+        else
+        {
+            //Notify the server I am ready to start
+            [self sendMessage:message toPlayers:server];
+        }
+    }
+}
+///////////////////////////////////////////////////////////////////
+- (void)endGame
+{
+    //Disconnect
+    [self disconnectFromMatch];
+    //Clear cache
+    self.match = nil;
+    _playerIDs = nil;
+    _bestServer = nil;
+    //Set game state to kRPGameStateDone
+    [self setGameState:kRPGameStateDone];
 }
 ///////////////////////////////////////////////////////////////////
 #pragma mark - Notification observer
@@ -315,11 +366,13 @@
         [_rootViewController dismissViewControllerAnimated:YES completion:nil];
     }
     self.match = match;
+    _playerIDs = match.playerIDs;
     match.delegate = self;
     if (self.gameState == kRPGameStateWaitingForMatch && match.expectedPlayerCount == 0)
     {
-        self.gameState = kRPGameStateWaitingForStart;
-        // Insert game-specific code to start the match.
+        self.gameState = kRPGameStateWaitingForBestServer;
+        // Insert game-specific code to start the match
+        [self chooseBestServer];
     }
 }
 ///////////////////////////////////////////////////////////////////
@@ -332,7 +385,44 @@
         return;
     }
     //Handle the data here
-    
+    RPGameMessage *message = (RPGameMessage *)[data bytes];
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    ///////////////////////////////////////////////////////////////////
+    switch (message->messageType)
+    {
+        case kRPGameMessageTypeGameBegin:
+        {
+            if (![[localPlayer playerID] isEqualToString:_bestServer] && ![playerID isEqualToString:_bestServer])
+            {
+                NSLog(@"%@Invalid message source", SELECTOR_STRING);
+                return;
+            }
+            //Handle game start here
+            if ([self gameState] == kRPGameStateWaitingForStart)
+            {
+                //Set game state to kRPGameStateActive
+                [self setGameState:kRPGameStateActive];
+            }
+        }
+            break;
+        case kRPGameMessageTypePlayerMove:
+        {
+            //Handle player moving here
+        }
+            break;
+        case kRPGameMessageTypeGameOver:
+        {
+            //Handle game over here
+            [self endGame];
+        }
+            break;
+        default :
+        {
+            NSLog(@"%@Message type is invalid", SELECTOR_STRING);
+        }
+            break;
+    }
+    ///////////////////////////////////////////////////////////////////
 }
 ///////////////////////////////////////////////////////////////////
 //Player state changed
