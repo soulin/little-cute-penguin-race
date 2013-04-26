@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <GameKit/GameKit.h>
 #import "RPGameHelper.h"
-
+//////////////////////////////////////////////////////////////
 //RPGameState
 typedef enum
 {
@@ -21,6 +21,7 @@ typedef enum
     kRPGameStateActive,
     kRPGameStateDone
 } RPGameState;
+//////////////////////////////////////////////////////////////
 //RPGameMode
 typedef enum
 {
@@ -28,6 +29,46 @@ typedef enum
     kRPGameModeSingle,
     kRPGameModeMultiple,
 } RPGameMode;
+//////////////////////////////////////////////////////////////
+//RPGameMessageType
+typedef enum
+{
+    kRPGameMessageTypeInvalid = 0,
+    kRPGameMessageTypeBestServer,
+    kRPGameMessageTypeGameBegin,
+    kRPGameMessageTypePlayerMove,
+    kRPGameMessageTypeGameOver
+} RPGameMessageType;
+//////////////////////////////////////////////////////////////
+//Message type structure
+typedef struct
+{
+    NSString *playerID;
+} RPGameMessageBestServer;
+typedef struct
+{
+    CGPoint positionMoveTo;
+} RPGameMessagePlayerMove;
+typedef struct
+{
+    BOOL begin;
+} RPGameMessageGameBegin;
+typedef struct
+{
+    BOOL gameOver;
+    NSString *winnerPlayerID;
+} RPGameMessageGameOver;
+//////////////////////////////////////////////////////////////
+//Message
+typedef struct
+{
+    RPGameMessageType messageType;
+    RPGameMessageBestServer bestServer;
+    RPGameMessageGameBegin shouldBegin;
+    RPGameMessagePlayerMove moveTo;
+    RPGameMessageGameOver shouldEnd;
+} RPGameMessage;
+//////////////////////////////////////////////////////////////
 //RPGameManager
 @interface RPGameManager : NSObject <GKLeaderboardViewControllerDelegate,GKMatchmakerViewControllerDelegate, GKMatchDelegate>
 {
@@ -62,5 +103,6 @@ typedef enum
 //Match handler
 - (void)chooseBestServer;
 - (void)initMatchWithRequest:(GKMatchRequest *)request;
+- (void)sendMessage:(RPGameMessage)message toPlayers:(NSArray *)players;
 - (void)disconnectFromMatch;
 @end

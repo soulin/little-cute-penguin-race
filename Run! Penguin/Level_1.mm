@@ -254,9 +254,9 @@ enum playerState
     //float velocityY = playerBody->GetLinearVelocity().y;
 	
     //Player velocity acceleration
-	float accelerationX = (float) acceleration.x * kFilterFactor + (1- kFilterFactor)*previousX;
-	float accelerationY = (float) acceleration.y * kFilterFactor + (1 - kFilterFactor)*previousY;
-	float accelerationZ = (float) acceleration.z * kFilterFactor + (1 - kFilterFactor)*previousZ;
+	float accelerationX = (float) acceleration.x * kAccelerationFilterFactor + (1- kAccelerationFilterFactor)*previousX;
+	float accelerationY = (float) acceleration.y * kAccelerationFilterFactor + (1 - kAccelerationFilterFactor)*previousY;
+	float accelerationZ = (float) acceleration.z * kAccelerationFilterFactor + (1 - kAccelerationFilterFactor)*previousZ;
     
     //Player position transitions
     float transitionX = 0;

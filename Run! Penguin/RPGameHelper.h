@@ -14,6 +14,10 @@
 //to define the ratio so that your most common object type is 1x1 metre.
 #define PTM_RATIO 32
 ////////////////////////////////////////////////////////////////////////////
+//Player count
+#define kRPModeMultipleMinPlayerCount 2
+#define kRPModeMultipleMaxPlayerCount 4
+////////////////////////////////////////////////////////////////////////////
 //Selector string used in NSLog output
 #define SELECTOR_STRING [NSString stringWithFormat:@"[%@ %@]: ",NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
 ///////////////////////////////////////////////////////////////////////
@@ -22,7 +26,7 @@
 ///////////////////////////////////////////////////////////////////////
 //Acceleration filter
 //Bigger this value is more gentle the acceleration is
-#define kFilterFactor 0.7f
+#define kAccelerationFilterFactor 0.7f
 ///////////////////////////////////////////////////////////////////////
 //Player velocity
 #define kPlayerVelocity 2.5f

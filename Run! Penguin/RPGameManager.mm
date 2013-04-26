@@ -247,6 +247,7 @@
         }
     }];
 }
+///////////////////////////////////////////////////////////////////
 - (void)initMatchWithRequest:(GKMatchRequest *)request
 {
     GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc]
@@ -257,6 +258,16 @@
     if ([self match])
     {
         [mmvc addPlayersToMatch:self.match];
+    }
+}
+///////////////////////////////////////////////////////////////////
+- (void)sendMessage:(RPGameMessage)message toPlayers:(NSArray *)players
+{
+    if ([self match])
+    {
+        NSData *data = [NSData dataWithBytes:&message length:sizeof(message)];
+        NSError *error;
+        [[self match] sendData:data toPlayers:players withDataMode:GKMatchSendDataReliable error:&error];
     }
 }
 ///////////////////////////////////////////////////////////////////
