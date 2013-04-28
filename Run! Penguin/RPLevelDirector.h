@@ -40,6 +40,8 @@
 @property (assign, nonatomic,readwrite) CCLayer *currentLayer;
 @property (assign, nonatomic,readwrite) LevelHelperLoader *currentLoader;
 + (RPLevelDirector *)sharedLevelDirector;
+//Init map level
+- (void)initMapLevel:(NSString *)levelName;
 //Replace scene
 - (void)replaceScene:(CCScene *)newScene;
 //RPLevelLoadingProgress Protocol method

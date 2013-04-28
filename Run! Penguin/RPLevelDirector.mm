@@ -11,6 +11,7 @@
 ///////////////////////////////////////////////////////////////////
 
 #import "RPLevelDirector.h"
+#import "InitNewSceneOperation.h"
 #import "SimpleAudioEngine.h"
 #import "RPGameHelper.h"
 #import "RPGameManager.h"
@@ -287,6 +288,15 @@
 }
 ///////////////////////////////////////////////////////////////////
 #pragma mark - Scene transitions
+//Init
+- (void)initMapLevel:(NSString *)levelName
+{
+    InitNewSceneOperation *initNewScene = [[InitNewSceneOperation alloc] initWithString:levelName];
+    [[self initNewSceneQueue] addOperation:initNewScene];
+    [initNewScene release];
+}
+///////////////////////////////////////////////////////////////////
+//Replace
 - (void)replaceScene:(CCScene *)newScene
 {
     CCLayer *currentLevel = [self currentLayer];

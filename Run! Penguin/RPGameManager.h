@@ -17,6 +17,7 @@ typedef enum
     kRPGameStateUnavailable = 0,
     kRPGameStateWaitingForMatch,
     kRPGameStateWaitingForBestServer,
+    kRPGameStateWaitingForDesignatedSprite,
     kRPGameStateWaitingForStart,
     kRPGameStateActive,
     kRPGameStateDone
@@ -34,7 +35,7 @@ typedef enum
 typedef enum
 {
     kRPGameMessageTypeInvalid = 0,
-    kRPGameMessageTypeBestServer,
+    kRPGameMessageTypeDispatchSprite,
     kRPGameMessageTypeGameBegin,
     kRPGameMessageTypePlayerMove,
     kRPGameMessageTypeGameOver
@@ -43,8 +44,8 @@ typedef enum
 //Message type structure
 typedef struct
 {
-    NSString *playerID;
-} RPGameMessageBestServer;
+    NSDictionary *playerSprite;
+} RPGameMessageDispatchSprite;
 typedef struct
 {
     //Dictionary of key : value like playerID : positionMoveTo
@@ -64,7 +65,7 @@ typedef struct
 typedef struct
 {
     RPGameMessageType messageType;
-    RPGameMessageBestServer bestServer;
+    RPGameMessageDispatchSprite designatedSprite;
     RPGameMessageGameBegin shouldBegin;
     RPGameMessagePlayerMove moveTo;
     RPGameMessageGameOver shouldEnd;
@@ -77,6 +78,8 @@ typedef struct
     UIViewController *_rootViewController;
     //GKMatch
     GKMatch *_match;
+    //GKMatchRequest
+    GKMatchRequest *_matchRequest;
     //Best server
     NSString *_bestServer;
     //Game state identifier
@@ -86,7 +89,8 @@ typedef struct
     //GKMath
     
 }
-@property (retain,nonatomic,readwrite) GKMatch *match;
+@property (retain,readwrite) GKMatch *match;
+@property (retain,readwrite) GKMatchRequest *matchRequest;
 @property (assign,nonatomic,readwrite) RPGameState gameState;
 @property (assign,nonatomic,readwrite) RPGameMode gameMode;
 
@@ -102,11 +106,7 @@ typedef struct
 - (void)loadAchievements;
 - (void)showVIPLeaderBoard;
 //Match handler
-- (void)chooseBestServer;
 - (BOOL)amIBestServer;
 - (void)initMatchWithRequest:(GKMatchRequest *)request;
 - (void)sendMessage:(RPGameMessage)message toPlayers:(NSArray *)players;
-- (void)disconnectFromMatch;
-- (void)beginGame;
-- (void)endGame;
 @end

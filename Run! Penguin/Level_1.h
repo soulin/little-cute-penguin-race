@@ -26,8 +26,6 @@
     //Main layer
     LHLayer *_mainLayer;
     
-    LHSprite *_player_1;
-    LHSprite *_player_2;
     NSMutableArray *_playersArray;
     //key : value like playerID : LHSprite
     NSMutableDictionary *_playerSprite;

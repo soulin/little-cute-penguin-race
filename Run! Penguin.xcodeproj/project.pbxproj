@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0df941a0f699fb0931fb3a3c /* LHJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = da813d694e9aa205e315c3e1 /* LHJoint.mm */; };
+		1431B33F172BB7B2008E9D82 /* InitNewSceneOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1431B33E172BB7B2008E9D82 /* InitNewSceneOperation.mm */; };
 		14480B30171D05CC007B7417 /* Run!Penguin.pshs in Resources */ = {isa = PBXBuildFile; fileRef = 14480B26171D05CC007B7417 /* Run!Penguin.pshs */; };
 		14480B31171D05CC007B7417 /* Run!Penguin_Characters-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B27171D05CC007B7417 /* Run!Penguin_Characters-hd.png */; };
 		14480B32171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 14480B28171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png */; };
@@ -200,6 +201,8 @@
 
 /* Begin PBXFileReference section */
 		079316f68f4d54356a040fb9 /* LHCustomSpriteMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHCustomSpriteMgr.h; sourceTree = "<group>"; };
+		1431B33D172BB7B2008E9D82 /* InitNewSceneOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitNewSceneOperation.h; sourceTree = "<group>"; };
+		1431B33E172BB7B2008E9D82 /* InitNewSceneOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InitNewSceneOperation.mm; sourceTree = "<group>"; };
 		14480B26171D05CC007B7417 /* Run!Penguin.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Run!Penguin.pshs"; sourceTree = "<group>"; };
 		14480B27171D05CC007B7417 /* Run!Penguin_Characters-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_Characters-hd.png"; sourceTree = "<group>"; };
 		14480B28171D05CC007B7417 /* Run!Penguin_Characters-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run!Penguin_Characters-ipadhd.png"; sourceTree = "<group>"; };
@@ -635,6 +638,8 @@
 		146B712E171C32B400BAE027 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1431B33D172BB7B2008E9D82 /* InitNewSceneOperation.h */,
+				1431B33E172BB7B2008E9D82 /* InitNewSceneOperation.mm */,
 				1497BAE817166D4F006D2035 /* RootViewController.h */,
 				1497BAE917166D4F006D2035 /* RootViewController.m */,
 				1497BAE517166D4F006D2035 /* AppDelegate.h */,
@@ -1517,6 +1522,7 @@
 				cbcf8a3be72e6868338383a0 /* LHTouchMgr.mm in Sources */,
 				250e1473997f280a794687eb /* SHDocumentLoader.mm in Sources */,
 				16abf7fc71589ce37267ae26 /* LHAsset.mm in Sources */,
+				1431B33F172BB7B2008E9D82 /* InitNewSceneOperation.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1572,7 +1578,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Run! Penguin/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1594,7 +1600,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Run! Penguin/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

@@ -12,7 +12,6 @@
 
 @synthesize loader = _loader;
 @synthesize loadingDelegate = _loadingDelegate;
-@synthesize playerCountInMultiplayerMode = _playerCountInMultiplayerMode;
 
 #pragma mark - Memory management
 -(id) init

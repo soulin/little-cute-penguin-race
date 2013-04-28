@@ -7,9 +7,17 @@
 //
 
 #import "RPGameManager.h"
+#import "RPLevelDirector.h"
 
+@interface RPGameManager (Private)
+- (void)chooseBestServer;
+- (void)disconnectFromMatch;
+- (void)beginGame;
+- (void)endGame;
+@end
 @implementation RPGameManager
 @synthesize match = _match;
+@synthesize matchRequest = _matchRequest;
 @synthesize gameState = _gameState;
 @synthesize gameMode = _gameMode;
 
@@ -28,6 +36,8 @@
 {
     self = [super init];
     _rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    _match = nil;
+    _matchRequest = nil;
     self.gameState = kRPGameStateWaitingForMatch;
     self.gameMode = kRPGameModeSingle;
     //Listen to the notification to handle player change event
@@ -81,8 +91,8 @@
                     else if (playersToInvite)
                     {
                         GKMatchRequest *request = [[GKMatchRequest alloc] init];
-                        request.minPlayers = 2;
-                        request.maxPlayers = 4;
+                        request.minPlayers = kMinPlayerCountModeMultiple;
+                        request.maxPlayers = kMaxPlayerCountModeMultiple;
                         request.playersToInvite = playersToInvite;
                         GKMatchmakerViewController *mmvc = [[GKMatchmakerViewController alloc] initWithMatchRequest:request];
                         mmvc.matchmakerDelegate = self;
@@ -304,8 +314,6 @@
     }
     [[self match] disconnect];
 }
-///////////////////////////////////////////////////////////////////
-#pragma mark - Game logic
 //Begin
 - (void)beginGame
 {
@@ -338,6 +346,46 @@
     _bestServer = nil;
     //Set game state to kRPGameStateDone
     [self setGameState:kRPGameStateDone];
+}
+///////////////////////////////////////////////////////////////////
+#pragma mark - SetGameState
+- (void)setGameState:(RPGameState)gameState
+{
+    switch (gameState)
+    {
+        case kRPGameStateWaitingForMatch:
+        {
+            _gameState = kRPGameStateWaitingForMatch;
+            NSLog(@"Game state is: Waiting for match");
+        }
+            break;
+        case kRPGameStateWaitingForBestServer:
+        {
+            _gameState = kRPGameStateWaitingForBestServer;
+            NSLog(@"Game state is: Waiting for best server");
+        }
+            break;
+        case kRPGameStateWaitingForDesignatedSprite:
+        {
+            _gameState = kRPGameStateWaitingForDesignatedSprite;
+            NSLog(@"Game state is: Waiting for designated sprite");
+        }
+            break;
+        case kRPGameStateActive:
+        {
+            _gameState = kRPGameStateActive;
+            NSLog(@"Game state is: Active");
+        }
+            break;
+        case kRPGameStateDone:
+        {
+            _gameState = kRPGameStateDone;
+            NSLog(@"Game state is: Done");
+        }
+            break;
+        default:
+            break;
+    }
 }
 ///////////////////////////////////////////////////////////////////
 #pragma mark - Notification observer
@@ -378,8 +426,7 @@
     match.delegate = self;
     if (self.gameState == kRPGameStateWaitingForMatch && match.expectedPlayerCount == 0)
     {
-        self.gameState = kRPGameStateWaitingForBestServer;
-        // Insert game-specific code to start the match
+        [self setGameState:kRPGameStateWaitingForBestServer];
         [self chooseBestServer];
     }
 }
@@ -394,10 +441,22 @@
     }
     //Handle the data here
     RPGameMessage *message = (RPGameMessage *)[data bytes];
-    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
     ///////////////////////////////////////////////////////////////////
     switch (message->messageType)
     {
+        case kRPGameMessageTypeDispatchSprite:
+        {
+            if (![playerID isEqualToString:_bestServer])
+            {
+                NSLog(@"%@Only server can dispatch sprite for the other players",SELECTOR_STRING);
+                return;
+            }
+            if ([self gameState] == kRPGameStateWaitingForDesignatedSprite)
+            {
+                //Handle the message here
+            }
+        }
+            break;
         case kRPGameMessageTypeGameBegin:
         {
             if (![self amIBestServer] && ![playerID isEqualToString:_bestServer])
@@ -410,6 +469,7 @@
             {
                 //Set game state to kRPGameStateActive
                 [self setGameState:kRPGameStateActive];
+                //Init map level here
             }
         }
             break;
