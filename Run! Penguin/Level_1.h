@@ -26,7 +26,6 @@
     //Main layer
     LHLayer *_mainLayer;
     
-    NSMutableArray *_playersArray;
     //key : value like playerID : LHSprite
     NSMutableDictionary *_playerSprite;
     //Particles

@@ -19,9 +19,7 @@
     LevelHelperLoader *_loader;
     id<RPLeveLoadingProgress> _loadingDelegate;
     LHSprite *_player_1;
-    LHSprite *_player_2;
-    LHSprite *_player_3;
-    LHSprite *_player_4;
+    
 }
 @property (assign,nonatomic,readwrite) LevelHelperLoader *loader;
 @property (assign,nonatomic,readwrite) id<RPLeveLoadingProgress> loadingDelegate;

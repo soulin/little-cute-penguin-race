@@ -373,22 +373,21 @@ enum playerState
     _gameManager = [RPGameManager sharedGameManager];
     _mainLayer = [_loader layerWithUniqueName:@"MAIN_LAYER"];
     _player_1 = [_loader spriteWithUniqueName:@"penguin_kid"];
-    _playersArray = nil;
 }
 - (void)initMultiPlayerModeProperties
 {
     [self initSingleModeProperties];
     //Multiplayer mode players init
     int playerCount = [[[_gameManager match] playerIDs] count];
-    _playersArray = [[NSMutableArray arrayWithCapacity:playerCount] retain];
+    NSMutableArray *spritesArray = [NSMutableArray arrayWithCapacity:playerCount];
     //Add player_1 sprite at index 0
-    [_playersArray insertObject:_player_1 atIndex:0];
+    [spritesArray insertObject:_player_1 atIndex:0];
     ///////////////////////////////////////////////////////////////////////
     //Add the other player sprites
     for (int i = 1; i < playerCount; i++)
     {
         LHSprite *anotherSprite = [_loader createBatchSpriteWithUniqueName:@"penguin_kid"];
-        [_playersArray insertObject:anotherSprite atIndex:i];
+        [spritesArray insertObject:anotherSprite atIndex:i];
     }
     
     ///////////////////////////////////////////////////////////////////////
@@ -397,7 +396,7 @@ enum playerState
     {
         //Match the playerID and LHSprite in the _playerSprite dictionary
         NSArray *playerIDs = [[_gameManager match] playerIDs];
-        self.playerSprite = [NSMutableDictionary dictionaryWithObjects:(NSArray *)_playersArray forKeys:playerIDs];
+        self.playerSprite = [NSMutableDictionary dictionaryWithObjects:(NSArray *)spritesArray forKeys:playerIDs];
         //Dispatch the message to the other players
         RPGameMessage message;
         message.messageType = kRPGameMessageTypeDispatchSprite;
