@@ -899,7 +899,6 @@ CGSize  LHSizeFromString(NSString* val){
     
     [physicBoundariesInLevel release];
     [imageFolder release];
-    [super dealloc];
 #endif
     
     lhNodes = nil;
@@ -911,6 +910,11 @@ CGSize  LHSizeFromString(NSString* val){
     
     wb = nil;
     physicBoundariesInLevel = nil;
+    
+#ifndef LH_ARC_ENABLED
+    [super dealloc];
+#endif
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 //GRAVITY

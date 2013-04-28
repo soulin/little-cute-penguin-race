@@ -17,9 +17,10 @@ typedef enum
     kRPGameStateUnavailable = 0,
     kRPGameStateWaitingForMatch,
     kRPGameStateWaitingForBestServer,
-    kRPGameStateWaitingForDesignatedSprite,
     kRPGameStateWaitingForStart,
+    kRPGameStateWaitingForRandomMap,
     kRPGameStateActive,
+    kRPGameStateWaitingForDesignatedSprite,
     kRPGameStateDone
 } RPGameState;
 //////////////////////////////////////////////////////////////
@@ -35,8 +36,9 @@ typedef enum
 typedef enum
 {
     kRPGameMessageTypeInvalid = 0,
-    kRPGameMessageTypeDispatchSprite,
     kRPGameMessageTypeGameBegin,
+    kRPGameMessageTypeDispatchSprite,
+    kRPGameMessageTypeRandomMap,
     kRPGameMessageTypePlayerMove,
     kRPGameMessageTypeGameOver
 } RPGameMessageType;
@@ -44,8 +46,12 @@ typedef enum
 //Message type structure
 typedef struct
 {
-    NSDictionary *playerSprite;
+    NSDictionary *playerSpriteIndex;
 } RPGameMessageDispatchSprite;
+typedef struct
+{
+    NSString *mapName;
+} RPGameMessageRandomMap;
 typedef struct
 {
     //Dictionary of key : value like playerID : positionMoveTo
@@ -66,16 +72,20 @@ typedef struct
 {
     RPGameMessageType messageType;
     RPGameMessageDispatchSprite designatedSprite;
+    RPGameMessageRandomMap map;
     RPGameMessageGameBegin shouldBegin;
     RPGameMessagePlayerMove moveTo;
     RPGameMessageGameOver shouldEnd;
 } RPGameMessage;
 //////////////////////////////////////////////////////////////
+@class RPLevelDirector;
 //RPGameManager
 @interface RPGameManager : NSObject <GKLeaderboardViewControllerDelegate,GKMatchmakerViewControllerDelegate, GKMatchDelegate>
 {
     //RootViewController
     UIViewController *_rootViewController;
+    //Level director
+    RPLevelDirector *_levelDirector;
     //GKMatch
     GKMatch *_match;
     //GKMatchRequest

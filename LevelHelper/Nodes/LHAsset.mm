@@ -188,11 +188,15 @@
     [jointsInAsset release];
     [lhNodes release];
     [lhJoints release];
-    
-    [super dealloc];
 #endif
 
     jointsInAsset = nil;
     lhNodes = nil;
+    lhJoints = nil;
+    
+#ifndef LH_ARC_ENABLED
+	[super dealloc];
+#endif
+
 }
 @end

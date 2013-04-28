@@ -18,15 +18,21 @@
     //Level state
     BOOL _isLevelStatePausedManually;
     BOOL _isLevelStateSceneTransition;
+    //Operation queue
     NSOperationQueue *_initNewSceneQueue;
+    //Loading percentage
     float _levelLoadingPercentage;
+    //Sounds and music
     NSMutableArray *_backgroundMusicList;
     NSMutableArray *_soundEffectList;
     BOOL _isGameSoundEnabled;
     BOOL _isGameMusicEnabled;
+    //Weak refference to current layer and LHLoader
     CCScene *_currentScene;
-    CCLayer *_currentLayer;
+    RPLevelTemplate *_currentLayer;
     LevelHelperLoader *_currentLHLoader;
+    //All available maps
+    NSArray *_allMaps;
 }
 @property (assign,nonatomic,readwrite) BOOL isLevelStatePausedManually;
 @property (assign,nonatomic,readwrite) BOOL isLevelStateSceneTransition;
@@ -37,13 +43,17 @@
 @property (assign,nonatomic,readwrite) BOOL isGameSoundEnabled;
 @property (assign,nonatomic,readwrite) BOOL isGameMusicEnabled;
 @property (assign, nonatomic,readwrite) CCScene *currentScene;
-@property (assign, nonatomic,readwrite) CCLayer *currentLayer;
+@property (assign, nonatomic,readwrite) RPLevelTemplate *currentLayer;
 @property (assign, nonatomic,readwrite) LevelHelperLoader *currentLoader;
 + (RPLevelDirector *)sharedLevelDirector;
 //Init map level
 - (void)initMapLevel:(NSString *)levelName;
+- (NSString *)initRandomMapLevelForMulitplayerMode;
 //Replace scene
 - (void)replaceScene:(CCScene *)newScene;
+//Player state
+- (BOOL)isLocalPlayerReady;
+- (void)setLocalPlayerReady:(BOOL)isReady;
 //RPLevelLoadingProgress Protocol method
 - (void)loadingProgress:(NSNumber *)progress;
 //Sounds

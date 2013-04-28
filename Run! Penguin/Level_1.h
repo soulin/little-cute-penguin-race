@@ -25,14 +25,10 @@
     RPGameManager *_gameManager;
     //Main layer
     LHLayer *_mainLayer;
-    
-    //key : value like playerID : LHSprite
-    NSMutableDictionary *_playerSprite;
     //Particles
     CCParticleSystem *_particleWindSnow;
 }
 
-@property (retain,nonatomic,readwrite) NSMutableDictionary *playerSprite;
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 

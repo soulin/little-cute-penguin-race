@@ -12,6 +12,9 @@
 
 @synthesize loader = _loader;
 @synthesize loadingDelegate = _loadingDelegate;
+@synthesize spritesArray = _spritesArray;
+@synthesize playerSpriteIndex = _playerSpriteIndex;
+@synthesize playerSprite = _playerSprite;
 
 #pragma mark - Memory management
 -(id) init

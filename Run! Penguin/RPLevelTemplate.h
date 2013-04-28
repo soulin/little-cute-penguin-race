@@ -19,10 +19,16 @@
     LevelHelperLoader *_loader;
     id<RPLeveLoadingProgress> _loadingDelegate;
     LHSprite *_player_1;
-    
+    NSMutableArray *_spritesArray;
+    //key : value like playerID : LHSprite
+    NSDictionary *_playerSpriteIndex;
+    NSDictionary *_playerSprite;
 }
 @property (assign,nonatomic,readwrite) LevelHelperLoader *loader;
 @property (assign,nonatomic,readwrite) id<RPLeveLoadingProgress> loadingDelegate;
+@property (retain,nonatomic,readwrite) NSMutableArray *spritesArray;
+@property (retain,nonatomic,readwrite) NSDictionary *playerSpriteIndex;
+@property (retain,nonatomic,readwrite) NSDictionary *playerSprite;
 
 //Subclass should implement these methods
 - (void) handlePanFrom:(UIPanGestureRecognizer *)recognizer;

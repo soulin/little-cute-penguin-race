@@ -171,8 +171,18 @@
     [frames release];
     [oldSpriteFrame release];
     sprite = nil;
+#endif
+
+    shSceneName = nil;
+    uniqueName = nil;
+    sheetName = nil;
+    sheetImage = nil;
+    frames = nil;
+    oldSpriteFrame = nil;
+#ifndef LH_ARC_ENABLED
 	[super dealloc];
 #endif
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(id) initWithDictionary:(NSDictionary*)dictionary

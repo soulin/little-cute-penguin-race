@@ -139,8 +139,15 @@
 #ifndef LH_ARC_ENABLED
     [uniqueName release];
 	[sprites release];
+#endif
+
+    uniqueName = nil;
+    sprites = nil;
+    
+#ifndef LH_ARC_ENABLED
 	[super dealloc];
 #endif
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(id) initWithDictionary:(NSDictionary*)parallaxDict loader:(LevelHelperLoader*)loader;

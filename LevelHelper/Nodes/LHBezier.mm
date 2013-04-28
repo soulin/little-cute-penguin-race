@@ -321,11 +321,20 @@
     
 	[uniqueName release];
 	[pathPoints release];
-    
-	[super dealloc];
 #endif
     
     tile_texture = nil;
+    userCustomInfo = nil;
+    touchBeginObserver = nil;
+    touchMovedObserver = nil;
+    touchEndedObserver = nil;
+    uniqueName = nil;
+    pathPoints = nil;
+    
+#ifndef LH_ARC_ENABLED
+	[super dealloc];
+#endif
+
 }
 
 -(void)removeBodyFromWorld{

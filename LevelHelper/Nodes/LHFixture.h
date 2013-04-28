@@ -19,7 +19,7 @@
     int fixtureID;
 }
 @property (readonly) NSString* fixtureName;
-@property (readonly) int fixtureID;
+@property (readwrite) int fixtureID;
 
 +(id)fixtureWithDictionary:(NSDictionary*)dictionary 
                       body:(b2Body*)body 

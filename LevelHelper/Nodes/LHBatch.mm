@@ -63,9 +63,17 @@ static int untitledBatchCount = 0;
         [userCustomInfo release];
         userCustomInfo = nil;
     }
+#endif
 
+    uniqueName = nil;
+    imagePath = nil;
+    shFile = nil;
+    userCustomInfo = nil;
+    
+#ifndef LH_ARC_ENABLED
 	[super dealloc];
 #endif
+
 }
 //------------------------------------------------------------------------------
 -(NSString*)shFile{
@@ -118,7 +126,7 @@ static int untitledBatchCount = 0;
 // used internally to alter the zOrder variable. DON'T call this method manually
 -(void) _setZOrder:(NSInteger) z
 {
-#if COCOS2D_VERSION > 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
+#if COCOS2D_VERSION >= 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
     zOrder_ = z;
 #else
     _zOrder = z;
@@ -141,6 +149,7 @@ static int untitledBatchCount = 0;
         NSString *fullpath = [CCFileUtils fullPathFromRelativePath:imgPath];
 #endif
         
+        
         UIImage* image = [UIImage imageWithContentsOfEncryptedFile:fullpath
                                                            withKey:decryptKey];
         
@@ -154,6 +163,7 @@ static int untitledBatchCount = 0;
     }
     NSAssert(imgPath!=nil, @"Image path must not be nil");
     
+        
     if(texture == nil){
         self = [super initWithFile:[imgPath lastPathComponent] capacity:29]; //29 is the default capacity
     }
@@ -181,7 +191,7 @@ static int untitledBatchCount = 0;
         if([dictionary objectForKey:@"SHScene"])
             shFile = [[NSString alloc] initWithString:[dictionary stringForKey:@"SHScene"]];
         
-        imagePath = [[NSString alloc] initWithString:imgPath];
+        imagePath = [[NSString alloc] initWithString:[imgPath lastPathComponent]];
         
         
         

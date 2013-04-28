@@ -383,7 +383,17 @@ public:
 
     CGRect oldRect = [oldSprite originalRect];
     
-    CCTexture2D* oldTexture = [[CCTextureCache sharedTextureCache] addImage:[oldSprite imageFile]];
+#if COCOS2D_VERSION >= 0x00020000
+    ccResolutionType resolution;
+    NSString *fullpath = [[CCFileUtils sharedFileUtils] fullPathFromRelativePath:[oldSprite imageFile] resolutionType:&resolution];
+#else
+    NSString *fullpath = [CCFileUtils fullPathFromRelativePath:[oldSprite imageFile]];
+#endif
+    
+    
+//    CCTexture2D* oldTexture = [[CCTextureCache sharedTextureCache] addImage:[oldSprite imageFile]];
+
+    CCTexture2D* oldTexture = [[CCTextureCache sharedTextureCache] addImage:fullpath];
     
     CCSprite* tempOrigSprite = [CCSprite spriteWithTexture:oldTexture rect:oldRect];
     

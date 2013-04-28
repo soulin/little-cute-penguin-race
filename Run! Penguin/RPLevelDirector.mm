@@ -63,6 +63,10 @@
     [self registerWithLHTouchMgr];
     self.backgroundMusicList = nil;
     self.soundEffectList = nil;
+    self.currentScene = nil;
+    self.currentLayer = nil;
+    self.currentLoader = nil;
+    _allMaps = [[NSArray arrayWithObjects:@"Level_1", nil] retain];
     //Background music listener
     [self setBackgroundMusicListener:self selector:@selector(backgroundMusicDidFinishPlay)];
     [self preloadSoundEffects];
@@ -282,7 +286,7 @@
     [self setIsLevelStateSceneTransition:NO];
     [self setCurrentScene:scene];
     CCLayer *layer = [[scene children] objectAtIndex:0];
-    [self setCurrentLayer:layer];
+    [self setCurrentLayer:(RPLevelTemplate *)layer];
     LevelHelperLoader *loader = [(RPLevelTemplate *)layer loader];
     [self setCurrentLoader:loader];
 }
@@ -296,6 +300,14 @@
     [initNewScene release];
 }
 ///////////////////////////////////////////////////////////////////
+- (NSString *)initRandomMapLevelForMulitplayerMode
+{
+    int randomIndex = arc4random() % _allMaps.count;
+    NSString *randomMap = [_allMaps objectAtIndex:randomIndex];
+    [self initMapLevel:randomMap];
+    return randomMap;
+}
+///////////////////////////////////////////////////////////////////
 //Replace
 - (void)replaceScene:(CCScene *)newScene
 {
@@ -307,6 +319,24 @@
     [[CCDirector sharedDirector] replaceScene:newScene];
     //New scene is running, post notification
     [[NSNotificationCenter defaultCenter] postNotificationName:RPNewSceneHasBecomeCurrentScene object:newScene];
+}
+///////////////////////////////////////////////////////////////////
+#pragma mark - Player state
+- (BOOL)isLocalPlayerReady
+{
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    LHSprite *player1 = [[[self currentLayer] playerSprite] objectForKey:localPlayer.playerID];
+    Player *player = [player1 userInfo];
+    return [player isReadyToGo];
+}
+///////////////////////////////////////////////////////////////////
+- (void)setLocalPlayerReady:(BOOL)isReady
+{
+    //Set player state to ready
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    LHSprite *player1 = [[[self currentLayer] playerSprite] objectForKey:localPlayer.playerID];
+    Player *player = [player1 userInfo];
+    [player setIsReadyToGo:isReady];
 }
 ///////////////////////////////////////////////////////////////////
 #pragma mark - Private

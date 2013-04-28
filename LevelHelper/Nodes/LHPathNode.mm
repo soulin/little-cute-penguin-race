@@ -274,10 +274,14 @@
     }
 
 	if(axisOrientation != 0){
-		[sprite transformRotation:newAngle];
+        //added this check or else the angle may snap at certain points
+        if(!((int)startPosition.x == (int)endPosition.x && (int)startPosition.y == (int)endPosition.y))
+            [sprite transformRotation:newAngle];
     }
 	if(isLine){
-        if(axisOrientation != 0){    
+        if(axisOrientation != 0){
+            //added this check or else the angle may snap at certain points
+            if(!((int)startPosition.x == (int)endPosition.x && (int)startPosition.y == (int)endPosition.y))
             [sprite transformRotation:endAngle];
         }
     }

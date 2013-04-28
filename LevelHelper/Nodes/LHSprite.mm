@@ -386,7 +386,7 @@ static int untitledSpritesCount = 0;
 // used internally to alter the zOrder variable. DON'T call this method manually
 -(void) _setZOrder:(NSInteger) z
 {
-#if COCOS2D_VERSION > 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
+#if COCOS2D_VERSION >= 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
     zOrder_ = z;
 #else
     _zOrder = z;
@@ -778,10 +778,11 @@ static int untitledSpritesCount = 0;
 -(void)setImageFile:(NSString*)img{
     
 #ifndef LH_ARC_ENABLED
-    if(imageFile)
+    if(imageFile){
         [imageFile release];
+        imageFile = nil;
+    }
 #endif
-    
     imageFile = [[NSString alloc] initWithString:img];
 }
 //------------------------------------------------------------------------------
@@ -2150,6 +2151,81 @@ static int untitledSpritesCount = 0;
         fix = fix->GetNext();
     }
 }
+
+-(LHFixture*)fixtureWithName:(NSString*)name{
+
+    if(body == nil)return nil;
+    
+    b2Fixture* fix = body->GetFixtureList();
+    
+    while (fix) {
+        
+#ifndef LH_ARC_ENABLED
+        LHFixture* lhFix = (LHFixture*)(fix->GetUserData());
+#else
+        LHFixture* lhFix = (__bridge LHFixture*)(fix->GetUserData());
+#endif
+        
+        if([LHFixture isLHFixture:lhFix])
+        {
+            if([[lhFix fixtureName] isEqualToString:name]){
+                return lhFix;
+            }
+        }
+        fix = fix->GetNext();
+    }
+    return nil;
+}
+-(LHFixture*)fixtureWithID:(int)fixId{
+    if(body == nil)return nil;
+    
+    b2Fixture* fix = body->GetFixtureList();
+    
+    while (fix) {
+        
+#ifndef LH_ARC_ENABLED
+        LHFixture* lhFix = (LHFixture*)(fix->GetUserData());
+#else
+        LHFixture* lhFix = (__bridge LHFixture*)(fix->GetUserData());
+#endif
+        
+        if([LHFixture isLHFixture:lhFix])
+        {
+            if([lhFix fixtureID] == fixId){
+                return lhFix;
+            }
+        }
+        fix = fix->GetNext();
+    }
+    return nil;
+}
+-(NSArray*)fixturesWithID:(int)fixId{
+
+    if(body == nil)return nil;
+
+    NSMutableArray* array = [NSMutableArray array];
+    b2Fixture* fix = body->GetFixtureList();
+    
+    while (fix) {
+        
+#ifndef LH_ARC_ENABLED
+        LHFixture* lhFix = (LHFixture*)(fix->GetUserData());
+#else
+        LHFixture* lhFix = (__bridge LHFixture*)(fix->GetUserData());
+#endif
+        
+        if([LHFixture isLHFixture:lhFix])
+        {
+            if([lhFix fixtureID] == fixId){
+                [array addObject:lhFix];
+            }
+        }
+        fix = fix->GetNext();
+    }
+    
+    return array;
+}
+
 
 -(bool)hasContacts{
     if(body == nil)

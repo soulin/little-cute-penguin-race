@@ -117,24 +117,32 @@
 #ifndef LH_ARC_ENABLED
     if(onTouchBeginOnSpriteOfTag)
         [onTouchBeginOnSpriteOfTag release];
-    onTouchBeginOnSpriteOfTag = nil;
+
     if(onTouchMovedOnSpriteOfTag)
         [onTouchMovedOnSpriteOfTag release];
-    onTouchMovedOnSpriteOfTag = nil;
+
     if(onTouchEndedOnSpriteOfTag)
         [onTouchEndedOnSpriteOfTag release];
-    onTouchEndedOnSpriteOfTag = nil;
+    
 
     if(swallowTouchesOnTag)
         [swallowTouchesOnTag release];
-    swallowTouchesOnTag = nil;
+
 
     if(priorityForTouchesOfTag)
         [priorityForTouchesOfTag release];
-    priorityForTouchesOfTag = nil;
     
-	[super dealloc];
 #endif
+    
+    onTouchBeginOnSpriteOfTag = nil;
+    onTouchMovedOnSpriteOfTag = nil;
+    onTouchEndedOnSpriteOfTag = nil;
+    swallowTouchesOnTag = nil;
+    priorityForTouchesOfTag = nil;
+#ifndef LH_ARC_ENABLED
+    [super dealloc];
+#endif
+    
 }
 //------------------------------------------------------------------------------
 - (id)init

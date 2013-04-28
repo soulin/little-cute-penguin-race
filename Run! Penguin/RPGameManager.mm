@@ -10,6 +10,9 @@
 #import "RPLevelDirector.h"
 
 @interface RPGameManager (Private)
+//Set up client playerSprite dictionary
+- (void)setupClientPlayerSprite;
+//Game logic methods
 - (void)chooseBestServer;
 - (void)disconnectFromMatch;
 - (void)beginGame;
@@ -36,6 +39,7 @@
 {
     self = [super init];
     _rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    _levelDirector = [RPLevelDirector sharedLevelDirector];
     _match = nil;
     _matchRequest = nil;
     self.gameState = kRPGameStateWaitingForMatch;
@@ -246,7 +250,28 @@
      }];
 }
 ///////////////////////////////////////////////////////////////////
-#pragma mark - Match handler
+#pragma mark - Private methods
+- (void)setupClientPlayerSprite
+{
+    //Set up client playerSprite here
+    //Through 2 enumeration blocks
+    [[_levelDirector currentLayer] setPlayerSprite:nil];
+    __block NSMutableDictionary *playerSpriteTemp = [NSMutableDictionary dictionaryWithCapacity:4];
+    [[[_levelDirector currentLayer] spritesArray] enumerateObjectsUsingBlock:^(LHSprite *sprite, NSUInteger idx, BOOL *stop1)
+     {
+         __block Player *player = [sprite userInfo];
+         [[[_levelDirector currentLayer] playerSpriteIndex] enumerateKeysAndObjectsUsingBlock:^(NSString *playerID, NSNumber *index, BOOL *stop2)
+          {
+              if ((int)[player index] == [index intValue])
+              {
+                  [playerSpriteTemp setObject:sprite forKey:playerID];
+                  *stop2 = YES;
+              }
+          }];
+     }];
+    [[_levelDirector currentLayer] setPlayerSprite:(NSDictionary *)playerSpriteTemp];
+}
+///////////////////////////////////////////////////////////////////
 - (void)chooseBestServer
 {
     [self.match chooseBestHostPlayerWithCompletionHandler:^(NSString *playerID)
@@ -444,19 +469,7 @@
     ///////////////////////////////////////////////////////////////////
     switch (message->messageType)
     {
-        case kRPGameMessageTypeDispatchSprite:
-        {
-            if (![playerID isEqualToString:_bestServer])
-            {
-                NSLog(@"%@Only server can dispatch sprite for the other players",SELECTOR_STRING);
-                return;
-            }
-            if ([self gameState] == kRPGameStateWaitingForDesignatedSprite)
-            {
-                //Handle the message here
-            }
-        }
-            break;
+        ///////////////////////////////////////////////////////////////////
         case kRPGameMessageTypeGameBegin:
         {
             if (![self amIBestServer] && ![playerID isEqualToString:_bestServer])
@@ -467,28 +480,74 @@
             //Handle game start here
             if ([self gameState] == kRPGameStateWaitingForStart)
             {
-                //Set game state to kRPGameStateActive
-                [self setGameState:kRPGameStateActive];
-                //Init map level here
+                [self setGameState:kRPGameStateWaitingForRandomMap];
+                //Server should init a random map
+                if ([self amIBestServer])
+                {
+                    [self setGameState:kRPGameStateWaitingForRandomMap];
+                    NSString *randomMap = [_levelDirector initRandomMapLevelForMulitplayerMode];
+                    RPGameMessage message;
+                    message.messageType = kRPGameMessageTypeRandomMap;
+                    message.map.mapName = randomMap;
+                    [self sendMessage:message toPlayers:self.match.playerIDs];
+                    //Set game state to kRPGameStateActive
+                    [self setGameState:kRPGameStateActive];
+                }
             }
         }
             break;
+        ///////////////////////////////////////////////////////////////////    
+        case kRPGameMessageTypeRandomMap:
+        {
+            if (![self amIBestServer])
+            {
+                [_levelDirector initMapLevel:message->map.mapName];
+                [self setGameState:kRPGameStateActive];
+            }
+        }
+            break;
+        ///////////////////////////////////////////////////////////////////    
+        case kRPGameMessageTypeDispatchSprite:
+        {
+            if (![playerID isEqualToString:_bestServer])
+            {
+                NSLog(@"%@Only server can dispatch sprite for the other players",SELECTOR_STRING);
+                return;
+            }
+            if ([self gameState] == kRPGameStateWaitingForRandomMap || [self gameState] == kRPGameStateWaitingForDesignatedSprite)
+            {
+                [self setGameState:kRPGameStateActive];
+            }
+            //Handle the message here
+            //Only client should receive random map
+            if (![self amIBestServer])
+            {
+                [[_levelDirector currentLayer] setPlayerSpriteIndex:message->designatedSprite.playerSpriteIndex];
+                [self setupClientPlayerSprite];
+                [_levelDirector setLocalPlayerReady:YES];
+            }
+        }
+            break;
+        ///////////////////////////////////////////////////////////////////    
         case kRPGameMessageTypePlayerMove:
         {
             //Handle player moving here
         }
             break;
+        ///////////////////////////////////////////////////////////////////    
         case kRPGameMessageTypeGameOver:
         {
             //Handle game over here
             [self endGame];
         }
             break;
+        ///////////////////////////////////////////////////////////////////    
         default :
         {
             NSLog(@"%@Message type is invalid", SELECTOR_STRING);
         }
             break;
+        ///////////////////////////////////////////////////////////////////    
     }
     ///////////////////////////////////////////////////////////////////
 }

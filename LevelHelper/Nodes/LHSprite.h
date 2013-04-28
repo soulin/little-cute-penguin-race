@@ -437,6 +437,10 @@
 -(void)setSensor:(bool)val fixturesWithID:(int)fixID; //makes all the fixtures with the id sensors
 -(void)setSensor:(bool)val; //makes the entire body a sensor
 
+-(LHFixture*)fixtureWithName:(NSString*)name;
+-(LHFixture*)fixtureWithID:(int)fixId;//returns first fixture with this id
+-(NSArray*)fixturesWithID:(int)fixId;//returns all fixtures with this id - maybe be 1 or more
+
 -(bool)hasContacts;
 //this methods return NULL if no contacts are found
 -(NSArray*)contactSprites;//will return only the LHSprites objects with which this sprite is in contact

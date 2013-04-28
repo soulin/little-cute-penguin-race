@@ -158,8 +158,17 @@ void lhContact_CallBeginEndSolveMethod(void* object,
 	[preCollisionMap release];
     [postCollisionMap release];
     [beginEndCollisionMap release];    
+
+#endif
+
+    preCollisionMap = nil;
+    postCollisionMap = nil;
+    beginEndCollisionMap = nil;
+    
+#ifndef LH_ARC_ENABLED
 	[super dealloc];
 #endif
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(id) initContactNodeWithWorld:(b2World*)world

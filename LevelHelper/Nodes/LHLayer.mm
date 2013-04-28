@@ -37,12 +37,15 @@ static int untitledLayersCount = 0;
         [userCustomInfo release];
         userCustomInfo = nil;
     }
-
-	[super dealloc];
 #endif
     uniqueName = nil;
     parentLoader = nil;
     userCustomInfo = nil;
+    
+#ifndef LH_ARC_ENABLED
+	[super dealloc];
+#endif
+
 }
 //------------------------------------------------------------------------------
 -(void) loadUserCustomInfoFromDictionary:(NSDictionary*)dictionary{
@@ -80,7 +83,7 @@ static int untitledLayersCount = 0;
 // used internally to alter the zOrder variable. DON'T call this method manually
 -(void) _setZOrder:(NSInteger) z
 {
-#if COCOS2D_VERSION > 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
+#if COCOS2D_VERSION >= 0x00020100 || COCOS2D_VERSION == 0x00020000 || COCOS2D_VERSION == 0x00010100 || COCOS2D_VERSION == 0x00010001 || COCOS2D_VERSION == 0x0001000
     zOrder_ = z;
 #else
     _zOrder = z;

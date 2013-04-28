@@ -251,13 +251,17 @@
 	[rope_sticks release];
     [rope_textureName release];
     [uniqueName release];
-	[super dealloc];
 #endif
     rope_textureName = nil;
     uniqueName = nil;
     rope_points = nil;
 	rope_sprites= nil;
 	rope_sticks= nil;
+    
+#ifndef LH_ARC_ENABLED
+    [super dealloc];
+#endif
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(id) initWithDictionary:(NSDictionary*)dictionary 
